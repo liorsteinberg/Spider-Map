@@ -107,12 +107,25 @@ def get_walking_distances_batch():
     """Calculate walking distances from a center point to multiple stations using Pandana vectorization"""
     try:
         data = request.json
+        logger.info(f"Received walking distances request for {len(data.get('stations', []))} stations")
+        
         center_lat = data['center_lat']
         center_lng = data['center_lng']
         stations = data['stations']
         
-        if pandana_network is None:
-            return jsonify({'error': 'Pandana network not loaded'}), 500
+        # Check if network is loaded, try to load if not
+        network = pandana_network
+        if network is None:
+            logger.warning("Pandana network not loaded, attempting to load now...")
+            network = load_pandana_network()
+            
+        if network is None:
+            logger.error("Pandana network unavailable - cannot calculate distances")
+            return jsonify({
+                'error': 'Pandana network not available', 
+                'details': 'Network file may be missing or failed to load',
+                'suggestion': 'Check server logs for network loading errors'
+            }), 500
         
         # Use Pandana for fast vectorized calculations
         start_time = time.time()
@@ -196,8 +209,12 @@ def get_walking_distances_batch():
         return jsonify({'stations': final_5})
         
     except Exception as e:
-        print(f"Batch calculation error: {e}")
-        return jsonify({'error': str(e)}), 500
+        logger.error(f"Batch calculation error: {e}", exc_info=True)
+        return jsonify({
+            'error': str(e),
+            'type': type(e).__name__,
+            'pandana_loaded': pandana_network is not None
+        }), 500
 
 @app.route('/health', methods=['GET'])
 def health_check():
