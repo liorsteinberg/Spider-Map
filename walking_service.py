@@ -3,7 +3,7 @@
 Flask backend service for calculating walking distances using Pandana
 """
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
 from pathlib import Path
@@ -19,14 +19,20 @@ pandana_network = None
 
 @app.route('/')
 def home():
-    """Root endpoint providing service information and available endpoints"""
+    """Serve the main map interface"""
+    return send_from_directory('.', 'map.html')
+
+@app.route('/api')
+def api_info():
+    """API information endpoint"""
     return jsonify({
         "service": "Spider Map Walking Service",
         "status": "running",
         "version": "1.0",
         "description": "Flask backend service for calculating walking distances using Pandana",
         "endpoints": {
-            "/": "Service information (this endpoint)",
+            "/": "Main map interface",
+            "/api": "API information (this endpoint)",
             "/health": "Health check endpoint",
             "/walking-distances-batch": "POST - Calculate walking distances from center to multiple stations"
         },
