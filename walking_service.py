@@ -17,6 +17,22 @@ CORS(app)  # Allow cross-origin requests
 # Global variable to store the network
 pandana_network = None
 
+@app.route('/')
+def home():
+    """Root endpoint providing service information and available endpoints"""
+    return jsonify({
+        "service": "Spider Map Walking Service",
+        "status": "running",
+        "version": "1.0",
+        "description": "Flask backend service for calculating walking distances using Pandana",
+        "endpoints": {
+            "/": "Service information (this endpoint)",
+            "/health": "Health check endpoint",
+            "/walking-distances-batch": "POST - Calculate walking distances from center to multiple stations"
+        },
+        "pandana_loaded": pandana_network is not None
+    })
+
 def load_pandana_network():
     """Load the pre-built Pandana network"""
     global pandana_network
