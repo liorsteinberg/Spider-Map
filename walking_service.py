@@ -145,10 +145,13 @@ def health_check():
     return jsonify({'status': 'ok', 'pandana_loaded': pandana_network is not None})
 
 if __name__ == '__main__':
+    import os
     print("Starting walking distance service...")
     
     # Pre-load the Pandana network
     load_pandana_network()
     
-    print("Service ready at http://localhost:8080")
-    app.run(host='0.0.0.0', port=8080, debug=False)
+    # Use Heroku's PORT environment variable or default to 8080
+    port = int(os.environ.get('PORT', 8080))
+    print(f"Service ready at http://localhost:{port}")
+    app.run(host='0.0.0.0', port=port, debug=False)
