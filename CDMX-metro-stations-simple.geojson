@@ -1,0 +1,2150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuatro Caminos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.21553989619045,
+          19.460557515238083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacubaya L7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18675598484847,
+          19.402189360606062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidalgo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14806958833336,
+          19.437600101666657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Balderas L1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14918932903227,
+          19.42707141935484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mixcoac L7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18776846578946,
+          19.376138618421052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Metro Puebla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.08245998333334,
+          19.407177553333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Metro Villa de Aragón LB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.06132999411766,
+          19.46163452352941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Observatorio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.20045202941178,
+          19.398263941176467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Potrero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13220156,
+          19.476977299999998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mixiuhca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.11294989642859,
+          19.408395778571425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Candelaria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1200923823529,
+          19.428986954901966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zócalo/Tenochtitlan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13240421176474,
+          19.432607079411767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pino Suárez L1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13296535714288,
+          19.426023010714285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pino Suárez L2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13288340000001,
+          19.424836446666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Merced"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1249481,
+          19.42546511538462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morelos LB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1195742772727,
+          19.439403795454545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Consulado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.11345550937499,
+          19.455352703124994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacubaya L1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18777565749998,
+          19.4025417575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacubaya L9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18792094999999,
+          19.401277020833327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juárez"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14762823999999,
+          19.43331628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tepalcates"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.04619016000001,
+          19.391203259999997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chapultepec"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.17709753333335,
+          19.420644128205133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tlatelolco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14316826923076,
+          19.455013523076925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacuba L2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18824772631577,
+          19.45933647368421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacuba L7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18768225806451,
+          19.458349709677424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guerrero L3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14517844117644,
+          19.444836182352944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guerrero LB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14614226470587,
+          19.445127511764703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Centro Médico L9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.15604205405404,
+          19.4065887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Centro Médico L3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.15511095000001,
+          19.40725234545454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Balderas L3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14899098787879,
+          19.426499021212123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buenavista"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1524237153846,
+          19.446173242307694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "General Anaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1449619,
+          19.3533412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Portales"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1415858,
+          19.369771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nativitas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1402,
+          19.3793936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa de Cortés"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1389557,
+          19.3875657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Xola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1378126,
+          19.3951932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viaducto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1369072,
+          19.4007878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellas Artes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1411221,
+          19.4361674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puebla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0824676,
+          19.4072053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ciudad Deportiva"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0913653,
+          19.4084639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Velódromo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.103108,
+          19.40856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lázaro Cárdenas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1444476,
+          19.407137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gómez Farías"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0902724,
+          19.4164089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salto del Agua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1420543,
+          19.4267538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eduardo Molina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1053492,
+          19.4513894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aragón"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0962394,
+          19.4512698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nezahualcóyotl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0546005,
+          19.4727949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bosque de Aragón"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0692581,
+          19.458076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deportivo Oceanía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0791507,
+          19.4510562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Romero Rubio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0942262,
+          19.4407748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ricardo Flores Magón"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1036464,
+          19.4365424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barranca del Muerto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1892568,
+          19.3615527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Antonio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1866332,
+          19.3845079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Constituyentes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1913845,
+          19.4117501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Auditorio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1922567,
+          19.4249847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Polanco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.190915,
+          19.43353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Refinería"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1904631,
+          19.4696029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camarones"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1900262,
+          19.4791036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Terminal Aérea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0882966,
+          19.433974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hangares"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0879737,
+          19.4242423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Autobuses del Norte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.140622,
+          19.4789149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Constitución de 1917"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0637399,
+          19.3459153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cerro de la Estrella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0856882,
+          19.3559895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UAM-I"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0747979,
+          19.351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Apatlaco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1095076,
+          19.3791527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iztacalco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1120396,
+          19.3880913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Escuadrón 201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1095471,
+          19.3649049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aculco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1076646,
+          19.3733127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mixiuhca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1125396,
+          19.4083782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Viga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12626,
+          19.4066635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obrera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1440487,
+          19.4132002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Doctores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14322,
+          19.4214424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Juan de Letrán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1413291,
+          19.4312856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Joaquín"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1917953,
+          19.4449744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Pedro de los Pinos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1859103,
+          19.3911516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lagunilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1312288,
+          19.4432579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tepito"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1241019,
+          19.4428214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chilpancingo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1685264,
+          19.4059029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Martha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.9952089,
+          19.3602817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Reyes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.9768726,
+          19.3590226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Paz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.9609329,
+          19.3505168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peñón Viejo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0170442,
+          19.3732744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guelatao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0356205,
+          19.3851177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canal de San Juan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0594334,
+          19.398764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agrícola Oriental"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0695045,
+          19.4045642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zaragoza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0827131,
+          19.4120659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Merced"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1255053,
+          19.4255407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isabel la Católica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1378401,
+          19.4263577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuauhtémoc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1545773,
+          19.4256516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tlaltenco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0240388,
+          19.2943676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eje Central"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.151486,
+          19.3613563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hospital 20 de Noviembre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1707596,
+          19.3719536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lomas Estrella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0956838,
+          19.3221728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calle 11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0858929,
+          19.3205052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mexicaltzingo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1226854,
+          19.357663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culhuacán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1089421,
+          19.336909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colegio Militar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1718924,
+          19.4492099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canal del Norte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.116142,
+          19.4488073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Consulado L5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1135557,
+          19.4551085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Consulado L4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1138856,
+          19.4580434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bondojito"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1119857,
+          19.4646629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Candelaria L4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1193914,
+          19.4288048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fray Servando"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1205069,
+          19.4215897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jamaica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.121726,
+          19.4108977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patriotismo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.178752,
+          19.4060319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Misterios"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1304452,
+          19.463197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valle Gómez"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.119858,
+          19.4589822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Andrés Tomatlán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.104439,
+          19.3281071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tasqueña"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1396585,
+          19.3437579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salto del Agua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1419862,
+          19.4272197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coyuya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1135033,
+          19.398336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Acatitla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.005643,
+          19.3646704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iztapalapa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0935577,
+          19.3577446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sevilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1708104,
+          19.4219182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buenavista"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1526654,
+          19.4462541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guerrero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1451728,
+          19.4449101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viveros-Derechos Humanos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1751123,
+          19.354325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copilco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1770655,
+          19.3360586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universidad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1739054,
+          19.3244753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zapata"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1648064,
+          19.3706696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eugenia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1571902,
+          19.3861257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niños Héroes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.150302,
+          19.419418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Balderas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1489658,
+          19.4271218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tlatelolco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1431694,
+          19.455014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Raza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.139518,
+          19.4687443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacubaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1874725,
+          19.402049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juanacatlán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18199,
+          19.4129786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chapultepec"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1768378,
+          19.420702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pino Suárez"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1330004,
+          19.4259177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Candelaria L1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1209047,
+          19.4295765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Balbuena"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1023994,
+          19.4231214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panteones"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2030401,
+          19.4586893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tacuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1871316,
+          19.458901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuitláhuac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1814675,
+          19.4572284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Popotla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1754624,
+          19.4528599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Normal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1673519,
+          19.4445654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolución"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1539905,
+          19.4391338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Cosme"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.160696,
+          19.4419205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Antonio Abad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1345491,
+          19.4160351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chabacano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1355234,
+          19.4090955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Periférico Oriente"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0746315,
+          19.3177274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pantitlán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0745031,
+          19.4152415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Lázaro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1141346,
+          19.4300375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garibaldi-Lagunilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1388026,
+          19.4439202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oceanía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.087175,
+          19.4456761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Anita"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1215493,
+          19.40367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morelos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1190037,
+          19.4397067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Centro Médico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1551569,
+          19.4065257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hospital General"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1532797,
+          19.4136617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nopalera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0459579,
+          19.2999294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Etiopía/Plaza de la Transparencia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.156033,
+          19.3960312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tezonco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0651959,
+          19.3062608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olivos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0594631,
+          19.3042837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zapotitlán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0342124,
+          19.2966699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Insurgentes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1633188,
+          19.4236015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa de Aragón"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0613528,
+          19.4616747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zócalo/Tenochtitlan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1322807,
+          19.4324614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allende"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1371341,
+          19.435551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellas Artes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1406102,
+          19.4362043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parque de los Venados"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.158782,
+          19.3706329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salto del Agua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1433856,
+          19.426921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jamaica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1219076,
+          19.4094101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ermita"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1432067,
+          19.3600503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidalgo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1468952,
+          19.4373769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Juan de Letrán"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1412928,
+          19.4315049
+        ]
+      }
+    }
+  ]
+}

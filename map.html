@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Interactive CDMX Metro Map (Live)</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+        .leaflet-container {
+            background: #1a202c; /* Dark background for map tiles loading */
+        }
+        .center-crosshair {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 0 0 3px #000, 0 0 5px #000;
+        }
+        .toggle-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(26, 32, 44, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .toggle-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .toggle-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .toggle-switch {
+            position: relative;
+            width: 44px;
+            height: 24px;
+            background: #4A5568;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-switch.active {
+            background: #ed8936;
+        }
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(20px);
+        }
+        .loading-indicator {
+            display: none;
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #4A5568;
+            border-top: 2px solid #ed8936;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <div id="map"></div>
+    
+    <!-- Toggle Container -->
+    <div class="toggle-container">
+        <button class="toggle-button" onclick="toggleDistanceMode()">
+            <span id="toggle-label">Euclidean Distance</span>
+            <div class="toggle-switch" id="toggle-switch">
+                <div class="toggle-slider"></div>
+            </div>
+            <div class="loading-indicator" id="loading-indicator"></div>
+        </button>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        // --- Configuration ---
+        let useOSMNetwork = false; // Toggle between Euclidean and OSM network distance
+        let isLoading = false;
+        
+        // --- DATA: Mexico City Metro Stations with Lat/Lng ---
+        const stations = [
+            { name: "Observatorio", lat: 19.4024, lng: -99.2005 }, { name: "Tacubaya", lat: 19.4036, lng: -99.1871 },
+            { name: "Juanacatlán", lat: 19.412, lng: -99.182 }, { name: "Chapultepec", lat: 19.4205, lng: -99.1764 },
+            { name: "Sevilla", lat: 19.422, lng: -99.171 }, { name: "Insurgentes", lat: 19.425, lng: -99.164 },
+            { name: "Cuauhtémoc", lat: 19.428, lng: -99.157 }, { name: "Balderas", lat: 19.429, lng: -99.149 },
+            { name: "Salto del Agua", lat: 19.427, lng: -99.143 }, { name: "Isabel la Católica", lat: 19.428, lng: -99.138 },
+            { name: "Pino Suárez", lat: 19.425, lng: -99.132 }, { name: "Merced", lat: 19.427, lng: -99.123 },
+            { name: "Candelaria", lat: 19.428, lng: -99.119 }, { name: "San Lázaro", lat: 19.43, lng: -99.113 },
+            { name: "Moctezuma", lat: 19.431, lng: -99.106 }, { name: "Balbuena", lat: 19.429, lng: -99.1 },
+            { name: "Gómez Farías", lat: 19.426, lng: -99.088 }, { name: "Zaragoza", lat: 19.423, lng: -99.08 },
+            { name: "Pantitlán", lat: 19.415, lng: -99.072 }, { name: "Cuatro Caminos", lat: 19.458, lng: -99.215 },
+            { name: "Panteones", lat: 19.456, lng: -99.202 }, { name: "Tacuba", lat: 19.456, lng: -99.188 },
+            { name: "Cuitláhuac", lat: 19.46, lng: -99.175 }, { name: "Popotla", lat: 19.456, lng: -99.172 },
+            { name: "Colegio Militar", lat: 19.452, lng: -99.168 }, { name: "Normal", lat: 19.448, lng: -99.165 },
+            { name: "San Cosme", lat: 19.444, lng: -99.16 }, { name: "Revolución", lat: 19.439, lng: -99.156 },
+            { name: "Hidalgo", lat: 19.436, lng: -99.148 }, { name: "Bellas Artes", lat: 19.435, lng: -99.141 },
+            { name: "Allende", lat: 19.436, lng: -99.137 }, { name: "Zócalo", lat: 19.432, lng: -99.133 },
+            { name: "San Antonio Abad", lat: 19.419, lng: -99.133 }, { name: "Chabacano", lat: 19.406, lng: -99.133 },
+            { name: "Viaducto", lat: 19.398, lng: -99.135 }, { name: "Xola", lat: 19.39, lng: -99.138 },
+            { name: "Villa de Cortés", lat: 19.382, lng: -99.14 }, { name: "Nativitas", lat: 19.375, lng: -99.142 },
+            { name: "Portales", lat: 19.366, lng: -99.144 }, { name: "Ermita", lat: 19.358, lng: -99.146 },
+            { name: "General Anaya", lat: 19.35, lng: -99.148 }, { name: "Tasqueña", lat: 19.34, lng: -99.145 },
+            { name: "Indios Verdes", lat: 19.495, lng: -99.118 }, { name: "Deportivo 18 de Marzo", lat: 19.485, lng: -99.125 },
+            { name: "Potrero", lat: 19.475, lng: -99.135 }, { name: "La Raza", lat: 19.465, lng: -99.14 },
+            { name: "Tlatelolco", lat: 19.45, lng: -99.142 }, { name: "Guerrero", lat: 19.443, lng: -99.145 },
+            { name: "Centro Médico", lat: 19.409, lng: -99.156 }, { name: "Etiopía", lat: 19.398, lng: -99.159 },
+            { name: "Eugenia", lat: 19.39, lng: -99.16 }, { name: "División del Norte", lat: 19.382, lng: -99.162 },
+            { name: "Zapata", lat: 19.373, lng: -99.165 }, { name: "Coyoacán", lat: 19.362, lng: -99.168 },
+            { name: "Viveros", lat: 19.354, lng: -99.175 }, { name: "Miguel Ángel de Quevedo", lat: 19.347, lng: -99.182 },
+            { name: "Copilco", lat: 19.338, lng: -99.18 }, { name: "Universidad", lat: 19.33, lng: -99.175 },
+            { name: "Martín Carrera", lat: 19.48, lng: -99.097 }, { name: "Talismán", lat: 19.475, lng: -99.105 },
+            { name: "Bondojito", lat: 19.46, lng: -99.112 }, { name: "Consulado", lat: 19.45, lng: -99.118 },
+            { name: "Fray Servando", lat: 19.42, lng: -99.128 }, { name: "Jamaica", lat: 19.412, lng: -99.118 },
+            { name: "Santa Anita", lat: 19.403, lng: -99.113 }, { name: "El Rosario", lat: 19.505, lng: -99.215 },
+            { name: "Tezozómoc", lat: 19.5, lng: -99.205 }, { name: "UAM-Azcapotzalco", lat: 19.495, lng: -99.195 },
+            { name: "Ferrería", lat: 19.49, lng: -99.18 }, { name: "Norte 45", lat: 19.485, lng: -99.168 },
+            { name: "Vallejo", lat: 19.48, lng: -99.158 }, { name: "Instituto del Petróleo", lat: 19.475, lng: -99.148 },
+            { name: "Lindavista", lat: 19.482, lng: -99.135 }, { name: "La Villa-Basílica", lat: 19.485, lng: -99.11 },
+            { name: "Garibaldi", lat: 19.441, lng: -99.139 }, { name: "San Juan de Letrán", lat: 19.43, lng: -99.14 },
+            { name: "Doctores", lat: 19.42, lng: -99.146 }, { name: "Obrera", lat: 19.412, lng: -99.14 },
+            { name: "Lázaro Cárdenas", lat: 19.408, lng: -99.148 }, { name: "Mixcoac", lat: 19.38, lng: -99.185 },
+            { name: "San Antonio", lat: 19.39, lng: -99.18 }, { name: "San Pedro de los Pinos", lat: 19.395, lng: -99.182 },
+            { name: "Polanco", lat: 19.432, lng: -99.192 }, { name: "Auditorio", lat: 19.425, lng: -99.195 },
+        ];
+        
+        // --- Map Initialization ---
+        const map = L.map('map').setView([19.4326, -99.1332], 13);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+
+        // --- Layers ---
+        const linesLayer = L.layerGroup().addTo(map);
+        const highlightedStationsLayer = L.layerGroup().addTo(map);
+        let centerMarker;
+
+        // --- Throttle Function for Performance ---
+        // This function limits how often another function can be called.
+        // It prevents the update function from running too frequently during rapid map movements.
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // --- Core Logic ---
+        async function updateClosestStations() {
+            if (isLoading) return;
+            
+            linesLayer.clearLayers();
+            highlightedStationsLayer.clearLayers();
+            if (centerMarker) {
+                map.removeLayer(centerMarker);
+            }
+
+            const center = map.getCenter();
+
+            // Add a crosshair marker at the center
+            const centerIcon = L.divIcon({
+                className: 'center-crosshair',
+                html: '<b>+</b>',
+                iconSize: [24, 24],
+                iconAnchor: [12, 12] // Center the icon
+            });
+            centerMarker = L.marker(center, { icon: centerIcon, interactive: false, zIndexOffset: 1000 }).addTo(map);
+
+            let closestStations;
+            
+            if (useOSMNetwork) {
+                // Use OSM network distance with batch processing
+                isLoading = true;
+                showLoading(true);
+                
+                try {
+                    closestStations = await calculateOSMDistances(center, stations);
+                } catch (error) {
+                    console.error('Error calculating OSM distances:', error);
+                    // Fallback to Euclidean distance
+                    const stationsWithDist = calculateEuclideanDistances(center, stations);
+                    stationsWithDist.sort((a, b) => a.distance - b.distance);
+                    closestStations = stationsWithDist.slice(0, 5);
+                }
+                
+                isLoading = false;
+                showLoading(false);
+            } else {
+                // Use Euclidean distance
+                const stationsWithDist = calculateEuclideanDistances(center, stations);
+                stationsWithDist.sort((a, b) => a.distance - b.distance);
+                closestStations = stationsWithDist.slice(0, 5);
+            }
+
+            closestStations.forEach(station => {
+                const stationLatLng = L.latLng(station.lat, station.lng);
+                
+                // Draw route or straight line based on mode
+                if (useOSMNetwork && station.route && station.route.length > 0) {
+                    // Draw the actual walking route
+                    L.polyline(station.route, { 
+                        color: '#ed8936', 
+                        weight: 3, 
+                        opacity: 0.8,
+                        dashArray: '5, 5'  // Dashed line to distinguish from straight lines
+                    }).addTo(linesLayer);
+                } else {
+                    // Draw straight line
+                    L.polyline([center, stationLatLng], { 
+                        color: '#ed8936', 
+                        weight: 2, 
+                        opacity: 0.7 
+                    }).addTo(linesLayer);
+                }
+                
+                L.circleMarker(stationLatLng, { radius: 8, color: '#FFFFFF', weight: 2, fillColor: '#ed8936', fillOpacity: 1 })
+                    .bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m`).addTo(highlightedStationsLayer);
+            });
+        }
+        
+        // --- Distance Calculation Functions ---
+        function calculateEuclideanDistances(center, stations) {
+            return stations.map(station => ({
+                ...station,
+                distance: center.distanceTo(L.latLng(station.lat, station.lng))
+            }));
+        }
+        
+        async function calculateOSMDistances(center, stations) {
+            try {
+                const response = await fetch('http://localhost:8080/walking-distances-batch', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        center_lat: center.lat,
+                        center_lng: center.lng,
+                        stations: stations
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                return data.stations || [];
+            } catch (error) {
+                console.error('Error calculating OSM distances:', error);
+                // Fallback to Euclidean distance
+                return calculateEuclideanDistances(center, stations)
+                    .sort((a, b) => a.distance - b.distance)
+                    .slice(0, 5);
+            }
+        }
+        
+        // --- Toggle Functions ---
+        function toggleDistanceMode() {
+            if (isLoading) return;
+            
+            useOSMNetwork = !useOSMNetwork;
+            
+            const toggleSwitch = document.getElementById('toggle-switch');
+            const toggleLabel = document.getElementById('toggle-label');
+            
+            if (useOSMNetwork) {
+                toggleSwitch.classList.add('active');
+                toggleLabel.textContent = 'OSM Network';
+            } else {
+                toggleSwitch.classList.remove('active');
+                toggleLabel.textContent = 'Euclidean Distance';
+            }
+            
+            updateClosestStations();
+        }
+        
+        function showLoading(show) {
+            const loadingIndicator = document.getElementById('loading-indicator');
+            loadingIndicator.style.display = show ? 'block' : 'none';
+        }
+        
+        // --- Draw all stations as subtle background dots ---
+        stations.forEach(station => {
+            L.circleMarker([station.lat, station.lng], { radius: 4, color: '#4A5568', weight: 1, fillColor: '#718096', fillOpacity: 0.5 })
+                .bindPopup(`<b>${station.name}</b>`).addTo(map);
+        });
+
+        // --- Event Listeners ---
+        // Create a throttled version of the update function for smoother live updates.
+        // The function will run at most once every 100 milliseconds.
+        const throttledUpdate = throttle(updateClosestStations, 100);
+
+        // Use 'move' and 'zoom' for live updates, but throttled for performance.
+        map.on('move', throttledUpdate);
+        map.on('zoom', throttledUpdate);
+
+        // Also run the function one last time when movement stops to ensure the final position is perfect.
+        map.on('moveend', updateClosestStations);
+
+        // Initial call to draw the elements.
+        updateClosestStations();
+    </script>
+</body>
+</html>
