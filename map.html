@@ -124,6 +124,9 @@
         let useOSMNetwork = false; // Toggle between Euclidean and OSM network distance
         let isLoading = false;
         
+        // API Configuration - works for both local development and Heroku
+        const API_BASE_URL = window.location.origin;
+        
         // --- DATA: Mexico City Metro Stations with Lat/Lng ---
         const stations = [
             { name: "Observatorio", lat: 19.4024, lng: -99.2005 }, { name: "Tacubaya", lat: 19.4036, lng: -99.1871 },
@@ -282,7 +285,7 @@
         
         async function calculateOSMDistances(center, stations) {
             try {
-                const response = await fetch('http://localhost:8080/walking-distances-batch', {
+                const response = await fetch(`${API_BASE_URL}/walking-distances-batch`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
