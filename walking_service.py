@@ -9,7 +9,30 @@ import json
 from pathlib import Path
 import numpy as np
 import time
-import pandana as pdna
+import logging
+import os
+import sys
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+logger.info("Starting Spider Map Walking Service...")
+logger.info(f"Python version: {sys.version}")
+logger.info("Checking dependencies...")
+
+try:
+    import pandana as pdna
+    logger.info(f"Pandana imported successfully, version: {pdna.__version__}")
+except ImportError as e:
+    logger.error(f"Failed to import pandana: {e}")
+    pdna = None
+
+try:
+    import osmnx
+    logger.info(f"OSMnx imported successfully, version: {osmnx.__version__}")
+except ImportError as e:
+    logger.error(f"Failed to import osmnx: {e}")
 
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests
@@ -44,24 +67,39 @@ def load_pandana_network():
     global pandana_network
     
     if pandana_network is not None:
+        logger.info("Pandana network already loaded, returning cached version")
         return pandana_network
     
-    print("Loading pre-built Pandana network...")
-    print("Note: Contraction hierarchy building (~20s) is unavoidable even with pre-built network")
+    if pdna is None:
+        logger.error("Pandana not available - cannot load network")
+        return None
+
+    logger.info("Loading pre-built Pandana network...")
+    logger.info("Note: Contraction hierarchy building (~20s) is unavoidable even with pre-built network")
     load_start = time.time()
+    
     try:
-        import os
-        if os.path.exists('cdmx_pandana_network.h5'):
-            pandana_network = pdna.Network.from_hdf5('cdmx_pandana_network.h5')
+        network_file = 'cdmx_pandana_network.h5'
+        logger.info(f"Checking for network file: {network_file}")
+        
+        if os.path.exists(network_file):
+            logger.info(f"Network file found, size: {os.path.getsize(network_file)} bytes")
+            logger.info("Starting network loading...")
+            pandana_network = pdna.Network.from_hdf5(network_file)
             load_time = time.time() - load_start
-            print(f"Pre-built Pandana network loaded successfully in {load_time:.2f}s")
+            logger.info(f"Pre-built Pandana network loaded successfully in {load_time:.2f}s")
             return pandana_network
         else:
-            print("Pre-built Pandana network file not found. Run 'python build_pandana_network.py' first.")
+            logger.error(f"Pre-built Pandana network file '{network_file}' not found")
+            logger.error("Available files in current directory:")
+            for file in os.listdir('.'):
+                logger.error(f"  - {file}")
+            logger.error("Run 'python build_pandana_network.py' first to create the network file.")
             return None
     except Exception as e:
-        print(f"Failed to load pre-built Pandana network: {e}")
-        print("You may need to rebuild it with 'python build_pandana_network.py'")
+        load_time = time.time() - load_start
+        logger.error(f"Failed to load pre-built Pandana network after {load_time:.2f}s: {e}")
+        logger.error("You may need to rebuild it with 'python build_pandana_network.py'")
         return None
 
 @app.route('/walking-distances-batch', methods=['POST'])
@@ -167,13 +205,17 @@ def health_check():
     return jsonify({'status': 'ok', 'pandana_loaded': pandana_network is not None})
 
 if __name__ == '__main__':
-    import os
-    print("Starting walking distance service...")
+    logger.info("Starting walking distance service...")
     
     # Pre-load the Pandana network
-    load_pandana_network()
+    logger.info("Attempting to pre-load Pandana network...")
+    network_result = load_pandana_network()
+    if network_result:
+        logger.info("Pandana network pre-loaded successfully")
+    else:
+        logger.warning("Pandana network failed to pre-load - will attempt loading on first request")
     
     # Use Heroku's PORT environment variable or default to 8080
     port = int(os.environ.get('PORT', 8080))
-    print(f"Service ready at http://localhost:{port}")
+    logger.info(f"Service ready at http://localhost:{port}")
     app.run(host='0.0.0.0', port=port, debug=False)
