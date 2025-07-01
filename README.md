@@ -2,14 +2,11 @@
 
 An interactive web map showing the 5 closest Mexico City metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
 
+This project is inspired by [Carlos Enrique Vázquez Juárez's original work](https://carto.mx/webmap/spoke/) and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
+
 ## 🚀 Fast NetworKit Backend
 
-**High-performance**: Uses **NetworKit** for ultra-fast network analysis and distance calculations!
-
-- **Network creation**: ~10s
-- **Distance calculations**: ~0.01s for 165 stations  
-- **Route calculations**: ~0.002s per route
-- **Memory usage**: ~200MB
+**High-performance**: Uses **[NetworKit](https://github.com/networkit/networkit)** for ultra-fast network analysis and distance calculations!
 
 ## Features
 
@@ -52,12 +49,6 @@ An interactive web map showing the 5 closest Mexico City metro stations to any l
 ### Setup & Documentation
 - `build_networkit_network.py` - Build NetworKit network
 - `requirements.txt` - Project dependencies
-
-## Performance Comparison
-
-| Backend | Network Build | Distance Calc | Route Calc | Memory | Installation |
-|---------|---------------|---------------|------------|---------|--------------|
-| **NetworKit** | ~10s | ~0.01s | ~0.002s | ~200MB | ✅ Easy |
 
 ## Requirements
 

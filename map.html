@@ -111,11 +111,135 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        /* Info Button Styles */
+        .info-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            width: 40px;
+            height: 40px;
+            background: rgba(26, 32, 44, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        .info-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .modal-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .close-button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+        }
+        .close-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .modal-text {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .modal-link {
+            color: #ed8936;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .modal-link:hover {
+            color: #fbb870;
+            text-decoration: underline;
+        }
+        .github-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border-left: 4px solid #ed8936;
+        }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ed8936;
+            color: #1a202c;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.2s ease;
+        }
+        .github-link:hover {
+            background: #fbb870;
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body class="bg-gray-900">
 
     <div id="map"></div>
+    
+    <!-- Info Button -->
+    <button class="info-button" onclick="showInfoModal()" title="About this project">
+        ℹ️
+    </button>
     
     <!-- Toggle Container -->
     <div class="toggle-container">
@@ -129,6 +253,31 @@
             </div>
             <div class="loading-indicator" id="loading-indicator"></div>
         </button>
+    </div>
+    
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">CDMX Metro Spider Map</h2>
+                <button class="close-button" onclick="hideInfoModal()">&times;</button>
+            </div>
+            <div class="modal-text">
+                An interactive web map showing the 5 closest Mexico City metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
+            </div>
+            <div class="modal-text">
+                This project is inspired by <a href="https://carto.mx/webmap/spoke/" target="_blank" class="modal-link">Carlos Enrique Vázquez Juárez's original work</a> and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
+            </div>
+            <div class="github-section">
+                <div class="modal-text">
+                    <strong>Open Source Project</strong><br>
+                    This is a completely open-source project available on GitHub. You can view the code, contribute improvements, report issues, or fork it for your own use.
+                </div>
+                <a href="https://github.com/liorsteinberg/Spider-Map" target="_blank" class="github-link">
+                    🔗 View on GitHub
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- Leaflet JS -->
@@ -299,6 +448,11 @@
             subdomains: 'abcd',
             maxZoom: 20
         }).addTo(map);
+
+        // Show info modal on page load
+        setTimeout(() => {
+            showInfoModal();
+        }, 500); // Small delay to ensure page is fully loaded
 
         // --- Layers ---
         const linesLayer = L.layerGroup().addTo(map);
@@ -663,6 +817,30 @@
                 return fallbackResults.slice(0, 5);
             }
         }
+        
+        // --- Modal Functions ---
+        function showInfoModal() {
+            document.getElementById('info-modal').style.display = 'block';
+        }
+        
+        function hideInfoModal() {
+            document.getElementById('info-modal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('info-modal');
+            if (event.target === modal) {
+                hideInfoModal();
+            }
+        }
+        
+        // Close modal with escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideInfoModal();
+            }
+        });
     </script>
 </body>
 </html>
