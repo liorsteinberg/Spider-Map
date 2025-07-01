@@ -4,6 +4,10 @@ An interactive web map showing the 5 closest Mexico City metro stations to any l
 
 This project is inspired by [Carlos Enrique Vázquez Juárez's original work](https://carto.mx/webmap/spoke/) and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
 
+## 🌐 Live Demo
+
+**Try it now:** [https://spidermap.steinberg.nu/](https://spidermap.steinberg.nu/)
+
 ## 🚀 Fast NetworKit Backend
 
 **High-performance**: Uses **[NetworKit](https://github.com/networkit/networkit)** for ultra-fast network analysis and distance calculations!
