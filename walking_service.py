@@ -40,7 +40,26 @@ except ImportError as e:
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests
 
+# Supported cities - complete configuration
+CITIES = {
+    'mexico_city': {
+        'cache_prefix': 'cdmx', 
+        'display_name': 'Mexico City',
+        'name': 'Mexico City, Mexico',
+        'center': [19.4326, -99.1332],
+        'zoom': 11
+    },
+    'berlin': {
+        'cache_prefix': 'berlin', 
+        'display_name': 'Berlin',
+        'name': 'Berlin, Germany',
+        'center': [52.5200, 13.4050],
+        'zoom': 11
+    }
+}
+
 # Global variables to store the network
+current_city = 'mexico_city'  # Track current city
 networkit_graph = None
 node_mapping = None  # Maps (lat, lng) to NetworKit node IDs
 coordinate_mapping = None  # Maps NetworKit node IDs to (lat, lng)
@@ -85,7 +104,152 @@ def health_check():
         "status": "healthy",
         "networkit_available": nk is not None,
         "osmnx_available": ox is not None,
-        "graph_loaded": networkit_graph is not None
+        "graph_loaded": networkit_graph is not None,
+        "current_city": current_city
+    })
+
+@app.route('/api/cities')
+def list_cities():
+    """List all supported cities with complete information"""
+    cities_list = []
+    for key, config in CITIES.items():
+        cache_file = f"CityData/{config['cache_prefix']}_walking_graph.pkl"
+        stations_file = f"CityData/{config['cache_prefix']}_stations.geojson"
+        
+        # Backward compatibility check for Mexico City
+        if not os.path.exists(cache_file) and config['cache_prefix'] == 'cdmx':
+            cache_file = 'cdmx_networkit_graph.pkl'
+        
+        # Count stations if file exists
+        station_count = 0
+        if os.path.exists(stations_file):
+            try:
+                with open(stations_file, 'r', encoding='utf-8') as f:
+                    geojson_data = json.load(f)
+                    station_count = len(geojson_data.get('features', []))
+            except:
+                station_count = 0
+        
+        cities_list.append({
+            "key": key,
+            "name": config['display_name'],
+            "full_name": config.get('name', config['display_name']),
+            "center": config.get('center', [0, 0]),
+            "zoom": config.get('zoom', 10),
+            "is_current": key == current_city,
+            "data_available": {
+                "walking_network": os.path.exists(cache_file),
+                "stations": os.path.exists(stations_file),
+                "station_count": station_count
+            }
+        })
+    
+    return jsonify({
+        "cities": cities_list,
+        "current_city": current_city,
+        "current_city_info": {
+            "key": current_city,
+            "name": CITIES[current_city]['display_name'],
+            "center": CITIES[current_city].get('center', [0, 0]),
+            "zoom": CITIES[current_city].get('zoom', 10)
+        }
+    })
+
+@app.route('/api/stations')
+def get_stations():
+    """Get stations for the current city"""
+    try:
+        cache_prefix = CITIES.get(current_city, {}).get('cache_prefix', 'cdmx')
+        geojson_file = f"CityData/{cache_prefix}_stations.geojson"
+        
+        if not os.path.exists(geojson_file):
+            return jsonify({
+                "stations": [],
+                "city": current_city,
+                "count": 0,
+                "error": f"No stations file found for {current_city}: {geojson_file}"
+            })
+        
+        logger.info(f"Loading stations from: {geojson_file}")
+        with open(geojson_file, 'r', encoding='utf-8') as f:
+            geojson_data = json.load(f)
+        
+        # Convert GeoJSON to simple station list
+        stations = []
+        for feature in geojson_data.get('features', []):
+            if feature['geometry']['type'] == 'Point':
+                coords = feature['geometry']['coordinates']
+                lng, lat = coords[0], coords[1]  # GeoJSON uses [lng, lat] order
+                
+                station = {
+                    'name': feature['properties'].get('name', 'Unknown Station'),
+                    'lat': lat,
+                    'lng': lng,
+                    'osm_id': feature['properties'].get('osm_id', '')
+                }
+                stations.append(station)
+        
+        logger.info(f"✅ Loaded {len(stations)} stations for {CITIES[current_city]['display_name']}")
+        return jsonify({
+            "stations": stations,
+            "city": current_city,
+            "city_name": CITIES[current_city]['display_name'],
+            "count": len(stations)
+        })
+        
+    except Exception as e:
+        logger.error(f"Failed to load stations for {current_city}: {e}")
+        return jsonify({
+            "stations": [],
+            "city": current_city,
+            "count": 0,
+            "error": str(e)
+        })
+
+@app.route('/api/cities/<city_key>', methods=['POST'])
+def switch_city(city_key):
+    """Switch to a different city"""
+    global current_city, networkit_graph, node_mapping, coordinate_mapping
+    
+    if city_key not in CITIES:
+        return jsonify({
+            "error": f"Unknown city: {city_key}",
+            "available_cities": list(CITIES.keys())
+        }), 400
+    
+    if city_key == current_city:
+        return jsonify({
+            "message": f"Already using {CITIES[city_key]['display_name']}",
+            "city": city_key
+        })
+    
+    logger.info(f"🔄 Switching from {CITIES[current_city]['display_name']} to {CITIES[city_key]['display_name']}")
+    
+    # Clear current data to force reload
+    networkit_graph = None
+    node_mapping = None
+    coordinate_mapping = None
+    
+    # Clear numpy arrays if they exist
+    global _node_ids_array, _coords_array
+    if '_node_ids_array' in globals():
+        del _node_ids_array
+    if '_coords_array' in globals():
+        del _coords_array
+        logger.info("Cleared node lookup arrays for new city")
+    
+    # Update current city
+    current_city = city_key
+    
+    return jsonify({
+        "message": f"Successfully switched to {CITIES[city_key]['display_name']}",
+        "city": {
+            "key": city_key,
+            "name": CITIES[city_key]['display_name'],
+            "full_name": CITIES[city_key].get('name', CITIES[city_key]['display_name']),
+            "center": CITIES[city_key].get('center', [0, 0]),
+            "zoom": CITIES[city_key].get('zoom', 10)
+        }
     })
 
 def load_networkit_graph():
@@ -101,7 +265,16 @@ def load_networkit_graph():
         return None
 
     # Always try to load pre-built NetworKit graph first (much faster than OSM creation)
-    cache_file = 'cdmx_networkit_graph.pkl'
+    # Determine cache file based on current city
+    cache_prefix = CITIES.get(current_city, {}).get('cache_prefix', 'cdmx')
+    cache_file = f'CityData/{cache_prefix}_walking_graph.pkl'
+    
+    # Backward compatibility for Mexico City
+    if cache_prefix == 'cdmx' and not os.path.exists(cache_file):
+        old_cache_file = 'cdmx_networkit_graph.pkl'
+        if os.path.exists(old_cache_file):
+            cache_file = old_cache_file
+    
     logger.info(f"Checking for cached NetworKit graph: {cache_file}")
     
     if os.path.exists(cache_file):
@@ -287,17 +460,70 @@ def find_nearest_node(lat, lng):
 def get_walking_distances_batch():
     """Calculate walking distances using NetworKit"""
     try:
+        global current_city, networkit_graph, node_mapping, coordinate_mapping
+        
         data = request.json
         logger.info(f"Received walking distances request for {len(data.get('stations', []))} stations")
         
         center_lat = data['center_lat']
         center_lng = data['center_lng']
-        stations = data['stations']
+        requested_city = data.get('city', current_city)  # Get requested city
+        
+        # CRITICAL: Switch cities if needed for correct network
+        if requested_city != current_city and requested_city in CITIES:
+            logger.info(f"🔄 Switching from {CITIES[current_city]['display_name']} to {CITIES[requested_city]['display_name']} for OSM calculation")
+            current_city = requested_city
+            
+            # Clear current graph to force reload for new city
+            networkit_graph = None
+            node_mapping = None
+            coordinate_mapping = None
+            
+            # Clear numpy arrays if they exist
+            global _node_ids_array, _coords_array
+            if '_node_ids_array' in globals():
+                del _node_ids_array
+            if '_coords_array' in globals():
+                del _coords_array
+                logger.info("Cleared node lookup arrays for new city")
+
+        # CRITICAL: Always load stations from the current city's data file
+        # Don't use stations from frontend - they might be from wrong city
+        logger.info(f"Loading stations for current city: {CITIES[current_city]['display_name']}")
+        cache_prefix = CITIES.get(current_city, {}).get('cache_prefix', 'cdmx')
+        geojson_file = f"CityData/{cache_prefix}_stations.geojson"
+        
+        if not os.path.exists(geojson_file):
+            logger.error(f"No stations file found for {current_city}: {geojson_file}")
+            return jsonify({
+                'error': f'Station data not available for {CITIES[current_city]["display_name"]}',
+                'city': current_city
+            }), 404
+        
+        # Load stations from current city's data file
+        with open(geojson_file, 'r', encoding='utf-8') as f:
+            geojson_data = json.load(f)
+        
+        stations = []
+        for feature in geojson_data.get('features', []):
+            if feature['geometry']['type'] == 'Point':
+                coords = feature['geometry']['coordinates']
+                lng, lat = coords[0], coords[1]  # GeoJSON uses [lng, lat] order
+                
+                station = {
+                    'name': feature['properties'].get('name', 'Unknown Station'),
+                    'lat': lat,
+                    'lng': lng,
+                    'osm_id': feature['properties'].get('osm_id', '')
+                }
+                stations.append(station)
+        
+        logger.info(f"✅ Using {len(stations)} stations from {CITIES[current_city]['display_name']} data file")
         
         # Check if graph is loaded, try to load if not
         graph = networkit_graph
         if graph is None:
-            logger.warning("NetworKit graph not loaded, attempting to load now...")
+            logger.warning(f"NetworKit graph not loaded for {current_city}, attempting to load now...")
             graph = load_networkit_graph()
             
         if graph is None:

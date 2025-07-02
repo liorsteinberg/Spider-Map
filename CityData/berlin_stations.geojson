@@ -1,0 +1,2511 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2414191,
+          52.5256744
+        ]
+      },
+      "properties": {
+        "name": "Ruhleben",
+        "osm_id": "('node', 27586255)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3501546,
+          52.5423332
+        ]
+      },
+      "properties": {
+        "name": "Amrumer Straße",
+        "osm_id": "('node', 29045595)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3330236,
+          52.5058669
+        ]
+      },
+      "properties": {
+        "name": "Zoologischer Garten",
+        "osm_id": "('node', 29046450)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3314365,
+          52.5038223
+        ]
+      },
+      "properties": {
+        "name": "Kurfürstendamm",
+        "osm_id": "('node', 29046970)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3310064,
+          52.4920843
+        ]
+      },
+      "properties": {
+        "name": "Güntzelstraße",
+        "osm_id": "('node', 29046976)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3310103,
+          52.4873298
+        ]
+      },
+      "properties": {
+        "name": "Berliner Straße",
+        "osm_id": "('node', 29046979)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3287301,
+          52.4721217
+        ]
+      },
+      "properties": {
+        "name": "Friedrich-Wilhelm-Platz",
+        "osm_id": "('node', 29046999)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3282601,
+          52.4653254
+        ]
+      },
+      "properties": {
+        "name": "Walther-Schreiber-Platz",
+        "osm_id": "('node', 29047043)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3250946,
+          52.461481
+        ]
+      },
+      "properties": {
+        "name": "Schloßstraße",
+        "osm_id": "('node', 29047045)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3209344,
+          52.4567983
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Steglitz",
+        "osm_id": "('node', 29047047)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3891706,
+          52.5148248
+        ]
+      },
+      "properties": {
+        "name": "U Französische Straße",
+        "osm_id": "('node', 29058259)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2722217,
+          52.5099869
+        ]
+      },
+      "properties": {
+        "name": "Theodor-Heuss-Platz",
+        "osm_id": "('node', 29123754)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2592357,
+          52.5162154
+        ]
+      },
+      "properties": {
+        "name": "Neu-Westend",
+        "osm_id": "('node', 29123761)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3105328,
+          52.511837
+        ]
+      },
+      "properties": {
+        "name": "Deutsche Oper",
+        "osm_id": "('node', 29123763)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3221613,
+          52.5118853
+        ]
+      },
+      "properties": {
+        "name": "Ernst-Reuter-Platz",
+        "osm_id": "('node', 29123764)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3384251,
+          52.5754161
+        ]
+      },
+      "properties": {
+        "name": "Lindauer Allee",
+        "osm_id": "('node', 29190897)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4181732,
+          52.5153554
+        ]
+      },
+      "properties": {
+        "name": "Jannowitzbrücke",
+        "osm_id": "('node', 29494301)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3436736,
+          52.478987
+        ]
+      },
+      "properties": {
+        "name": "Innsbrucker Platz",
+        "osm_id": "('node', 29497638)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3405436,
+          52.4885755
+        ]
+      },
+      "properties": {
+        "name": "Bayerischer Platz",
+        "osm_id": "('node', 29833469)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4314659,
+          52.4672622
+        ]
+      },
+      "properties": {
+        "name": "Hermannstraße",
+        "osm_id": "('node', 31048718)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3052393,
+          52.5115148
+        ]
+      },
+      "properties": {
+        "name": "Bismarckstraße",
+        "osm_id": "('node', 31207787)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.306588,
+          52.517387
+        ]
+      },
+      "properties": {
+        "name": "Richard-Wagner-Platz",
+        "osm_id": "('node', 31207789)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3501694,
+          52.4895529
+        ]
+      },
+      "properties": {
+        "name": "Eisenacher Straße",
+        "osm_id": "('node', 76474606)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3259254,
+          52.5883733
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Reinickendorf",
+        "osm_id": "('node', 107606908)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4076671,
+          52.4892983
+        ]
+      },
+      "properties": {
+        "name": "Südstern",
+        "osm_id": "('node', 129730678)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3706891,
+          52.4929715
+        ]
+      },
+      "properties": {
+        "name": "Yorckstraße",
+        "osm_id": "('node', 174817813)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5128387,
+          52.5061644
+        ]
+      },
+      "properties": {
+        "name": "Friedrichsfelde",
+        "osm_id": "('node', 193661797)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3958247,
+          52.4912895
+        ]
+      },
+      "properties": {
+        "name": "Gneisenaustraße",
+        "osm_id": "('node', 259845849)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2831263,
+          52.5100921
+        ]
+      },
+      "properties": {
+        "name": "Kaiserdamm",
+        "osm_id": "('node', 316021790)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.560878,
+          52.5052929
+        ]
+      },
+      "properties": {
+        "name": "Elsterwerdaer Platz",
+        "osm_id": "('node', 557830030)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5465321,
+          52.4996047
+        ]
+      },
+      "properties": {
+        "name": "Biesdorf-Süd",
+        "osm_id": "('node', 557840857)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4011206,
+          52.5298999
+        ]
+      },
+      "properties": {
+        "name": "Rosenthaler Platz",
+        "osm_id": "('node', 1498939809)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3740318,
+          52.4995261
+        ]
+      },
+      "properties": {
+        "name": "Gleisdreieck",
+        "osm_id": "('node', 2102139395)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3883057,
+          52.5488223
+        ]
+      },
+      "properties": {
+        "name": "Gesundbrunnen",
+        "osm_id": "('node', 2461322542)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3650375,
+          52.5430625
+        ]
+      },
+      "properties": {
+        "name": "Wedding",
+        "osm_id": "('node', 2924245392)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3896554,
+          52.5120808
+        ]
+      },
+      "properties": {
+        "name": "Stadtmitte",
+        "osm_id": "('node', 3352091173)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3531176,
+          52.5498029
+        ]
+      },
+      "properties": {
+        "name": "Seestraße",
+        "osm_id": "('node', 3772787174)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3591672,
+          52.5463833
+        ]
+      },
+      "properties": {
+        "name": "Leopoldplatz",
+        "osm_id": "('node', 3772836700)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4754364,
+          52.5136227
+        ]
+      },
+      "properties": {
+        "name": "Frankfurter Allee",
+        "osm_id": "('node', 3799307108)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3821605,
+          52.5312724
+        ]
+      },
+      "properties": {
+        "name": "Naturkundemuseum",
+        "osm_id": "('node', 3820796396)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.392876,
+          52.5422898
+        ]
+      },
+      "properties": {
+        "name": "Voltastraße",
+        "osm_id": "('node', 3844356478)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4107479,
+          52.5036623
+        ]
+      },
+      "properties": {
+        "name": "Moritzplatz",
+        "osm_id": "('node', 3844467019)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4220572,
+          52.4930552
+        ]
+      },
+      "properties": {
+        "name": "Schönleinstraße",
+        "osm_id": "('node', 3844501316)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.425281,
+          52.4801685
+        ]
+      },
+      "properties": {
+        "name": "Boddinstraße",
+        "osm_id": "('node', 3846415853)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4283545,
+          52.4729787
+        ]
+      },
+      "properties": {
+        "name": "Leinestraße",
+        "osm_id": "('node', 3846471665)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4315264,
+          52.5180981
+        ]
+      },
+      "properties": {
+        "name": "Strausberger Platz",
+        "osm_id": "('node', 3846589198)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2897049,
+          52.4574096
+        ]
+      },
+      "properties": {
+        "name": "Dahlem-Dorf",
+        "osm_id": "('node', 3846748389)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4447135,
+          52.5167465
+        ]
+      },
+      "properties": {
+        "name": "Weberwiese",
+        "osm_id": "('node', 3846755695)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4447716,
+          52.4628825
+        ]
+      },
+      "properties": {
+        "name": "Grenzallee",
+        "osm_id": "('node', 3851450060)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3409843,
+          52.5566893
+        ]
+      },
+      "properties": {
+        "name": "Rehberge",
+        "osm_id": "('node', 3854167532)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3906496,
+          52.4977596
+        ]
+      },
+      "properties": {
+        "name": "Hallesches Tor",
+        "osm_id": "('node', 3854590997)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3782147,
+          52.5091586
+        ]
+      },
+      "properties": {
+        "name": "U Potsdamer Platz",
+        "osm_id": "('node', 3854591000)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3701242,
+          52.5252819
+        ]
+      },
+      "properties": {
+        "name": "Hauptbahnhof",
+        "osm_id": "('node', 3856100108)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4481868,
+          52.4377918
+        ]
+      },
+      "properties": {
+        "name": "Britz-Süd",
+        "osm_id": "('node', 3856551765)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4533376,
+          52.4293213
+        ]
+      },
+      "properties": {
+        "name": "Johannisthaler Chaussee",
+        "osm_id": "('node', 3856551767)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4626984,
+          52.4246425
+        ]
+      },
+      "properties": {
+        "name": "Lipschitzallee",
+        "osm_id": "('node', 3856551769)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4953978,
+          52.41617
+        ]
+      },
+      "properties": {
+        "name": "Rudow",
+        "osm_id": "('node', 3856551771)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4839403,
+          52.4233803
+        ]
+      },
+      "properties": {
+        "name": "Zwickauer Damm",
+        "osm_id": "('node', 3856551777)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3346178,
+          52.5602382
+        ]
+      },
+      "properties": {
+        "name": "Afrikanische Straße",
+        "osm_id": "('node', 3858579923)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.327129,
+          52.5632274
+        ]
+      },
+      "properties": {
+        "name": "Kurt-Schumacher-Platz",
+        "osm_id": "('node', 3858818979)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3126219,
+          52.5668172
+        ]
+      },
+      "properties": {
+        "name": "Scharnweberstraße",
+        "osm_id": "('node', 3858932763)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3029254,
+          52.5710338
+        ]
+      },
+      "properties": {
+        "name": "Otisstraße",
+        "osm_id": "('node', 3859009452)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2961132,
+          52.575692
+        ]
+      },
+      "properties": {
+        "name": "Holzhauser Straße",
+        "osm_id": "('node', 3859032226)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2905918,
+          52.5818407
+        ]
+      },
+      "properties": {
+        "name": "Borsigwerke",
+        "osm_id": "('node', 3862380796)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3809897,
+          52.5166047
+        ]
+      },
+      "properties": {
+        "name": "Brandenburger Tor",
+        "osm_id": "('node', 3862767512)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4418203,
+          52.4685956
+        ]
+      },
+      "properties": {
+        "name": "Neukölln",
+        "osm_id": "('node', 3865616067)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4050194,
+          52.5254666
+        ]
+      },
+      "properties": {
+        "name": "Weinmeisterstraße",
+        "osm_id": "('node', 3867910440)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3882862,
+          52.5202635
+        ]
+      },
+      "properties": {
+        "name": "U Friedrichstraße",
+        "osm_id": "('node', 3869306768)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3850915,
+          52.5117915
+        ]
+      },
+      "properties": {
+        "name": "Mohrenstraße",
+        "osm_id": "('node', 3870475231)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4490065,
+          52.505014
+        ]
+      },
+      "properties": {
+        "name": "Warschauer Straße",
+        "osm_id": "('node', 3870914569)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2413921,
+          52.4434481
+        ]
+      },
+      "properties": {
+        "name": "Krumme Lanke",
+        "osm_id": "('node', 3872477458)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4280355,
+          52.4992628
+        ]
+      },
+      "properties": {
+        "name": "Görlitzer Bahnhof",
+        "osm_id": "('node', 3875882001)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4124323,
+          52.5172347
+        ]
+      },
+      "properties": {
+        "name": "Klosterstraße",
+        "osm_id": "('node', 3876077784)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4211125,
+          52.52079
+        ]
+      },
+      "properties": {
+        "name": "Schillingstraße",
+        "osm_id": "('node', 3876218098)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4539745,
+          52.515818
+        ]
+      },
+      "properties": {
+        "name": "Frankfurter Tor",
+        "osm_id": "('node', 3876349058)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4414625,
+          52.5008341
+        ]
+      },
+      "properties": {
+        "name": "Schlesisches Tor",
+        "osm_id": "('node', 3876481637)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3425741,
+          52.536735
+        ]
+      },
+      "properties": {
+        "name": "Westhafen",
+        "osm_id": "('node', 3876909306)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.40591,
+          52.4983972
+        ]
+      },
+      "properties": {
+        "name": "Prinzenstraße",
+        "osm_id": "('node', 3881590700)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3875138,
+          52.4396754
+        ]
+      },
+      "properties": {
+        "name": "Alt-Mariendorf",
+        "osm_id": "('node', 3884823930)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3859508,
+          52.4860843
+        ]
+      },
+      "properties": {
+        "name": "Platz der Luftbrücke",
+        "osm_id": "('node', 3887567777)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.348511,
+          52.5742433
+        ]
+      },
+      "properties": {
+        "name": "Paracelsus-Bad",
+        "osm_id": "('node', 3894910680)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3604739,
+          52.5711895
+        ]
+      },
+      "properties": {
+        "name": "Residenzstraße",
+        "osm_id": "('node', 3895051317)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3639236,
+          52.5645392
+        ]
+      },
+      "properties": {
+        "name": "Franz-Neumann-Platz",
+        "osm_id": "('node', 3895235324)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.413278,
+          52.5593248
+        ]
+      },
+      "properties": {
+        "name": "Vinetastraße",
+        "osm_id": "('node', 3896661775)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3846346,
+          52.4599764
+        ]
+      },
+      "properties": {
+        "name": "Kaiserin-Augusta-Straße",
+        "osm_id": "('node', 3898068655)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3856905,
+          52.4462674
+        ]
+      },
+      "properties": {
+        "name": "Westphalweg",
+        "osm_id": "('node', 3898404805)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4183107,
+          52.4989853
+        ]
+      },
+      "properties": {
+        "name": "Kottbusser Tor",
+        "osm_id": "('node', 3900136339)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2963306,
+          52.5109137
+        ]
+      },
+      "properties": {
+        "name": "Sophie-Charlotte-Platz",
+        "osm_id": "('node', 3900580952)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3537297,
+          52.4995972
+        ]
+      },
+      "properties": {
+        "name": "Nollendorfplatz",
+        "osm_id": "('node', 3901824902)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4041155,
+          52.5112959
+        ]
+      },
+      "properties": {
+        "name": "Spittelmarkt",
+        "osm_id": "('node', 3904674211)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3619411,
+          52.4999599
+        ]
+      },
+      "properties": {
+        "name": "Kurfürstenstraße",
+        "osm_id": "('node', 3906622702)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.377318,
+          52.5351574
+        ]
+      },
+      "properties": {
+        "name": "Schwartzkopffstraße",
+        "osm_id": "('node', 3906729688)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4126861,
+          52.5323899
+        ]
+      },
+      "properties": {
+        "name": "Senefelderplatz",
+        "osm_id": "('node', 3916325095)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3090745,
+          52.4945315
+        ]
+      },
+      "properties": {
+        "name": "Konstanzer Straße",
+        "osm_id": "('node', 3918542874)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4393375,
+          52.4762696
+        ]
+      },
+      "properties": {
+        "name": "Karl-Marx-Straße",
+        "osm_id": "('node', 3918711741)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3873583,
+          52.5255998
+        ]
+      },
+      "properties": {
+        "name": "Oranienburger Tor",
+        "osm_id": "('node', 3928759793)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3073226,
+          52.5000028
+        ]
+      },
+      "properties": {
+        "name": "Adenauerplatz",
+        "osm_id": "('node', 3931919580)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5964015,
+          52.5338331
+        ]
+      },
+      "properties": {
+        "name": "Cottbusser Platz",
+        "osm_id": "('node', 3933477396)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5889176,
+          52.5211535
+        ]
+      },
+      "properties": {
+        "name": "Kaulsdorf-Nord",
+        "osm_id": "('node', 3933477399)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4870792,
+          52.5124541
+        ]
+      },
+      "properties": {
+        "name": "Magdalenenstraße",
+        "osm_id": "('node', 3933477401)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5906369,
+          52.5286152
+        ]
+      },
+      "properties": {
+        "name": "Kienberg (Gärten der Welt)",
+        "osm_id": "('node', 3933477404)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3671696,
+          52.5514056
+        ]
+      },
+      "properties": {
+        "name": "Nauener Platz",
+        "osm_id": "('node', 3933566460)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3748605,
+          52.503724
+        ]
+      },
+      "properties": {
+        "name": "Mendelssohn-Bartholdy-Park",
+        "osm_id": "('node', 3933855820)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.383123,
+          52.4986927
+        ]
+      },
+      "properties": {
+        "name": "Möckernbrücke",
+        "osm_id": "('node', 3933855823)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3814583,
+          52.5522617
+        ]
+      },
+      "properties": {
+        "name": "Pankstraße",
+        "osm_id": "('node', 3933855829)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4644405,
+          52.5147399
+        ]
+      },
+      "properties": {
+        "name": "Samariterstraße",
+        "osm_id": "('node', 3935369912)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.633123,
+          52.5384335
+        ]
+      },
+      "properties": {
+        "name": "Hönow",
+        "osm_id": "('node', 3935470812)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3632209,
+          52.4975858
+        ]
+      },
+      "properties": {
+        "name": "Bülowstraße",
+        "osm_id": "('node', 3946122064)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.395591,
+          52.5133502
+        ]
+      },
+      "properties": {
+        "name": "Hausvogteiplatz",
+        "osm_id": "('node', 3947836158)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3856299,
+          52.4655217
+        ]
+      },
+      "properties": {
+        "name": "Alt-Tempelhof",
+        "osm_id": "('node', 3948690912)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3844659,
+          52.4537449
+        ]
+      },
+      "properties": {
+        "name": "Ullsteinstraße",
+        "osm_id": "('node', 3948690916)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3886168,
+          52.4941308
+        ]
+      },
+      "properties": {
+        "name": "Mehringdamm",
+        "osm_id": "('node', 3949521962)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3862561,
+          52.4780189
+        ]
+      },
+      "properties": {
+        "name": "Paradestraße",
+        "osm_id": "('node', 3949521963)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4986022,
+          52.5111151
+        ]
+      },
+      "properties": {
+        "name": "Lichtenberg",
+        "osm_id": "('node', 3950105985)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2530752,
+          52.4498912
+        ]
+      },
+      "properties": {
+        "name": "Onkel Toms Hütte",
+        "osm_id": "('node', 3955368088)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2690711,
+          52.4503608
+        ]
+      },
+      "properties": {
+        "name": "Oskar-Helene-Heim",
+        "osm_id": "('node', 3955368093)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.281744,
+          52.4510388
+        ]
+      },
+      "properties": {
+        "name": "Freie Universität (Thielplatz)",
+        "osm_id": "('node', 3955368095)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3266968,
+          52.5028118
+        ]
+      },
+      "properties": {
+        "name": "Uhlandstraße",
+        "osm_id": "('node', 3957757603)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3430005,
+          52.5017976
+        ]
+      },
+      "properties": {
+        "name": "Wittenbergplatz",
+        "osm_id": "('node', 3957757604)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3420365,
+          52.518008
+        ]
+      },
+      "properties": {
+        "name": "Hansaplatz",
+        "osm_id": "('node', 3957897529)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3413533,
+          52.5323818
+        ]
+      },
+      "properties": {
+        "name": "Birkenstraße",
+        "osm_id": "('node', 3959201657)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4492022,
+          52.4520801
+        ]
+      },
+      "properties": {
+        "name": "Blaschkoallee",
+        "osm_id": "('node', 3959389239)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3205449,
+          52.4864895
+        ]
+      },
+      "properties": {
+        "name": "Blissestraße",
+        "osm_id": "('node', 3959653399)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3088711,
+          52.4670266
+        ]
+      },
+      "properties": {
+        "name": "Breitenbachplatz",
+        "osm_id": "('node', 3959895235)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3732715,
+          52.5571597
+        ]
+      },
+      "properties": {
+        "name": "Osloer Straße",
+        "osm_id": "('node', 3983548303)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3729545,
+          52.5201123
+        ]
+      },
+      "properties": {
+        "name": "Bundestag",
+        "osm_id": "('node', 4213705914)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3412971,
+          52.5261489
+        ]
+      },
+      "properties": {
+        "name": "Turmstraße",
+        "osm_id": "('node', 4440948591)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2727638,
+          52.5367748
+        ]
+      },
+      "properties": {
+        "name": "Siemensdamm",
+        "osm_id": "('node', 4512633105)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5229595,
+          52.4977241
+        ]
+      },
+      "properties": {
+        "name": "Tierpark",
+        "osm_id": "('node', 4598319045)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4139082,
+          52.5215849
+        ]
+      },
+      "properties": {
+        "name": "Alexanderplatz",
+        "osm_id": "('node', 4598414751)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3006301,
+          52.5307879
+        ]
+      },
+      "properties": {
+        "name": "Jungfernheide",
+        "osm_id": "('node', 4644994619)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6183463,
+          52.538977
+        ]
+      },
+      "properties": {
+        "name": "Louis-Lewin-Straße",
+        "osm_id": "('node', 4788379933)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.606672,
+          52.5366883
+        ]
+      },
+      "properties": {
+        "name": "Hellersdorf",
+        "osm_id": "('node', 4788379937)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4101754,
+          52.5123348
+        ]
+      },
+      "properties": {
+        "name": "Märkisches Museum",
+        "osm_id": "('node', 4940731304)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1997742,
+          52.5351709
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Spandau",
+        "osm_id": "('node', 4989868817)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3602198,
+          52.4903665
+        ]
+      },
+      "properties": {
+        "name": "Kleistpark",
+        "osm_id": "('node', 5099979652)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3906125,
+          52.5060447
+        ]
+      },
+      "properties": {
+        "name": "Kochstraße/Checkpoint Charlie",
+        "osm_id": "('node', 5116771809)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341972,
+          52.4831773
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Schöneberg",
+        "osm_id": "('node', 5134482957)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3431855,
+          52.4961755
+        ]
+      },
+      "properties": {
+        "name": "Viktoria-Luise-Platz",
+        "osm_id": "('node', 5134716875)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.314415,
+          52.4732464
+        ]
+      },
+      "properties": {
+        "name": "Rüdesheimer Platz",
+        "osm_id": "('node', 5149137347)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2957519,
+          52.4641033
+        ]
+      },
+      "properties": {
+        "name": "Podbielskiallee",
+        "osm_id": "('node', 5160531362)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3364644,
+          52.5004423
+        ]
+      },
+      "properties": {
+        "name": "Augsburger Straße",
+        "osm_id": "('node', 5162689183)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3128835,
+          52.4797961
+        ]
+      },
+      "properties": {
+        "name": "Heidelberger Platz",
+        "osm_id": "('node', 5162689184)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3247547,
+          52.4940847
+        ]
+      },
+      "properties": {
+        "name": "Hohenzollernplatz",
+        "osm_id": "('node', 5162689220)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3310091,
+          52.4964453
+        ]
+      },
+      "properties": {
+        "name": "Spichernstraße",
+        "osm_id": "('node', 5162689571)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3151361,
+          52.4905442
+        ]
+      },
+      "properties": {
+        "name": "Fehrbelliner Platz",
+        "osm_id": "('node', 5162689572)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4245531,
+          52.4862857
+        ]
+      },
+      "properties": {
+        "name": "Hermannplatz",
+        "osm_id": "('node', 5171026793)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4341793,
+          52.4816522
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Neukölln",
+        "osm_id": "('node', 5171026794)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4495999,
+          52.4447743
+        ]
+      },
+      "properties": {
+        "name": "Parchimer Allee",
+        "osm_id": "('node', 5171026799)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2933009,
+          52.5362794
+        ]
+      },
+      "properties": {
+        "name": "Jakob-Kaiser-Platz",
+        "osm_id": "('node', 5176114547)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3066372,
+          52.5066749
+        ]
+      },
+      "properties": {
+        "name": "Wilmersdorfer Straße",
+        "osm_id": "('node', 5176114617)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2175358,
+          52.537652
+        ]
+      },
+      "properties": {
+        "name": "Zitadelle",
+        "osm_id": "('node', 5183374155)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2478176,
+          52.5379819
+        ]
+      },
+      "properties": {
+        "name": "Paulsternstraße",
+        "osm_id": "('node', 5183375788)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2861036,
+          52.5366262
+        ]
+      },
+      "properties": {
+        "name": "Halemweg",
+        "osm_id": "('node', 5183375797)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3702888,
+          52.5400429
+        ]
+      },
+      "properties": {
+        "name": "Reinickendorfer Straße",
+        "osm_id": "('node', 5198810677)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4137114,
+          52.5494885
+        ]
+      },
+      "properties": {
+        "name": "Schönhauser Allee",
+        "osm_id": "('node', 5219721336)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3335031,
+          52.5786231
+        ]
+      },
+      "properties": {
+        "name": "Karl-Bonhoeffer-Nervenklinik",
+        "osm_id": "('node', 5219721338)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3347115,
+          52.5956412
+        ]
+      },
+      "properties": {
+        "name": "Wittenau",
+        "osm_id": "('node', 5219721339)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4104868,
+          52.5276951
+        ]
+      },
+      "properties": {
+        "name": "Rosa-Luxemburg-Platz",
+        "osm_id": "('node', 5219756617)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3047721,
+          52.5263437
+        ]
+      },
+      "properties": {
+        "name": "Mierendorffplatz",
+        "osm_id": "('node', 5219756618)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4117203,
+          52.56678
+        ]
+      },
+      "properties": {
+        "name": "Pankow",
+        "osm_id": "('node', 5220107618)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2330942,
+          52.5387183
+        ]
+      },
+      "properties": {
+        "name": "Haselhorst",
+        "osm_id": "('node', 5220114129)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3898514,
+          52.5106178
+        ]
+      },
+      "properties": {
+        "name": "Stadtmitte",
+        "osm_id": "('node', 5250030091)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3917126,
+          52.4990257
+        ]
+      },
+      "properties": {
+        "name": "Hallesches Tor",
+        "osm_id": "('node', 5250030092)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3828981,
+          52.4991179
+        ]
+      },
+      "properties": {
+        "name": "Möckernbrücke",
+        "osm_id": "('node', 5250030093)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3285001,
+          52.4776476
+        ]
+      },
+      "properties": {
+        "name": "Bundesplatz",
+        "osm_id": "('node', 5324318370)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.262306,
+          52.5369951
+        ]
+      },
+      "properties": {
+        "name": "Rohrdamm",
+        "osm_id": "('node', 5330823481)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385629,
+          52.469568
+        ]
+      },
+      "properties": {
+        "name": "Tempelhof",
+        "osm_id": "('node', 5679382211)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2504479,
+          52.5168643
+        ]
+      },
+      "properties": {
+        "name": "Olympia-Stadion",
+        "osm_id": "('node', 5713678268)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4160272,
+          52.5104484
+        ]
+      },
+      "properties": {
+        "name": "Heinrich-Heine-Straße",
+        "osm_id": "('node', 5713678269)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4121769,
+          52.5415154
+        ]
+      },
+      "properties": {
+        "name": "Eberswalder Straße",
+        "osm_id": "('node', 5713678270)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3966175,
+          52.5374381
+        ]
+      },
+      "properties": {
+        "name": "Bernauer Straße",
+        "osm_id": "('node', 5713944071)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2837514,
+          52.5894565
+        ]
+      },
+      "properties": {
+        "name": "Alt-Tegel",
+        "osm_id": "('node', 5718454109)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2062573,
+          52.5388381
+        ]
+      },
+      "properties": {
+        "name": "Altstadt Spandau",
+        "osm_id": "('node', 5726082246)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4745668,
+          52.4233264
+        ]
+      },
+      "properties": {
+        "name": "Wutzkyallee",
+        "osm_id": "('node', 6555763842)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.38882,
+          52.5169884
+        ]
+      },
+      "properties": {
+        "name": "Unter den Linden",
+        "osm_id": "('node', 8170768521)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4080828,
+          52.5188425
+        ]
+      },
+      "properties": {
+        "name": "Rotes Rathaus",
+        "osm_id": "('node', 8170768522)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3988844,
+          52.5172626
+        ]
+      },
+      "properties": {
+        "name": "Museumsinsel",
+        "osm_id": "('node', 9082329700)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.206373370611644,
+          52.53881859814227
+        ]
+      },
+      "properties": {
+        "name": "Altstadt Spandau",
+        "osm_id": "('way', 477738273)"
+      }
+    }
+  ]
+}

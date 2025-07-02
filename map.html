@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Interactive CDMX Metro Map (Live)</title>
+    <title>Interactive Metro Spider Map</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
@@ -30,18 +30,47 @@
             font-size: 24px;
             font-weight: bold;
             text-shadow: 0 0 3px #000, 0 0 5px #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            line-height: 1;
         }
         .toggle-container {
             position: absolute;
             top: 20px;
             right: 20px;
             z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .control-panel {
             background: rgba(26, 32, 44, 0.9);
             backdrop-filter: blur(10px);
             border-radius: 12px;
             padding: 16px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .city-selector {
+            margin-bottom: 12px;
+        }
+        .city-selector select {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #fff;
+            padding: 8px 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .city-selector select option {
+            background: #1a202c;
+            color: #fff;
         }
         .toggle-button {
             display: flex;
@@ -240,30 +269,40 @@
     <button class="info-button" onclick="showInfoModal()" title="About this project">
         ℹ️
     </button>
-    
+
     <!-- Toggle Container -->
     <div class="toggle-container">
-        <button class="toggle-button" onclick="toggleDistanceMode()">
-            <div class="toggle-labels">
-                <span class="toggle-label" id="euclidean-label">Euclidean Distance</span>
-                <span class="toggle-label inactive" id="network-label">Walking Network</span>
+        <!-- City Selector -->
+        <div class="control-panel">
+            <div class="city-selector">
+                <select id="city-selector">
+                    <option value="">Loading cities...</option>
+                </select>
             </div>
-            <div class="toggle-switch" id="toggle-switch">
-                <div class="toggle-slider"></div>
-            </div>
-            <div class="loading-indicator" id="loading-indicator"></div>
-        </button>
+            
+            <!-- Distance Toggle -->
+            <button class="toggle-button" onclick="toggleDistanceMode()">
+                <div class="toggle-labels">
+                    <span class="toggle-label" id="euclidean-label">Euclidean Distance</span>
+                    <span class="toggle-label inactive" id="network-label">Walking Network</span>
+                </div>
+                <div class="toggle-switch" id="toggle-switch">
+                    <div class="toggle-slider"></div>
+                </div>
+                <div class="loading-indicator" id="loading-indicator"></div>
+            </button>
+        </div>
     </div>
     
     <!-- Info Modal -->
     <div id="info-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title">CDMX Metro Spider Map</h2>
+                <h2 class="modal-title" id="modal-title">Metro Spider Map</h2>
                 <button class="close-button" onclick="hideInfoModal()">&times;</button>
             </div>
-            <div class="modal-text">
-                An interactive web map showing the 5 closest Mexico City metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
+            <div class="modal-text" id="modal-description">
+                An interactive web map showing the 5 closest metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
             </div>
             <div class="modal-text">
                 This project is inspired by <a href="https://carto.mx/webmap/spoke/" target="_blank" class="modal-link">Carlos Enrique Vázquez Juárez's original work</a> and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
@@ -284,58 +323,428 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
+        console.log('🔥 JavaScript is loading...');
+        
         // --- Configuration ---
         let useOSMNetwork = false; // Toggle between Euclidean and OSM network distance
         let isLoading = false;
         
         // API Configuration - works for both local development and Heroku
-        const API_BASE_URL = window.location.origin;
+        const API_BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:8080' : window.location.origin;
+        console.log('🌐 API Base URL:', API_BASE_URL);
         
-        // --- DATA: Mexico City Metro Stations with Lat/Lng ---
-        const stations = [
-            { name: "Observatorio", lat: 19.4024, lng: -99.2005 }, { name: "Tacubaya", lat: 19.4036, lng: -99.1871 },
-            { name: "Juanacatlán", lat: 19.412, lng: -99.182 }, { name: "Chapultepec", lat: 19.4205, lng: -99.1764 },
-            { name: "Sevilla", lat: 19.422, lng: -99.171 }, { name: "Insurgentes", lat: 19.425, lng: -99.164 },
-            { name: "Cuauhtémoc", lat: 19.428, lng: -99.157 }, { name: "Balderas", lat: 19.429, lng: -99.149 },
-            { name: "Salto del Agua", lat: 19.427, lng: -99.143 }, { name: "Isabel la Católica", lat: 19.428, lng: -99.138 },
-            { name: "Pino Suárez", lat: 19.425, lng: -99.132 }, { name: "Merced", lat: 19.427, lng: -99.123 },
-            { name: "Candelaria", lat: 19.428, lng: -99.119 }, { name: "San Lázaro", lat: 19.43, lng: -99.113 },
-            { name: "Moctezuma", lat: 19.431, lng: -99.106 }, { name: "Balbuena", lat: 19.429, lng: -99.1 },
-            { name: "Gómez Farías", lat: 19.426, lng: -99.088 }, { name: "Zaragoza", lat: 19.423, lng: -99.08 },
-            { name: "Pantitlán", lat: 19.415, lng: -99.072 }, { name: "Cuatro Caminos", lat: 19.458, lng: -99.215 },
-            { name: "Panteones", lat: 19.456, lng: -99.202 }, { name: "Tacuba", lat: 19.456, lng: -99.188 },
-            { name: "Cuitláhuac", lat: 19.46, lng: -99.175 }, { name: "Popotla", lat: 19.456, lng: -99.172 },
-            { name: "Colegio Militar", lat: 19.452, lng: -99.168 }, { name: "Normal", lat: 19.448, lng: -99.165 },
-            { name: "San Cosme", lat: 19.444, lng: -99.16 }, { name: "Revolución", lat: 19.439, lng: -99.156 },
-            { name: "Hidalgo", lat: 19.436, lng: -99.148 }, { name: "Bellas Artes", lat: 19.435, lng: -99.141 },
-            { name: "Allende", lat: 19.436, lng: -99.137 }, { name: "Zócalo", lat: 19.432, lng: -99.133 },
-            { name: "San Antonio Abad", lat: 19.419, lng: -99.133 }, { name: "Chabacano", lat: 19.406, lng: -99.133 },
-            { name: "Viaducto", lat: 19.398, lng: -99.135 }, { name: "Xola", lat: 19.39, lng: -99.138 },
-            { name: "Villa de Cortés", lat: 19.382, lng: -99.14 }, { name: "Nativitas", lat: 19.375, lng: -99.142 },
-            { name: "Portales", lat: 19.366, lng: -99.144 }, { name: "Ermita", lat: 19.358, lng: -99.146 },
-            { name: "General Anaya", lat: 19.35, lng: -99.148 }, { name: "Tasqueña", lat: 19.34, lng: -99.145 },
-            { name: "Indios Verdes", lat: 19.495, lng: -99.118 }, { name: "Deportivo 18 de Marzo", lat: 19.485, lng: -99.125 },
-            { name: "Potrero", lat: 19.475, lng: -99.135 }, { name: "La Raza", lat: 19.465, lng: -99.14 },
-            { name: "Tlatelolco", lat: 19.45, lng: -99.142 }, { name: "Guerrero", lat: 19.443, lng: -99.145 },
-            { name: "Centro Médico", lat: 19.409, lng: -99.156 }, { name: "Etiopía", lat: 19.398, lng: -99.159 },
-            { name: "Eugenia", lat: 19.39, lng: -99.16 }, { name: "División del Norte", lat: 19.382, lng: -99.162 },
-            { name: "Zapata", lat: 19.373, lng: -99.165 }, { name: "Coyoacán", lat: 19.362, lng: -99.168 },
-            { name: "Viveros", lat: 19.354, lng: -99.175 }, { name: "Miguel Ángel de Quevedo", lat: 19.347, lng: -99.182 },
-            { name: "Copilco", lat: 19.338, lng: -99.18 }, { name: "Universidad", lat: 19.33, lng: -99.175 },
-            { name: "Martín Carrera", lat: 19.48, lng: -99.097 }, { name: "Talismán", lat: 19.475, lng: -99.105 },
-            { name: "Bondojito", lat: 19.46, lng: -99.112 }, { name: "Consulado", lat: 19.45, lng: -99.118 },
-            { name: "Fray Servando", lat: 19.42, lng: -99.128 }, { name: "Jamaica", lat: 19.412, lng: -99.118 },
-            { name: "Santa Anita", lat: 19.403, lng: -99.113 }, { name: "El Rosario", lat: 19.505, lng: -99.215 },
-            { name: "Tezozómoc", lat: 19.5, lng: -99.205 }, { name: "UAM-Azcapotzalco", lat: 19.495, lng: -99.195 },
-            { name: "Ferrería", lat: 19.49, lng: -99.18 }, { name: "Norte 45", lat: 19.485, lng: -99.168 },
-            { name: "Vallejo", lat: 19.48, lng: -99.158 }, { name: "Instituto del Petróleo", lat: 19.475, lng: -99.148 },
-            { name: "Lindavista", lat: 19.482, lng: -99.135 }, { name: "La Villa-Basílica", lat: 19.485, lng: -99.11 },
-            { name: "Garibaldi", lat: 19.441, lng: -99.139 }, { name: "San Juan de Letrán", lat: 19.43, lng: -99.14 },
-            { name: "Doctores", lat: 19.42, lng: -99.146 }, { name: "Obrera", lat: 19.412, lng: -99.14 },
-            { name: "Lázaro Cárdenas", lat: 19.408, lng: -99.148 }, { name: "Mixcoac", lat: 19.38, lng: -99.185 },
-            { name: "San Antonio", lat: 19.39, lng: -99.18 }, { name: "San Pedro de los Pinos", lat: 19.395, lng: -99.182 },
-            { name: "Polanco", lat: 19.432, lng: -99.192 }, { name: "Auditorio", lat: 19.425, lng: -99.195 },
-        ];
+        // --- Global Variables ---
+        let currentCity = null;
+        let stations = [];
+        let availableCities = [];
+        
+        // Global variables for spatial index and map
+        let stationIndex = null;
+        let map = null;
+        
+        // Cache instances for performance
+        let euclideanCache = null;
+        let distanceCache = null;
+        
+        // Global variable to track current calculation and allow cancellation
+        let currentCalculationId = 0;
+        
+        // Global variables for movement handling
+        let moveTimeout = null;
+        
+        // Helper function to validate station coordinates
+        function isValidStation(station) {
+            if (!station || !station.lat || !station.lng || 
+                typeof station.lat !== 'number' || typeof station.lng !== 'number' ||
+                station.lat === 0 || station.lng === 0 ||
+                isNaN(station.lat) || isNaN(station.lng) ||
+                Math.abs(station.lat) > 90 || Math.abs(station.lng) > 180) {
+                console.warn(`⚠️ Invalid station in ${currentCity || 'unknown'}:`, {
+                    name: station ? station.name : 'undefined',
+                    lat: station ? station.lat : 'undefined',
+                    lng: station ? station.lng : 'undefined',
+                    latType: station ? typeof station.lat : 'undefined',
+                    lngType: station ? typeof station.lng : 'undefined'
+                });
+                return false;
+            }
+            return true;
+        }
+        
+        // Initialize the app
+        async function initializeApp() {
+            try {
+                console.log('🚀 Initializing Spider Map app...');
+                
+                // Initialize caches
+                euclideanCache = new DistanceCache(50); // For euclidean distances  
+                distanceCache = new DistanceCache(30); // For OSM routes (smaller cache, bigger objects)
+                
+                console.log('✅ Caches initialized');
+                
+                // Load available cities
+                await loadCities();
+                console.log('✅ Cities loaded');
+                
+                // Load stations for current city
+                await loadStations();
+                console.log('✅ Stations loaded');
+                
+                // Initialize map and spatial index
+                initializeMap();
+                console.log('✅ Map initialized');
+                
+                // Ensure toggle UI reflects initial Euclidean mode
+                updateToggleUI();
+                console.log('✅ Toggle UI initialized');
+                
+                console.log('🎉 App initialization complete!');
+                
+            } catch (error) {
+                console.error('❌ Failed to initialize app:', error);
+                alert('Failed to load city data. Please refresh the page.');
+            }
+        }
+        
+        async function loadCities() {
+            try {
+                console.log('Loading cities from API...');
+                const response = await fetch(`${API_BASE_URL}/api/cities`);
+                console.log('Cities API response status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                console.log('Cities data received:', data);
+                
+                availableCities = data.cities;
+                currentCity = data.current_city;
+                
+                // Populate city selector
+                const selector = document.getElementById('city-selector');
+                if (!selector) {
+                    throw new Error('City selector element not found');
+                }
+                
+                selector.innerHTML = '';
+                
+                availableCities.forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city.key;
+                    option.textContent = city.name;
+                    option.selected = city.is_current;
+                    selector.appendChild(option);
+                });
+                
+                // Add change event listener
+                selector.addEventListener('change', switchCity);
+                
+                console.log(`Loaded ${availableCities.length} cities, current: ${currentCity}`);
+            } catch (error) {
+                console.error('Failed to load cities:', error);
+                throw error;
+            }
+        }
+        
+        async function loadStations() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/stations`);
+                const data = await response.json();
+                
+                // Filter stations immediately upon loading to ensure we never work with invalid data
+                const rawStations = data.stations;
+                stations = rawStations.filter(station => isValidStation(station));
+                
+                console.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
+                console.log(`📊 Station validation: ${stations.length} valid, ${rawStations.length - stations.length} invalid filtered out`);
+                
+                // Update modal title
+                const city = availableCities.find(c => c.key === data.city);
+                if (city) {
+                    document.getElementById('modal-title').textContent = `${city.name} Metro Spider Map`;
+                    document.getElementById('modal-description').textContent = 
+                        `An interactive web map showing the 5 closest ${city.name} metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.`;
+                }
+                
+            } catch (error) {
+                console.error('Failed to load stations:', error);
+                stations = [];
+                throw error;
+            }
+        }
+        
+        async function switchCity(event) {
+            const newCityKey = event.target.value;
+            if (!newCityKey || newCityKey === currentCity) return;
+            
+            const selector = document.getElementById('city-selector');
+            let originalText = null;
+            
+            try {
+                // Show loading state
+                originalText = selector.options[selector.selectedIndex].text;
+                selector.disabled = true;
+                selector.options[selector.selectedIndex].text = 'Switching...';
+                
+                // Switch city on backend
+                const response = await fetch(`${API_BASE_URL}/api/cities/${newCityKey}`, {
+                    method: 'POST'
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Failed to switch city: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                currentCity = newCityKey;
+                
+                // Reset to Euclidean mode when changing cities
+                useOSMNetwork = false;
+                updateToggleUI();
+                
+                // Reload stations for new city
+                await loadStations();
+                
+                // Reinitialize spatial index and clear current results
+                initializeSpatialIndex();
+                clearResults();
+                
+                // Clear distance caches to prevent cross-city contamination
+                if (euclideanCache) {
+                    euclideanCache.clear();
+                    console.log('🧹 Cleared Euclidean cache during city switch');
+                }
+                if (distanceCache) {
+                    distanceCache.clear();
+                    console.log('🧹 Cleared OSM cache during city switch');
+                }
+                
+                // Redraw background stations for the new city
+                map.eachLayer(layer => {
+                    if (layer.options && layer.options.isBackgroundStation) {
+                        map.removeLayer(layer);
+                    }
+                });
+                
+                stations.forEach(station => {
+                    // Validate station coordinates before rendering
+                    if (!isValidStation(station)) {
+                        return; // Skip this station - warning already logged
+                    }
+                    
+                    L.circleMarker([station.lat, station.lng], { 
+                        radius: 4, 
+                        color: '#4A5568', 
+                        weight: 1, 
+                        fillColor: '#718096', 
+                        fillOpacity: 0.5,
+                        isBackgroundStation: true
+                    }).bindPopup(`<b>${station.name}</b>`).addTo(map);
+                });
+                
+                // Update map view to new city center
+                const city = availableCities.find(c => c.key === newCityKey);
+                if (city) {
+                    map.setView(city.center, city.zoom);
+                }
+                
+                // Update closest stations in Euclidean mode after city switch
+                updateClosestStations();
+                
+                console.log(`Switched to ${data.city.name}`);
+                
+                // Success: Properly update the dropdown to show the new city name
+                const newCityData = availableCities.find(c => c.key === newCityKey);
+                if (newCityData) {
+                    selector.options[selector.selectedIndex].text = newCityData.name;
+                }
+                
+            } catch (error) {
+                console.error('Failed to switch city:', error);
+                alert('Failed to switch city. Please try again.');
+                
+                // Error: Reset selector to previous city and restore original text
+                event.target.value = currentCity;
+                if (originalText) {
+                    selector.options[selector.selectedIndex].text = originalText;
+                }
+            } finally {
+                // Always re-enable the selector
+                selector.disabled = false;
+            }
+        }
+        
+        function initializeMap() {
+            if (stations.length === 0) {
+                console.warn('No stations available to initialize map');
+                return;
+            }
+            
+            // Initialize spatial index
+            initializeSpatialIndex();
+            
+            // Initialize the map if not already created
+            if (!map) {
+                const city = availableCities.find(c => c.key === currentCity);
+                const center = city ? city.center : [19.4326, -99.1332]; // Default to Mexico City
+                const zoom = city ? city.zoom : 11;
+                
+                map = L.map('map').setView(center, zoom);
+                
+                // Add tile layer with dark theme
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                    subdomains: 'abcd',
+                    maxZoom: 20
+                }).addTo(map);
+                
+                // Initialize layer groups
+                linesLayer = L.layerGroup().addTo(map);
+                highlightedStationsLayer = L.layerGroup().addTo(map);
+                
+                // Add event listeners with proper synchronization for OSM mode
+                map.on('click', handleMapClick);
+                
+                // Improved movement handling for different calculation modes
+                let isMoving = false;
+                
+                function handleMapMovement() {
+                    isMoving = true;
+                    
+                    // Clear any pending updates
+                    if (moveTimeout) {
+                        clearTimeout(moveTimeout);
+                    }
+                    
+                    if (useOSMNetwork) {
+                        // OSM MODE: Update center marker immediately, delay expensive calculation
+                        const center = map.getCenter();
+                        updateCenterMarker(center);
+                        
+                        // Wait for movement to stop before calculating expensive OSM routes
+                        moveTimeout = setTimeout(() => {
+                            isMoving = false;
+                            if (map) {
+                                updateClosestStationsWithCenter(map.getCenter());
+                            }
+                        }, 300); // 300ms delay after movement stops
+                    } else {
+                        // EUCLIDEAN MODE: Calculate immediately on the fly for smooth real-time effect
+                        const center = map.getCenter();
+                        updateClosestStationsWithCenter(center);
+                        
+                        // Very short timeout just to prevent excessive calculations during rapid movement
+                        moveTimeout = setTimeout(() => {
+                            isMoving = false;
+                        }, 10); // Minimal delay, just for state management
+                    }
+                }
+                
+                // Use the same handler for all movement events
+                map.on('move', handleMapMovement);
+                map.on('zoom', handleMapMovement);
+                map.on('moveend', () => {
+                    if (moveTimeout) {
+                        clearTimeout(moveTimeout);
+                    }
+                    isMoving = false;
+                    // Final update when movement completely stops (mainly for OSM mode)
+                    if (useOSMNetwork) {
+                        updateClosestStations();
+                    }
+                });
+                
+                // Show info modal on initial load
+                setTimeout(() => {
+                    showInfoModal();
+                }, 500);
+                
+                // Establish initial center point and calculate closest stations
+                // This ensures the app has a proper reference point for distance calculations
+                const initialCenter = map.getCenter();
+                setTimeout(() => {
+                    // Add initial center marker and calculate distances
+                    updateClosestStations();
+                }, 200);
+            }
+            
+            // Clear existing station markers
+            map.eachLayer(layer => {
+                if (layer.options && layer.options.isBackgroundStation) {
+                    map.removeLayer(layer);
+                }
+            });
+            
+            // Draw all stations as subtle background dots
+            stations.forEach(station => {
+                // Validate station coordinates before rendering background dots
+                if (!isValidStation(station)) {
+                    return; // Skip this station - warning already logged
+                }
+                
+                L.circleMarker([station.lat, station.lng], { 
+                    radius: 4, 
+                    color: '#4A5568', 
+                    weight: 1, 
+                    fillColor: '#718096', 
+                    fillOpacity: 0.5,
+                    isBackgroundStation: true
+                }).bindPopup(`<b>${station.name}</b>`).addTo(map);
+            });
+            
+            // Initial call to draw the elements
+            updateClosestStations();
+            
+            // Test performance if stations are available
+            if (stations.length > 0) {
+                const testCenter = { lat: stations[0].lat + 0.01, lng: stations[0].lng + 0.01 };
+                setTimeout(() => measureDistanceCalculationPerformance(testCenter, stations), 1000);
+            }
+        }
+        
+        function initializeSpatialIndex() {
+            if (stations.length > 0) {
+                stationIndex = new StationSpatialIndex(stations);
+                console.log(`Spatial index initialized with ${stations.length} stations`);
+            }
+        }
+        
+        function clearResults() {
+            // Clear any existing results from the map
+            if (map) {
+                map.eachLayer(layer => {
+                    if (layer.options && (layer.options.isRoute || layer.options.isStation)) {
+                        map.removeLayer(layer);
+                    }
+                });
+            }
+            
+            // Also clear the layer groups used for spider web visualization
+            if (linesLayer) linesLayer.clearLayers();
+            if (highlightedStationsLayer) highlightedStationsLayer.clearLayers();
+            if (centerMarker) {
+                map.removeLayer(centerMarker);
+                centerMarker = null;
+            }
+        }
+        
+        function handleMapClick(e) {
+            const center = e.latlng;
+            
+            console.log(`🖱️ Map clicked at: ${center.lat.toFixed(6)}, ${center.lng.toFixed(6)}`);
+            
+            // Cancel any pending movement calculations
+            if (moveTimeout) {
+                clearTimeout(moveTimeout);
+                moveTimeout = null;
+            }
+            
+            // For clicks, we want immediate response regardless of mode
+            // The calculation function will handle loading states appropriately
+            updateClosestStationsWithCenter(center);
+        }
         
         // Spatial grid index for ultra-fast station lookups
         class StationSpatialIndex {
@@ -391,25 +800,58 @@
             constructor(maxSize = 50) { // Reduced size for faster lookups
                 this.cache = new Map();
                 this.maxSize = maxSize;
+                this.currentCity = null; // Track which city the cache is for
             }
             
             getCacheKey(lat, lng, precision = 4) { // ~100m precision for responsive caching
                 // Round to specified decimal places to create cache key
                 const roundedLat = Math.round(lat * Math.pow(10, precision)) / Math.pow(10, precision);
                 const roundedLng = Math.round(lng * Math.pow(10, precision)) / Math.pow(10, precision);
-                return `${roundedLat},${roundedLng}`;
+                // Only include city in cache key if currentCity is set to avoid issues during initialization
+                const cityPrefix = this.currentCity ? `${this.currentCity}:` : '';
+                return `${cityPrefix}${roundedLat},${roundedLng}`;
             }
             
             get(centerLat, centerLng) {
+                // ALWAYS auto-clear cache if city changed or is different
+                if (this.currentCity !== currentCity) {
+                    console.log(`🧹 Auto-clearing OSM cache: city changed from ${this.currentCity} to ${currentCity}`);
+                    this.clear();
+                    this.currentCity = currentCity;
+                    return null; // Force recalculation
+                }
+                
+                // Update current city if not set
+                if (!this.currentCity) {
+                    this.currentCity = currentCity;
+                }
+                
                 const key = this.getCacheKey(centerLat, centerLng);
                 const cached = this.cache.get(key);
                 if (cached) {
-                    console.log('🚀 Using cached OSM routes - instant response!');
+                    console.log(`🚀 Using cached OSM routes for ${currentCity || 'unknown'} - instant response!`);
+                    
+                    // Extra validation: ensure all cached stations are valid for current city
+                    const validCached = cached.filter(station => isValidStation(station));
+                    if (validCached.length !== cached.length) {
+                        console.warn(`⚠️ Found ${cached.length - validCached.length} invalid stations in cache, clearing...`);
+                        this.clear();
+                        return null;
+                    }
                 }
                 return cached;
             }
             
             set(centerLat, centerLng, result) {
+                // Update current city when setting cache
+                this.currentCity = currentCity;
+                
+                // Validate all stations before caching
+                const validResult = result.filter(station => isValidStation(station));
+                if (validResult.length !== result.length) {
+                    console.warn(`⚠️ Filtering out ${result.length - validResult.length} invalid stations before caching`);
+                }
+                
                 const key = this.getCacheKey(centerLat, centerLng);
                 
                 // Implement LRU cache by removing oldest entry
@@ -418,46 +860,26 @@
                     this.cache.delete(firstKey);
                 }
                 
-                this.cache.set(key, result);
-                console.log(`💾 Cached OSM routes for ${key} (${this.cache.size}/${this.maxSize})`);
+                this.cache.set(key, validResult);
+                console.log(`💾 Cached ${validResult.length} valid OSM routes for ${currentCity || 'unknown'} at ${key} (${this.cache.size}/${this.maxSize})`);
             }
             
             clear() {
                 this.cache.clear();
+                this.currentCity = null;
+                console.log('🧹 OSM cache cleared');
             }
         }
 
-        // Initialize optimizations immediately with separate caches
-        let stationIndex = null;
-        const euclideanCache = new DistanceCache(50); // For euclidean distances  
-        const distanceCache = new DistanceCache(30); // For OSM routes (smaller cache, bigger objects)
-        
-        console.log('Initializing spatial index for faster distance calculations...');
-        stationIndex = new StationSpatialIndex(stations);
-        
-        // Performance test on initial load (optional - can be removed in production)
-        if (stations.length > 0) {
-            const testCenter = L.latLng(19.4326, -99.1332); // CDMX center
-            setTimeout(() => measureDistanceCalculationPerformance(testCenter, stations), 1000);
-        }
-        
-        // --- Map Initialization ---
-        const map = L.map('map').setView([19.4326, -99.1332], 13);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 20
-        }).addTo(map);
+        // --- Legacy initialization code removed ---
+        // This section will be replaced by initializeApp() function
 
-        // Show info modal on page load
-        setTimeout(() => {
-            showInfoModal();
-        }, 500); // Small delay to ensure page is fully loaded
-
-        // --- Layers ---
-        const linesLayer = L.layerGroup().addTo(map);
-        const highlightedStationsLayer = L.layerGroup().addTo(map);
-        let centerMarker;
+        // --- Legacy tile layer and modal code removed ---
+        
+        // --- Cache classes ---
+        let linesLayer = null;
+        let highlightedStationsLayer = null;
+        let centerMarker = null;
 
         // --- Throttle Function for Performance ---
         // This function limits how often another function can be called.
@@ -477,94 +899,249 @@
 
         // --- Core Logic ---
         async function updateClosestStations() {
-            if (isLoading) return;
-            
             const center = map.getCenter();
+            if (!center || !center.lat || !center.lng) {
+                console.error('Invalid map center, skipping update');
+                return;
+            }
             
-            // Always update center marker immediately for responsive feedback
-            if (centerMarker) {
-                map.removeLayer(centerMarker);
+            // Pass the current map center to the main calculation function
+            // The center marker will be updated there to ensure perfect sync
+            await updateClosestStationsWithCenter(center);
+        }
+        
+        async function updateClosestStationsWithCenter(center) {
+            if (!map || !stations || stations.length === 0) {
+                console.log('Skipping updateClosestStationsWithCenter: not ready', {
+                    hasMap: !!map,
+                    stationsCount: stations ? stations.length : 0
+                });
+                return;
+            }
+            
+            if (!center || !center.lat || !center.lng) {
+                console.error('Invalid center provided to updateClosestStationsWithCenter');
+                return;
             }
 
-            // Add a crosshair marker at the center
-            const centerIcon = L.divIcon({
-                className: 'center-crosshair',
-                html: '<b>+</b>',
-                iconSize: [24, 24],
-                iconAnchor: [12, 12] // Center the icon
-            });
-            centerMarker = L.marker(center, { icon: centerIcon, interactive: false, zIndexOffset: 1000 }).addTo(map);
-
-            // For OSM mode: keep old routes visible until new ones are ready (smooth transition)
-            // For Euclidean mode: clear immediately since calculation is instant
-            if (!useOSMNetwork) {
-                linesLayer.clearLayers();
-                highlightedStationsLayer.clearLayers();
-            }
+            // Cancel any previous calculation and start a new one
+            currentCalculationId++;
+            const thisCalculationId = currentCalculationId;
+            console.log(`🔄 Starting calculation ${thisCalculationId} for center:`, center.lat.toFixed(4), center.lng.toFixed(4));
 
             let closestStations;
             
             if (useOSMNetwork) {
-                // Use OSM network distance with batch processing
+                // OSM MODE: Special handling for async calculations
+                
+                // Check if already loading - if so, we're replacing an in-progress calculation
+                if (isLoading) {
+                    console.log(`🔄 Replacing in-progress OSM calculation with new one (${thisCalculationId})`);
+                }
+                
+                // Set loading state immediately
                 isLoading = true;
                 showLoading(true);
                 
-                try {
-                    // OPTIMIZATION: Pre-filter to nearby stations only (much faster!)
-                    const nearbyStations = getStationsInRadius(center, stations, 10000); // 10km radius
-                    console.log(`OSM mode: Processing ${nearbyStations.length} nearby stations instead of ${stations.length} total stations`);
-                    
-                    closestStations = await calculateOSMDistances(center, nearbyStations);
-                } catch (error) {
-                    console.error('Error calculating OSM distances:', error);
-                    // Fallback to fully optimized Euclidean distance with all optimizations
-                    closestStations = calculateEuclideanDistancesWithCache(center);
+                // Update center marker immediately for responsive feedback
+                updateCenterMarker(center);
+                
+                // Show loading state by dimming existing routes (but keep them visible)
+                if (linesLayer) {
+                    linesLayer.eachLayer(layer => {
+                        if (layer.setStyle) {
+                            layer.setStyle({ opacity: 0.3, fillOpacity: 0.3 });
+                        }
+                    });
+                }
+                if (highlightedStationsLayer) {
+                    highlightedStationsLayer.eachLayer(layer => {
+                        if (layer.setStyle) {
+                            layer.setStyle({ opacity: 0.3, fillOpacity: 0.3 });
+                        }
+                    });
                 }
                 
-                isLoading = false;
-                showLoading(false);
+                try {
+                    // Early cancellation check
+                    if (thisCalculationId !== currentCalculationId) {
+                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled before starting`);
+                        return;
+                    }
+                    
+                    // Pre-filter to nearby stations for performance
+                    const nearbyStations = getStationsInRadius(center, stations, 10000);
+                    console.log(`🗺️ OSM mode: Processing ${nearbyStations.length} nearby stations`);
+                    
+                    closestStations = await calculateOSMDistances(center, nearbyStations, thisCalculationId);
+                    
+                    // Final cancellation check after async operation
+                    if (thisCalculationId !== currentCalculationId) {
+                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled after completion`);
+                        return;
+                    }
+                    
+                } catch (error) {
+                    // Only handle error if this calculation is still current
+                    if (thisCalculationId !== currentCalculationId) {
+                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled during error`);
+                        return;
+                    }
+                    
+                    console.error('OSM calculation failed, falling back to Euclidean:', error);
+                    closestStations = calculateEuclideanDistancesWithCache(center);
+                    
+                } finally {
+                    // Only cleanup if this is still the current calculation
+                    if (thisCalculationId === currentCalculationId) {
+                        isLoading = false;
+                        showLoading(false);
+                    }
+                }
+                
             } else {
-                // Use fully optimized Euclidean distance calculation
+                // EUCLIDEAN MODE: Fast synchronous calculation
+                
+                // Update center marker immediately
+                updateCenterMarker(center);
+                
+                // Clear existing routes immediately for instant feedback
+                linesLayer.clearLayers();
+                highlightedStationsLayer.clearLayers();
+                
+                // Calculate distances (fast, no async)
                 closestStations = calculateEuclideanDistancesWithCache(center);
-                console.log('Euclidean mode - closest stations:', closestStations);
+                console.log(`📏 Euclidean mode - found ${closestStations.length} stations`);
             }
 
+            // Validate results
             if (!closestStations || closestStations.length === 0) {
                 console.error('No closest stations found!');
                 return;
             }
 
-            // For OSM mode: clear old routes only after new ones are ready (smooth transition)
-            // For Euclidean mode: already cleared above for instant feedback
-            if (useOSMNetwork) {
-                linesLayer.clearLayers();
-                highlightedStationsLayer.clearLayers();
+            // Final cancellation check before rendering
+            if (thisCalculationId !== currentCalculationId) {
+                console.log(`⏭️ Calculation ${thisCalculationId} cancelled before rendering`);
+                return;
             }
 
-            closestStations.forEach(station => {
+            // Validate center coordinates before rendering
+            if (!center || !center.lat || !center.lng || 
+                typeof center.lat !== 'number' || typeof center.lng !== 'number' ||
+                isNaN(center.lat) || isNaN(center.lng) ||
+                Math.abs(center.lat) > 90 || Math.abs(center.lng) > 180) {
+                console.error('Invalid center coordinates for rendering:', center);
+                return;
+            }
+
+            // RENDER RESULTS
+            console.log(`✅ Rendering results for calculation ${thisCalculationId}`);
+            console.log(`📊 Drawing spider web from center: ${center.lat.toFixed(6)}, ${center.lng.toFixed(6)}`);
+            console.log(`🗂️ Closest stations to render:`, closestStations.map(s => ({
+                name: s.name,
+                lat: s.lat,
+                lng: s.lng,
+                distance: Math.round(s.distance)
+            })));
+
+            // Clear old routes and prepare for new ones
+            linesLayer.clearLayers();
+            highlightedStationsLayer.clearLayers();
+
+            // Draw the spider web
+            closestStations.forEach((station, index) => {
+                // CRITICAL: Validate station coordinates before rendering
+                if (!isValidStation(station)) {
+                    return; // Skip this station - warning already logged
+                }
+                
                 const stationLatLng = L.latLng(station.lat, station.lng);
                 
-                // Draw route or straight line based on mode
+                // Ensure center coordinates are properly handled for precise alignment
+                const preciseCenter = L.latLng(center.lat, center.lng);
+                
+                // Draw route or straight line based on mode and data availability
                 if (useOSMNetwork && station.route && station.route.length > 0) {
-                    // Draw the actual walking route
-                    L.polyline(station.route, { 
-                        color: '#ed8936', 
-                        weight: 3, 
-                        opacity: 0.8,
-                        dashArray: '5, 5'  // Dashed line to distinguish from straight lines
-                    }).addTo(linesLayer);
+                    // Validate OSM route coordinates before rendering
+                    const validRoute = station.route.filter(point => {
+                        if (!point || point.length !== 2 || 
+                            typeof point[0] !== 'number' || typeof point[1] !== 'number' ||
+                            isNaN(point[0]) || isNaN(point[1]) ||
+                            point[0] === 0 || point[1] === 0 ||
+                            Math.abs(point[0]) > 90 || Math.abs(point[1]) > 180) {
+                            console.warn(`⚠️ Invalid OSM route point filtered:`, point);
+                            return false;
+                        }
+                        return true;
+                    });
+                    
+                    if (validRoute.length > 1) {
+                        console.log(`🛣️ Drawing OSM route for ${station.name}: ${validRoute.length} valid points`);
+                        L.polyline(validRoute, { 
+                            color: '#ed8936', 
+                            weight: 3, 
+                            opacity: 0.8,
+                            dashArray: '5, 5'  // Dashed line for OSM routes
+                        }).addTo(linesLayer);
+                    } else {
+                        console.warn(`⚠️ OSM route for ${station.name} has no valid points, drawing straight line`);
+                        // Fallback to straight line
+                        console.log(`📏 Fallback line: center [${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)}] → station [${station.lat.toFixed(6)}, ${station.lng.toFixed(6)}]`);
+                        L.polyline([preciseCenter, stationLatLng], { 
+                            color: '#ed8936', 
+                            weight: 2, 
+                            opacity: 0.7 
+                        }).addTo(linesLayer);
+                    }
                 } else {
-                    // Draw straight line
-                    L.polyline([center, stationLatLng], { 
+                    // Draw straight line (Euclidean or fallback)
+                    console.log(`� Drawing straight line for ${station.name}: center [${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)}] → station [${station.lat.toFixed(6)}, ${station.lng.toFixed(6)}]`);
+                    L.polyline([preciseCenter, stationLatLng], { 
                         color: '#ed8936', 
                         weight: 2, 
                         opacity: 0.7 
                     }).addTo(linesLayer);
                 }
                 
-                L.circleMarker(stationLatLng, { radius: 8, color: '#FFFFFF', weight: 2, fillColor: '#ed8936', fillOpacity: 1 })
-                    .bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m`).addTo(highlightedStationsLayer);
+                // Draw station marker
+                L.circleMarker(stationLatLng, { 
+                    radius: 8, 
+                    color: '#FFFFFF', 
+                    weight: 2, 
+                    fillColor: '#ed8936', 
+                    fillOpacity: 1 
+                }).bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m`).addTo(highlightedStationsLayer);
             });
+            
+            console.log(`🎯 Successfully rendered ${closestStations.length} stations for calculation ${thisCalculationId}`);
+        }
+
+        function updateCenterMarker(center) {
+            // Remove existing center marker
+            if (centerMarker) {
+                map.removeLayer(centerMarker);
+                centerMarker = null;
+            }
+
+            // Ensure center coordinates are properly rounded to prevent floating point precision issues
+            const preciseCenter = L.latLng(center.lat, center.lng);
+
+            // Use CSS flexbox centering for perfect alignment
+            const centerIcon = L.divIcon({
+                className: 'center-crosshair',
+                html: '<b>+</b>',
+                iconSize: [24, 24],
+                iconAnchor: [12, 12] // Now properly centered with CSS flexbox
+            });
+            centerMarker = L.marker(preciseCenter, { icon: centerIcon, interactive: false, zIndexOffset: 1000 }).addTo(map);
+            
+            // Store the calculation ID this marker belongs to for debugging
+            if (centerMarker) {
+                centerMarker._calculationId = currentCalculationId;
+            }
+            
+            console.log(`📍 Center marker updated to: ${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)} (calc ID: ${currentCalculationId})`);
         }
         
         // --- Distance Calculation Functions ---
@@ -578,6 +1155,12 @@
             // Batch process stations for better performance
             for (let i = 0; i < stations.length; i++) {
                 const station = stations[i];
+                
+                // CRITICAL: Validate station coordinates to prevent invalid lines
+                if (!isValidStation(station)) {
+                    continue; // Skip this station - warning already logged
+                }
+                
                 const distance = fastHaversineDistance(centerLat, centerLng, station.lat, station.lng);
                 results.push({
                     ...station,
@@ -625,15 +1208,29 @@
             );
         }
         
-        async function calculateOSMDistances(center, stations) {
+        async function calculateOSMDistances(center, stations, calculationId = null) {
             try {
+                // Validate input parameters
+                if (!center || !center.lat || !center.lng || !stations || stations.length === 0) {
+                    console.error('Invalid parameters for OSM distance calculation', { center, stationsCount: stations ? stations.length : 0 });
+                    throw new Error('Invalid parameters');
+                }
+                
+                // Check if calculation is still current
+                if (calculationId && calculationId !== currentCalculationId) {
+                    console.log(`⏭️ OSM calculation ${calculationId} cancelled at start`);
+                    throw new Error('Calculation cancelled');
+                }
+                
                 // Check cache first for instant response
                 const cached = distanceCache.get(center.lat, center.lng);
                 if (cached) {
-                    return cached; // Instant response from cache!
+                    console.log(`✅ Using cached OSM data for ${currentCity}`);
+                    return cached; // Use cached data directly
                 }
                 
-                console.log(`🔄 Calculating OSM routes for ${stations.length} stations...`);
+                console.log(`🔄 Calculating OSM routes for ${currentCity} with ${stations.length} stations...`);
+                console.log(`📍 Sending OSM request with city: ${currentCity}`);
                 const requestStart = performance.now();
                 
                 const response = await fetch(`${API_BASE_URL}/walking-distances-batch`, {
@@ -644,16 +1241,64 @@
                     body: JSON.stringify({
                         center_lat: center.lat,
                         center_lng: center.lng,
-                        stations: stations
+                        stations: stations,
+                        city: currentCity  // CRITICAL: Tell backend which city's network to use
                     })
                 });
+                
+                // Check if calculation is still current after network request
+                if (calculationId && calculationId !== currentCalculationId) {
+                    console.log(`⏭️ OSM calculation ${calculationId} cancelled after network request`);
+                    throw new Error('Calculation cancelled');
+                }
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 
                 const data = await response.json();
-                const result = data.stations || [];
+                const rawResult = data.stations || [];
+                
+                // Validate and clean OSM route data
+                const result = rawResult.map(station => {
+                    // Validate station coordinates
+                    if (!isValidStation(station)) {
+                        console.warn(`⚠️ OSM response contains invalid station:`, station.name);
+                        return null;
+                    }
+                    
+                    // Validate route data if present
+                    if (station.route && Array.isArray(station.route)) {
+                        const validRoute = station.route.filter(point => {
+                            if (!Array.isArray(point) || point.length !== 2) return false;
+                            const [lat, lng] = point;
+                            if (typeof lat !== 'number' || typeof lng !== 'number') return false;
+                            if (isNaN(lat) || isNaN(lng)) return false;
+                            if (lat === 0 && lng === 0) return false;
+                            if (Math.abs(lat) > 90 || Math.abs(lng) > 180) return false;
+                            return true;
+                        });
+                        
+                        if (validRoute.length < station.route.length) {
+                            console.warn(`⚠️ Filtered ${station.route.length - validRoute.length} invalid route points for ${station.name}`);
+                        }
+                        
+                        station.route = validRoute;
+                    }
+                    
+                    return station;
+                }).filter(station => station !== null);
+                
+                console.log(`✅ OSM validation: ${result.length}/${rawResult.length} stations valid`);
+                
+                // Debug: Log all stations being returned for debugging
+                console.log('🔍 Detailed OSM response stations:', result.map(s => ({
+                    name: s.name,
+                    lat: s.lat,
+                    lng: s.lng,
+                    hasRoute: !!(s.route && s.route.length > 0),
+                    routePoints: s.route ? s.route.length : 0
+                })));
                 
                 const requestTime = performance.now() - requestStart;
                 console.log(`✅ OSM calculation completed in ${requestTime.toFixed(0)}ms`);
@@ -663,6 +1308,9 @@
                 
                 return result;
             } catch (error) {
+                if (error.message === 'Calculation cancelled') {
+                    throw error; // Re-throw cancellation errors
+                }
                 console.error('Error calculating OSM distances:', error);
                 // Fallback to fully optimized Euclidean distance
                 return calculateEuclideanDistancesWithCache(center);
@@ -671,10 +1319,33 @@
         
         // --- Toggle Functions ---
         function toggleDistanceMode() {
-            if (isLoading) return;
-            
+            const previousMode = useOSMNetwork;
             useOSMNetwork = !useOSMNetwork;
             
+            console.log(`🔄 Switching from ${previousMode ? 'OSM' : 'Euclidean'} to ${useOSMNetwork ? 'OSM' : 'Euclidean'} mode`);
+            
+            // Update UI immediately
+            updateToggleUI();
+            
+            // Cancel any pending calculations from the previous mode
+            currentCalculationId++;
+            if (moveTimeout) {
+                clearTimeout(moveTimeout);
+                moveTimeout = null;
+            }
+            
+            // Reset loading state
+            isLoading = false;
+            showLoading(false);
+            
+            // Recalculate with current map center in the new mode
+            if (map) {
+                const center = map.getCenter();
+                updateClosestStationsWithCenter(center);
+            }
+        }
+        
+        function updateToggleUI() {
             const toggleSwitch = document.getElementById('toggle-switch');
             const euclideanLabel = document.getElementById('euclidean-label');
             const networkLabel = document.getElementById('network-label');
@@ -688,8 +1359,6 @@
                 euclideanLabel.classList.remove('inactive');
                 networkLabel.classList.add('inactive');
             }
-            
-            updateClosestStations();
         }
         
         function showLoading(show) {
@@ -697,36 +1366,7 @@
             loadingIndicator.style.display = show ? 'block' : 'none';
         }
         
-        // --- Draw all stations as subtle background dots ---
-        stations.forEach(station => {
-            L.circleMarker([station.lat, station.lng], { radius: 4, color: '#4A5568', weight: 1, fillColor: '#718096', fillOpacity: 0.5 })
-                .bindPopup(`<b>${station.name}</b>`).addTo(map);
-        });
-
-        // --- Event Listeners with Smart Throttling ---
-        // Create different throttled versions for different modes
-        const throttledUpdateEuclidean = throttle(updateClosestStations, 100);  // Fast for Euclidean
-        const throttledUpdateOSM = throttle(updateClosestStations, 500);        // Slower for OSM to allow caching
-        
-        function smartThrottledUpdate() {
-            if (useOSMNetwork) {
-                // Use slower throttling for OSM to allow caching to work
-                throttledUpdateOSM();
-            } else {
-                // Use fast throttling for Euclidean
-                throttledUpdateEuclidean();
-            }
-        }
-
-        // Use 'move' and 'zoom' for live updates, but with smart throttling based on mode
-        map.on('move', smartThrottledUpdate);
-        map.on('zoom', smartThrottledUpdate);
-
-        // Also run the function one last time when movement stops to ensure the final position is perfect.
-        map.on('moveend', updateClosestStations);
-
-        // Initial call to draw the elements.
-        updateClosestStations();
+        // This code has been moved inside initializeMap() function
 
         // Performance monitoring for distance calculations
         function measureDistanceCalculationPerformance(center, stations) {
@@ -765,6 +1405,12 @@
         // Optimized Euclidean distance calculation with caching
         function calculateEuclideanDistancesWithCache(center, maxRadius = 10000) {
             try {
+                // Validate input parameters
+                if (!center || !center.lat || !center.lng) {
+                    console.error('Invalid center for Euclidean distance calculation', center);
+                    return [];
+                }
+                
                 const centerLat = center.lat;
                 const centerLng = center.lng;
                 
@@ -841,6 +1487,22 @@
                 hideInfoModal();
             }
         });
+        
+        // Initialize the app when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🌟 DOM Content Loaded - starting initialization...');
+            initializeApp();
+        });
+        
+        // Fallback initialization in case DOMContentLoaded already fired
+        if (document.readyState === 'loading') {
+            // Still loading, DOMContentLoaded will fire
+            console.log('📝 Document is still loading, waiting for DOMContentLoaded...');
+        } else {
+            // Already loaded
+            console.log('🌟 Document already loaded - starting initialization immediately...');
+            initializeApp();
+        }
     </script>
 </body>
 </html>

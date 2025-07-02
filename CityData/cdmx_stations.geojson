@@ -1,0 +1,2861 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1449619,
+          19.3533412
+        ]
+      },
+      "properties": {
+        "name": "General Anaya",
+        "osm_id": "('node', 30384902)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1415858,
+          19.369771
+        ]
+      },
+      "properties": {
+        "name": "Portales",
+        "osm_id": "('node', 30385126)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1402,
+          19.3793936
+        ]
+      },
+      "properties": {
+        "name": "Nativitas",
+        "osm_id": "('node', 30385133)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1389557,
+          19.3875657
+        ]
+      },
+      "properties": {
+        "name": "Villa de Cortés",
+        "osm_id": "('node', 30385139)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1378126,
+          19.3951932
+        ]
+      },
+      "properties": {
+        "name": "Xola",
+        "osm_id": "('node', 30385145)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1369072,
+          19.4007878
+        ]
+      },
+      "properties": {
+        "name": "Viaducto",
+        "osm_id": "('node', 30385148)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1411221,
+          19.4361674
+        ]
+      },
+      "properties": {
+        "name": "Bellas Artes",
+        "osm_id": "('node', 30385186)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0824676,
+          19.4072053
+        ]
+      },
+      "properties": {
+        "name": "Puebla",
+        "osm_id": "('node', 294027128)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0913653,
+          19.4084639
+        ]
+      },
+      "properties": {
+        "name": "Ciudad Deportiva",
+        "osm_id": "('node', 294027195)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.103108,
+          19.40856
+        ]
+      },
+      "properties": {
+        "name": "Velódromo",
+        "osm_id": "('node', 294027569)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1444476,
+          19.407137
+        ]
+      },
+      "properties": {
+        "name": "Lázaro Cárdenas",
+        "osm_id": "('node', 294082204)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0902724,
+          19.4164089
+        ]
+      },
+      "properties": {
+        "name": "Gómez Farías",
+        "osm_id": "('node', 294086737)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1420543,
+          19.4267538
+        ]
+      },
+      "properties": {
+        "name": "Salto del Agua",
+        "osm_id": "('node', 294088991)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1042528,
+          19.4850096
+        ]
+      },
+      "properties": {
+        "name": "Martín Carrera",
+        "osm_id": "('node', 302324984)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1053492,
+          19.4513894
+        ]
+      },
+      "properties": {
+        "name": "Eduardo Molina",
+        "osm_id": "('node', 302325585)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0962394,
+          19.4512698
+        ]
+      },
+      "properties": {
+        "name": "Aragón",
+        "osm_id": "('node', 302325593)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0692581,
+          19.458076
+        ]
+      },
+      "properties": {
+        "name": "Bosque de Aragón",
+        "osm_id": "('node', 302327331)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0791507,
+          19.4510562
+        ]
+      },
+      "properties": {
+        "name": "Deportivo Oceanía",
+        "osm_id": "('node', 302327334)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0942262,
+          19.4407748
+        ]
+      },
+      "properties": {
+        "name": "Romero Rubio",
+        "osm_id": "('node', 302327339)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1036464,
+          19.4365424
+        ]
+      },
+      "properties": {
+        "name": "Ricardo Flores Magón",
+        "osm_id": "('node', 302327340)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1892568,
+          19.3615527
+        ]
+      },
+      "properties": {
+        "name": "Barranca del Muerto",
+        "osm_id": "('node', 308554084)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1866332,
+          19.3845079
+        ]
+      },
+      "properties": {
+        "name": "San Antonio",
+        "osm_id": "('node', 308556308)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1913845,
+          19.4117501
+        ]
+      },
+      "properties": {
+        "name": "Constituyentes",
+        "osm_id": "('node', 308557541)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1922567,
+          19.4249847
+        ]
+      },
+      "properties": {
+        "name": "Auditorio",
+        "osm_id": "('node', 308561119)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.190915,
+          19.43353
+        ]
+      },
+      "properties": {
+        "name": "Polanco",
+        "osm_id": "('node', 308561120)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1904631,
+          19.4696029
+        ]
+      },
+      "properties": {
+        "name": "Refinería",
+        "osm_id": "('node', 308562800)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1900262,
+          19.4791036
+        ]
+      },
+      "properties": {
+        "name": "Camarones",
+        "osm_id": "('node', 308564178)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1952293,
+          19.4905558
+        ]
+      },
+      "properties": {
+        "name": "Aquiles Serdán",
+        "osm_id": "('node', 308564186)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0882966,
+          19.433974
+        ]
+      },
+      "properties": {
+        "name": "Terminal Aérea",
+        "osm_id": "('node', 313546269)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0879737,
+          19.4242423
+        ]
+      },
+      "properties": {
+        "name": "Hangares",
+        "osm_id": "('node', 313547018)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.140622,
+          19.4789149
+        ]
+      },
+      "properties": {
+        "name": "Autobuses del Norte",
+        "osm_id": "('node', 313766839)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1350725,
+          19.4880621
+        ]
+      },
+      "properties": {
+        "name": "Lindavista",
+        "osm_id": "('node', 351113759)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1960298,
+          19.4949382
+        ]
+      },
+      "properties": {
+        "name": "Tezozómoc",
+        "osm_id": "('node', 351114417)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1862889,
+          19.4908969
+        ]
+      },
+      "properties": {
+        "name": "UAM-Azcapotzalco",
+        "osm_id": "('node', 351114595)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.173913,
+          19.4906783
+        ]
+      },
+      "properties": {
+        "name": "Ferrería/Arena Ciudad de México",
+        "osm_id": "('node', 351114805)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1629873,
+          19.4886464
+        ]
+      },
+      "properties": {
+        "name": "Norte 45",
+        "osm_id": "('node', 351114820)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1561238,
+          19.4897759
+        ]
+      },
+      "properties": {
+        "name": "Vallejo",
+        "osm_id": "('node', 351114867)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1184474,
+          19.4816035
+        ]
+      },
+      "properties": {
+        "name": "La Villa-Basílica",
+        "osm_id": "('node', 351115062)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0637399,
+          19.3459153
+        ]
+      },
+      "properties": {
+        "name": "Constitución de 1917",
+        "osm_id": "('node', 506035217)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0856882,
+          19.3559895
+        ]
+      },
+      "properties": {
+        "name": "Cerro de la Estrella",
+        "osm_id": "('node', 554750099)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0747979,
+          19.351
+        ]
+      },
+      "properties": {
+        "name": "UAM-I",
+        "osm_id": "('node', 554754754)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1095076,
+          19.3791527
+        ]
+      },
+      "properties": {
+        "name": "Apatlaco",
+        "osm_id": "('node', 555064969)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1120396,
+          19.3880913
+        ]
+      },
+      "properties": {
+        "name": "Iztacalco",
+        "osm_id": "('node', 555065028)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1095471,
+          19.3649049
+        ]
+      },
+      "properties": {
+        "name": "Escuadrón 201",
+        "osm_id": "('node', 555066276)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1076646,
+          19.3733127
+        ]
+      },
+      "properties": {
+        "name": "Aculco",
+        "osm_id": "('node', 555066702)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1125396,
+          19.4083782
+        ]
+      },
+      "properties": {
+        "name": "Mixiuhca",
+        "osm_id": "('node', 555069072)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12626,
+          19.4066635
+        ]
+      },
+      "properties": {
+        "name": "La Viga",
+        "osm_id": "('node', 555079051)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1440487,
+          19.4132002
+        ]
+      },
+      "properties": {
+        "name": "Obrera",
+        "osm_id": "('node', 555079073)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14322,
+          19.4214424
+        ]
+      },
+      "properties": {
+        "name": "Doctores",
+        "osm_id": "('node', 555079083)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1413291,
+          19.4312856
+        ]
+      },
+      "properties": {
+        "name": "San Juan de Letrán",
+        "osm_id": "('node', 555081970)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1917953,
+          19.4449744
+        ]
+      },
+      "properties": {
+        "name": "San Joaquín",
+        "osm_id": "('node', 681448501)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1859103,
+          19.3911516
+        ]
+      },
+      "properties": {
+        "name": "San Pedro de los Pinos",
+        "osm_id": "('node', 681454741)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1312288,
+          19.4432579
+        ]
+      },
+      "properties": {
+        "name": "Lagunilla",
+        "osm_id": "('node', 681460966)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1241019,
+          19.4428214
+        ]
+      },
+      "properties": {
+        "name": "Tepito",
+        "osm_id": "('node', 681460971)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1685264,
+          19.4059029
+        ]
+      },
+      "properties": {
+        "name": "Chilpancingo",
+        "osm_id": "('node', 842889550)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.9952089,
+          19.3602817
+        ]
+      },
+      "properties": {
+        "name": "Santa Martha",
+        "osm_id": "('node', 1149526719)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0170442,
+          19.3732744
+        ]
+      },
+      "properties": {
+        "name": "Peñón Viejo",
+        "osm_id": "('node', 1155147125)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0356205,
+          19.3851177
+        ]
+      },
+      "properties": {
+        "name": "Guelatao",
+        "osm_id": "('node', 1155147244)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0594334,
+          19.398764
+        ]
+      },
+      "properties": {
+        "name": "Canal de San Juan",
+        "osm_id": "('node', 1155521581)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0695045,
+          19.4045642
+        ]
+      },
+      "properties": {
+        "name": "Agrícola Oriental",
+        "osm_id": "('node', 1155521678)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0827131,
+          19.4120659
+        ]
+      },
+      "properties": {
+        "name": "Zaragoza",
+        "osm_id": "('node', 1155638781)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1255053,
+          19.4255407
+        ]
+      },
+      "properties": {
+        "name": "Merced",
+        "osm_id": "('node', 1155680835)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1378401,
+          19.4263577
+        ]
+      },
+      "properties": {
+        "name": "Isabel la Católica",
+        "osm_id": "('node', 1158001795)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1545773,
+          19.4256516
+        ]
+      },
+      "properties": {
+        "name": "Cuauhtémoc",
+        "osm_id": "('node', 1158001804)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0240388,
+          19.2943676
+        ]
+      },
+      "properties": {
+        "name": "Tlaltenco",
+        "osm_id": "('node', 1991237943)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.151486,
+          19.3613563
+        ]
+      },
+      "properties": {
+        "name": "Eje Central",
+        "osm_id": "('node', 2081866441)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1707596,
+          19.3719536
+        ]
+      },
+      "properties": {
+        "name": "Hospital 20 de Noviembre",
+        "osm_id": "('node', 2081866443)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0956838,
+          19.3221728
+        ]
+      },
+      "properties": {
+        "name": "Lomas Estrella",
+        "osm_id": "('node', 2081866445)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0858929,
+          19.3205052
+        ]
+      },
+      "properties": {
+        "name": "Calle 11",
+        "osm_id": "('node', 2081866446)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1226854,
+          19.357663
+        ]
+      },
+      "properties": {
+        "name": "Mexicaltzingo",
+        "osm_id": "('node', 2081866456)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1788103,
+          19.3736688
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes Sur",
+        "osm_id": "('node', 2081866459)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1089421,
+          19.336909
+        ]
+      },
+      "properties": {
+        "name": "Culhuacán",
+        "osm_id": "('node', 2081866461)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1718924,
+          19.4492099
+        ]
+      },
+      "properties": {
+        "name": "Colegio Militar",
+        "osm_id": "('node', 2084929420)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.116142,
+          19.4488073
+        ]
+      },
+      "properties": {
+        "name": "Canal del Norte",
+        "osm_id": "('node', 2160084598)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1135557,
+          19.4551085
+        ]
+      },
+      "properties": {
+        "name": "Consulado L5",
+        "osm_id": "('node', 2160084601)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1138856,
+          19.4580434
+        ]
+      },
+      "properties": {
+        "name": "Consulado L4",
+        "osm_id": "('node', 2160084937)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1119857,
+          19.4646629
+        ]
+      },
+      "properties": {
+        "name": "Bondojito",
+        "osm_id": "('node', 2266111991)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1193914,
+          19.4288048
+        ]
+      },
+      "properties": {
+        "name": "Candelaria L4",
+        "osm_id": "('node', 2266125571)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1205069,
+          19.4215897
+        ]
+      },
+      "properties": {
+        "name": "Fray Servando",
+        "osm_id": "('node', 2266125613)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.121726,
+          19.4108977
+        ]
+      },
+      "properties": {
+        "name": "Jamaica",
+        "osm_id": "('node', 2266125668)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.178752,
+          19.4060319
+        ]
+      },
+      "properties": {
+        "name": "Patriotismo",
+        "osm_id": "('node', 2266164095)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1304452,
+          19.463197
+        ]
+      },
+      "properties": {
+        "name": "Misterios",
+        "osm_id": "('node', 2288627580)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.119858,
+          19.4589822
+        ]
+      },
+      "properties": {
+        "name": "Valle Gómez",
+        "osm_id": "('node', 2288627581)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.104439,
+          19.3281071
+        ]
+      },
+      "properties": {
+        "name": "San Andrés Tomatlán",
+        "osm_id": "('node', 2663332312)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1396585,
+          19.3437579
+        ]
+      },
+      "properties": {
+        "name": "Tasqueña",
+        "osm_id": "('node', 3649087197)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1419862,
+          19.4272197
+        ]
+      },
+      "properties": {
+        "name": "Salto del Agua",
+        "osm_id": "('node', 3649370808)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1135033,
+          19.398336
+        ]
+      },
+      "properties": {
+        "name": "Coyuya",
+        "osm_id": "('node', 3649370809)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.005643,
+          19.3646704
+        ]
+      },
+      "properties": {
+        "name": "Acatitla",
+        "osm_id": "('node', 3650765703)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0935577,
+          19.3577446
+        ]
+      },
+      "properties": {
+        "name": "Iztapalapa",
+        "osm_id": "('node', 3692692973)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2003437,
+          19.3822384
+        ]
+      },
+      "properties": {
+        "name": "Valentín Campa",
+        "osm_id": "('node', 4593462357)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1968401,
+          19.390232
+        ]
+      },
+      "properties": {
+        "name": "Álvaro Obregón",
+        "osm_id": "('node', 4593462358)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1708104,
+          19.4219182
+        ]
+      },
+      "properties": {
+        "name": "Sevilla",
+        "osm_id": "('node', 4688809545)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1526654,
+          19.4462541
+        ]
+      },
+      "properties": {
+        "name": "Buenavista",
+        "osm_id": "('node', 5335231300)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1451728,
+          19.4449101
+        ]
+      },
+      "properties": {
+        "name": "Guerrero",
+        "osm_id": "('node', 5335244209)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1751123,
+          19.354325
+        ]
+      },
+      "properties": {
+        "name": "Viveros-Derechos Humanos",
+        "osm_id": "('node', 5335255558)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1770655,
+          19.3360586
+        ]
+      },
+      "properties": {
+        "name": "Copilco",
+        "osm_id": "('node', 5335263290)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1739054,
+          19.3244753
+        ]
+      },
+      "properties": {
+        "name": "Universidad",
+        "osm_id": "('node', 5335271955)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1648064,
+          19.3706696
+        ]
+      },
+      "properties": {
+        "name": "Zapata",
+        "osm_id": "('node', 5335289466)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1571902,
+          19.3861257
+        ]
+      },
+      "properties": {
+        "name": "Eugenia",
+        "osm_id": "('node', 5335318010)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.150302,
+          19.419418
+        ]
+      },
+      "properties": {
+        "name": "Niños Héroes",
+        "osm_id": "('node', 5335683975)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1489658,
+          19.4271218
+        ]
+      },
+      "properties": {
+        "name": "Balderas",
+        "osm_id": "('node', 5335688062)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1431694,
+          19.455014
+        ]
+      },
+      "properties": {
+        "name": "Tlatelolco",
+        "osm_id": "('node', 5335704171)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.139518,
+          19.4687443
+        ]
+      },
+      "properties": {
+        "name": "La Raza",
+        "osm_id": "('node', 5335707477)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1874725,
+          19.402049
+        ]
+      },
+      "properties": {
+        "name": "Tacubaya",
+        "osm_id": "('node', 5335749332)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18199,
+          19.4129786
+        ]
+      },
+      "properties": {
+        "name": "Juanacatlán",
+        "osm_id": "('node', 5335750526)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1768378,
+          19.420702
+        ]
+      },
+      "properties": {
+        "name": "Chapultepec",
+        "osm_id": "('node', 5335762554)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1330004,
+          19.4259177
+        ]
+      },
+      "properties": {
+        "name": "Pino Suárez",
+        "osm_id": "('node', 5335789644)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1209047,
+          19.4295765
+        ]
+      },
+      "properties": {
+        "name": "Candelaria L1",
+        "osm_id": "('node', 5337579689)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1023994,
+          19.4231214
+        ]
+      },
+      "properties": {
+        "name": "Balbuena",
+        "osm_id": "('node', 5337596249)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2030401,
+          19.4586893
+        ]
+      },
+      "properties": {
+        "name": "Panteones",
+        "osm_id": "('node', 5339522597)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1871316,
+          19.458901
+        ]
+      },
+      "properties": {
+        "name": "Tacuba",
+        "osm_id": "('node', 5339524622)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1814675,
+          19.4572284
+        ]
+      },
+      "properties": {
+        "name": "Cuitláhuac",
+        "osm_id": "('node', 5339538498)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1754624,
+          19.4528599
+        ]
+      },
+      "properties": {
+        "name": "Popotla",
+        "osm_id": "('node', 5339541353)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1673519,
+          19.4445654
+        ]
+      },
+      "properties": {
+        "name": "Normal",
+        "osm_id": "('node', 5339546329)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1539905,
+          19.4391338
+        ]
+      },
+      "properties": {
+        "name": "Revolución",
+        "osm_id": "('node', 5339546600)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.160696,
+          19.4419205
+        ]
+      },
+      "properties": {
+        "name": "San Cosme",
+        "osm_id": "('node', 5339549119)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1345491,
+          19.4160351
+        ]
+      },
+      "properties": {
+        "name": "San Antonio Abad",
+        "osm_id": "('node', 5339567361)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1355234,
+          19.4090955
+        ]
+      },
+      "properties": {
+        "name": "Chabacano",
+        "osm_id": "('node', 5339640805)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0746315,
+          19.3177274
+        ]
+      },
+      "properties": {
+        "name": "Periférico Oriente",
+        "osm_id": "('node', 5358301208)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0745031,
+          19.4152415
+        ]
+      },
+      "properties": {
+        "name": "Pantitlán",
+        "osm_id": "('node', 5358430107)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1141346,
+          19.4300375
+        ]
+      },
+      "properties": {
+        "name": "San Lázaro",
+        "osm_id": "('node', 5358443126)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1388026,
+          19.4439202
+        ]
+      },
+      "properties": {
+        "name": "Garibaldi-Lagunilla",
+        "osm_id": "('node', 5358459287)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.087175,
+          19.4456761
+        ]
+      },
+      "properties": {
+        "name": "Oceanía",
+        "osm_id": "('node', 5358462886)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1068373,
+          19.4827528
+        ]
+      },
+      "properties": {
+        "name": "Martín Carrera",
+        "osm_id": "('node', 5363864103)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2000769,
+          19.5043093
+        ]
+      },
+      "properties": {
+        "name": "El Rosario",
+        "osm_id": "('node', 5382498627)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1250883,
+          19.4843428
+        ]
+      },
+      "properties": {
+        "name": "Deportivo 18 de Marzo",
+        "osm_id": "('node', 5382514908)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1215493,
+          19.40367
+        ]
+      },
+      "properties": {
+        "name": "Santa Anita",
+        "osm_id": "('node', 5383897872)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1190037,
+          19.4397067
+        ]
+      },
+      "properties": {
+        "name": "Morelos",
+        "osm_id": "('node', 5383914298)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1551569,
+          19.4065257
+        ]
+      },
+      "properties": {
+        "name": "Centro Médico",
+        "osm_id": "('node', 5383932843)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1013043,
+          19.3555105
+        ]
+      },
+      "properties": {
+        "name": "Atlalilco",
+        "osm_id": "('node', 7364482552)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1392575,
+          19.3876178
+        ]
+      },
+      "properties": {
+        "name": "Metro Villa de Cortés",
+        "osm_id": "('node', 7393104448)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1532797,
+          19.4136617
+        ]
+      },
+      "properties": {
+        "name": "Hospital General",
+        "osm_id": "('node', 10171375840)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0459579,
+          19.2999294
+        ]
+      },
+      "properties": {
+        "name": "Nopalera",
+        "osm_id": "('node', 10173855113)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.156033,
+          19.3960312
+        ]
+      },
+      "properties": {
+        "name": "Etiopía/Plaza de la Transparencia",
+        "osm_id": "('node', 10564807710)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0142154,
+          19.2860695
+        ]
+      },
+      "properties": {
+        "name": "Tlahuac",
+        "osm_id": "('node', 11013265297)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0651959,
+          19.3062608
+        ]
+      },
+      "properties": {
+        "name": "Tezonco",
+        "osm_id": "('node', 11059788206)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0594631,
+          19.3042837
+        ]
+      },
+      "properties": {
+        "name": "Olivos",
+        "osm_id": "('node', 11059788207)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0342124,
+          19.2966699
+        ]
+      },
+      "properties": {
+        "name": "Zapotitlán",
+        "osm_id": "('node', 11166740914)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1633188,
+          19.4236015
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes",
+        "osm_id": "('node', 11323110136)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0613528,
+          19.4616747
+        ]
+      },
+      "properties": {
+        "name": "Villa de Aragón",
+        "osm_id": "('node', 12029976896)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1322807,
+          19.4324614
+        ]
+      },
+      "properties": {
+        "name": "Zócalo/Tenochtitlan",
+        "osm_id": "('node', 12307021667)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1371341,
+          19.435551
+        ]
+      },
+      "properties": {
+        "name": "Allende",
+        "osm_id": "('node', 12307021668)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1406102,
+          19.4362043
+        ]
+      },
+      "properties": {
+        "name": "Bellas Artes",
+        "osm_id": "('node', 12526124489)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1491437,
+          19.5006224
+        ]
+      },
+      "properties": {
+        "name": "Politécnico",
+        "osm_id": "('node', 12536496310)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.158782,
+          19.3706329
+        ]
+      },
+      "properties": {
+        "name": "Parque de los Venados",
+        "osm_id": "('node', 12602265863)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1770894,
+          19.373258
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes Sur",
+        "osm_id": "('node', 12602265886)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1784173,
+          19.3735718
+        ]
+      },
+      "properties": {
+        "name": "Metro Insurgentes Sur",
+        "osm_id": "('node', 12603540631)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1967858,
+          19.3902239
+        ]
+      },
+      "properties": {
+        "name": "Álvaro Obregón",
+        "osm_id": "('node', 12606344292)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2002985,
+          19.3822241
+        ]
+      },
+      "properties": {
+        "name": "Valentín Campa",
+        "osm_id": "('node', 12606344296)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1788049,
+          19.3736891
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes Sur",
+        "osm_id": "('node', 12606344847)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1770847,
+          19.3732785
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes Sur",
+        "osm_id": "('node', 12606344851)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1433856,
+          19.426921
+        ]
+      },
+      "properties": {
+        "name": "Salto del Agua",
+        "osm_id": "('node', 12657126260)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1219076,
+          19.4094101
+        ]
+      },
+      "properties": {
+        "name": "Jamaica",
+        "osm_id": "('node', 12662561163)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1432067,
+          19.3600503
+        ]
+      },
+      "properties": {
+        "name": "Ermita",
+        "osm_id": "('node', 12679525779)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1468952,
+          19.4373769
+        ]
+      },
+      "properties": {
+        "name": "Hidalgo",
+        "osm_id": "('node', 12736564590)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1412928,
+          19.4315049
+        ]
+      },
+      "properties": {
+        "name": "San Juan de Letrán",
+        "osm_id": "('node', 12785180677)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18676328408318,
+          19.402155724752063
+        ]
+      },
+      "properties": {
+        "name": "Tacubaya L7",
+        "osm_id": "('relation', 17318665)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14720671964487,
+          19.43742055644646
+        ]
+      },
+      "properties": {
+        "name": "Hidalgo",
+        "osm_id": "('relation', 17980792)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12550064829716,
+          19.485078423101218
+        ]
+      },
+      "properties": {
+        "name": "Deportivo 18 de Marzo L3",
+        "osm_id": "('relation', 18789884)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14923888790481,
+          19.427031966547556
+        ]
+      },
+      "properties": {
+        "name": "Balderas L1",
+        "osm_id": "('relation', 18810571)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18768042347045,
+          19.376200825714704
+        ]
+      },
+      "properties": {
+        "name": "Mixcoac L7",
+        "osm_id": "('relation', 18815542)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.08236014411354,
+          19.407190031297645
+        ]
+      },
+      "properties": {
+        "name": "Metro Puebla",
+        "osm_id": "('way', 217345530)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.06135821564047,
+          19.461667841231197
+        ]
+      },
+      "properties": {
+        "name": "Metro Villa de Aragón LB",
+        "osm_id": "('way', 217355642)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2003966947579,
+          19.398271242197175
+        ]
+      },
+      "properties": {
+        "name": "Observatorio",
+        "osm_id": "('way', 217419203)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1195113243874,
+          19.49527768136335
+        ]
+      },
+      "properties": {
+        "name": "Indios Verdes",
+        "osm_id": "('way', 217801323)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13207888640918,
+          19.477107872161906
+        ]
+      },
+      "properties": {
+        "name": "Potrero",
+        "osm_id": "('way', 217802099)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.11276863604643,
+          19.40836382371414
+        ]
+      },
+      "properties": {
+        "name": "Mixiuhca",
+        "osm_id": "('way', 1178447966)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12007689965819,
+          19.429073047807563
+        ]
+      },
+      "properties": {
+        "name": "Candelaria",
+        "osm_id": "('way', 1178449762)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1323103119439,
+          19.432565186742472
+        ]
+      },
+      "properties": {
+        "name": "Zócalo/Tenochtitlan",
+        "osm_id": "('way', 1251764016)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13289571127122,
+          19.42588904727824
+        ]
+      },
+      "properties": {
+        "name": "Pino Suárez L1",
+        "osm_id": "('way', 1251768786)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13285395739527,
+          19.42488560343286
+        ]
+      },
+      "properties": {
+        "name": "Pino Suárez L2",
+        "osm_id": "('way', 1251768787)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12474035945861,
+          19.42542922274601
+        ]
+      },
+      "properties": {
+        "name": "La Merced",
+        "osm_id": "('way', 1258708454)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.10492268593724,
+          19.48459194347783
+        ]
+      },
+      "properties": {
+        "name": "Martín Carrera",
+        "osm_id": "('way', 1258715942)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.11959096249143,
+          19.439363008971664
+        ]
+      },
+      "properties": {
+        "name": "Morelos LB",
+        "osm_id": "('way', 1258721563)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1135527559233,
+          19.45553541147049
+        ]
+      },
+      "properties": {
+        "name": "Consulado",
+        "osm_id": "('way', 1258724586)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.08668400782997,
+          19.44466218214956
+        ]
+      },
+      "properties": {
+        "name": "Oceanía L5",
+        "osm_id": "('way', 1258728705)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18782955071497,
+          19.40252030182466
+        ]
+      },
+      "properties": {
+        "name": "Tacubaya L1",
+        "osm_id": "('way', 1258735833)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18797694667865,
+          19.401177178666906
+        ]
+      },
+      "properties": {
+        "name": "Tacubaya L9",
+        "osm_id": "('way', 1258748282)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13881973883106,
+          19.443934558706577
+        ]
+      },
+      "properties": {
+        "name": "Garibaldi/Lagunilla L8",
+        "osm_id": "('way', 1258831691)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13765101492608,
+          19.443862439507395
+        ]
+      },
+      "properties": {
+        "name": "Garibaldi/Lagunilla LB",
+        "osm_id": "('way', 1258837519)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.15436203249021,
+          19.439228335147437
+        ]
+      },
+      "properties": {
+        "name": "Revolución",
+        "osm_id": "('way', 1258845242)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.11422345003798,
+          19.430018596260034
+        ]
+      },
+      "properties": {
+        "name": "San Lázaro L1",
+        "osm_id": "('way', 1258849166)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1560561683904,
+          19.395902988372537
+        ]
+      },
+      "properties": {
+        "name": "Etiopía",
+        "osm_id": "('way', 1258850656)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14765472576744,
+          19.433433340625502
+        ]
+      },
+      "properties": {
+        "name": "Juárez",
+        "osm_id": "('way', 1258852271)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.16338613389709,
+          19.423612489546915
+        ]
+      },
+      "properties": {
+        "name": "Insurgentes",
+        "osm_id": "('way', 1258853411)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.17411913830779,
+          19.490615982232764
+        ]
+      },
+      "properties": {
+        "name": "Ferrería/Arena Ciudad de México",
+        "osm_id": "('way', 1295836661)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.04634965,
+          19.3912758
+        ]
+      },
+      "properties": {
+        "name": "Tepalcates",
+        "osm_id": "('way', 1296140498)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.17689803877917,
+          19.42069874377402
+        ]
+      },
+      "properties": {
+        "name": "Chapultepec",
+        "osm_id": "('way', 1298643058)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14316533928532,
+          19.455080643528433
+        ]
+      },
+      "properties": {
+        "name": "Tlatelolco",
+        "osm_id": "('way', 1298647771)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.10692208923523,
+          19.48277531174228
+        ]
+      },
+      "properties": {
+        "name": "Martín Carrera",
+        "osm_id": "('way', 1298657310)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18827357112394,
+          19.459396689624505
+        ]
+      },
+      "properties": {
+        "name": "Tacuba L2",
+        "osm_id": "('way', 1298660154)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18760360427727,
+          19.45827349707284
+        ]
+      },
+      "properties": {
+        "name": "Tacuba L7",
+        "osm_id": "('way', 1298660155)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.134250656271,
+          19.408711622543905
+        ]
+      },
+      "properties": {
+        "name": "Chabacano L9",
+        "osm_id": "('way', 1302146391)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14199867978657,
+          19.436375053820502
+        ]
+      },
+      "properties": {
+        "name": "Bellas Artes L2",
+        "osm_id": "('way', 1329449963)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14519131597682,
+          19.44476607350648
+        ]
+      },
+      "properties": {
+        "name": "Guerrero L3",
+        "osm_id": "('way', 1365071992)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14622246956017,
+          19.445136026321915
+        ]
+      },
+      "properties": {
+        "name": "Guerrero LB",
+        "osm_id": "('way', 1365071993)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1559774761997,
+          19.4065606894474
+        ]
+      },
+      "properties": {
+        "name": "Centro Médico L9",
+        "osm_id": "('way', 1365082943)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.15514261492946,
+          19.40731896166482
+        ]
+      },
+      "properties": {
+        "name": "Centro Médico L3",
+        "osm_id": "('way', 1365082945)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.12508530434819,
+          19.483638741289614
+        ]
+      },
+      "properties": {
+        "name": "Deportivo 18 de Marzo L6",
+        "osm_id": "('way', 1365089734)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14905105112327,
+          19.426478222281148
+        ]
+      },
+      "properties": {
+        "name": "Balderas L3",
+        "osm_id": "('way', 1366368534)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1524084687167,
+          19.44623410379548
+        ]
+      },
+      "properties": {
+        "name": "Buenavista",
+        "osm_id": "('way', 1366670740)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14782415320921,
+          19.49094801935881
+        ]
+      },
+      "properties": {
+        "name": "Instituto del Petróleo L6",
+        "osm_id": "('way', 1366679811)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14476182393746,
+          19.48940358928379
+        ]
+      },
+      "properties": {
+        "name": "Instituto del Petrólro L5",
+        "osm_id": "('way', 1366679812)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1866793610203,
+          19.375706539441993
+        ]
+      },
+      "properties": {
+        "name": "Mixcoac L12",
+        "osm_id": "('way', 1366694389)"
+      }
+    }
+  ]
+}
