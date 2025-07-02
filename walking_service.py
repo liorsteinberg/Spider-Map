@@ -14,6 +14,8 @@ import logging
 import os
 import sys
 import pickle
+from scipy.spatial import cKDTree
+import functools
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -70,6 +72,8 @@ current_city = 'mexico_city'  # Track current city
 networkit_graph = None
 node_mapping = None  # Maps (lat, lng) to NetworKit node IDs
 coordinate_mapping = None  # Maps NetworKit node IDs to (lat, lng)
+_spatial_index = None
+_spatial_node_ids = None
 
 @app.route('/')
 def home():
@@ -427,7 +431,7 @@ def find_nearest_node(lat, lng):
             return node_mapping[coord_key]
     
     # OPTIMIZED: Use pre-computed numpy arrays for vectorized operations
-    global _node_ids_array, _coords_array
+    global _node_ids_array, _coords_array, _spatial_index, _spatial_node_ids
     
     if '_node_ids_array' not in globals():
         # Build numpy arrays once and reuse (much faster)
@@ -435,22 +439,20 @@ def find_nearest_node(lat, lng):
         _node_ids_array = np.array(list(coordinate_mapping.keys()))
         _coords_array = np.array(list(coordinate_mapping.values()))
         logger.info(f"Built arrays with {len(_node_ids_array)} nodes for ultra-fast lookup")
+        
+        # Build spatial index for nearest neighbor search
+        _spatial_node_ids = _node_ids_array
+        _spatial_index = cKDTree(_coords_array)
+        logger.info("Built spatial index for fast nearest neighbor lookup")
     
     try:
-        # Vectorized distance calculation (MUCH faster than loops)
-        target = np.array([lat, lng])
-        
-        # Simple Euclidean distance for speed (close enough for nearest node lookup)
-        # This is 50-100x faster than haversine for large arrays
-        diff = _coords_array - target
-        distances_squared = np.sum(diff * diff, axis=1)
-        nearest_idx = np.argmin(distances_squared)
-        
-        return _node_ids_array[nearest_idx]
+        # Spatial index query for nearest neighbor
+        distance, nearest_idx = _spatial_index.query([lat, lng], k=1)
+        return _spatial_node_ids[nearest_idx]
         
     except Exception as e:
-        logger.warning(f"Vectorized lookup failed: {e}, falling back to simple method")
-        # Fallback to simple method if numpy fails
+        logger.warning(f"Spatial lookup failed: {e}, falling back to simple method")
+        # Fallback to simple method if spatial lookup fails
         min_distance = float('inf')
         nearest_node = None
         
@@ -572,110 +574,59 @@ def get_walking_distances_batch():
         # Fast shortest path calculation using NetworKit
         distance_calc_start = time.time()
         
-        # Use Dijkstra for weighted graph (fastest for our use case)
-        sssp = nk.distance.Dijkstra(graph, center_node, storePaths=False)
+        # OPTIMIZED: Use single Dijkstra with path storage for both distances AND routes
+        sssp = nk.distance.Dijkstra(graph, center_node, storePaths=True)
         sssp.run()
         
-        # Get distances to all station nodes
-        distances = []
-        for node in station_nodes:
+        # Get distances and prepare station data in one pass
+        station_distances = []
+        for i, (station, node) in enumerate(zip(valid_stations, station_nodes)):
             if graph.hasNode(node):
                 dist = sssp.distance(node)
-                distances.append(dist if dist != float('inf') else None)
-            else:
-                distances.append(None)
+                if dist != float('inf'):
+                    station_distances.append({
+                        'station': station,
+                        'station_node': node,
+                        'distance': float(dist),
+                        'index': i
+                    })
         
         distance_calc_time = time.time() - distance_calc_start
-        logger.info(f"NetworKit distance calculation took: {distance_calc_time:.3f}s")
+        logger.info(f"NetworKit distance calculation (with paths): {distance_calc_time:.3f}s")
         
-        # OPTIMIZATION: Only calculate routes for the closest 10 stations
+        # Sort by distance and take the closest stations needed
         route_calc_start = time.time()
-        
-        # Create list of stations with distances and sort by distance
-        station_distances = []
-        for i, (station, distance) in enumerate(zip(valid_stations, distances)):
-            if distance is not None and distance != float('inf'):
-                station_distances.append({
-                    'station': station,
-                    'station_node': station_nodes[i],
-                    'distance': float(distance),
-                    'index': i
-                })
-        
-        # Sort by distance and take the closest 10
         station_distances.sort(key=lambda x: x['distance'])
-        closest_10 = station_distances[:10]
-        logger.info(f"Smart optimization: Only calculating routes for {len(closest_10)} closest stations instead of {len(stations)}")
+        closest_stations = station_distances[:10]
+        logger.info(f"🚀 OPTIMIZED: Processing {len(closest_stations)} closest stations with single Dijkstra")
         
-        # Calculate routes for the closest 10 stations (much faster with NetworKit)
+        # Extract routes from the SAME Dijkstra run (no additional algorithms needed!)
         results = []
-        for station_data in closest_10:
+        for station_data in closest_stations:
             station = station_data['station']
             station_node = station_data['station_node']
             
-            # Get the route path using NetworKit's path reconstruction
-            single_route_start = time.time()
-            
             try:
-                # Use A* algorithm for point-to-point pathfinding (better for routes)
-                # But first let's try a simpler approach with the existing SSSP
-                if center_node in coordinate_mapping and station_node in coordinate_mapping:
-                    # Use simple bidirectional BFS for path finding
-                    path_finder = nk.distance.BFS(graph, center_node, storePaths=True)
-                    path_finder.run()
-                    
-                    # Check if target is reachable
-                    if path_finder.distance(station_node) != float('inf'):
-                        path_nodes = path_finder.getPath(station_node)
-                        
-                        # Convert node IDs to coordinates
-                        route_coords = []
-                        for node_id in path_nodes:
-                            if node_id in coordinate_mapping:
-                                lat, lng = coordinate_mapping[node_id]
-                                route_coords.append([lat, lng])  # [lat, lng] format for Leaflet
-                        
-                        single_route_time = time.time() - single_route_start
-                        logger.info(f"Station {station['name']}: route calc {single_route_time:.3f}s ({len(route_coords)} points)")
-                        
-                        if len(route_coords) > 1:  # Valid route found
-                            results.append({
-                                'name': station['name'],
-                                'lat': station['lat'],
-                                'lng': station['lng'],
-                                'distance': station_data['distance'],
-                                'route': route_coords
-                            })
-                        else:
-                            logger.warning(f"Route too short for {station['name']}, using straight line")
-                            results.append({
-                                'name': station['name'],
-                                'lat': station['lat'],
-                                'lng': station['lng'],
-                                'distance': station_data['distance'],
-                                'route': []  # Empty route will cause frontend to draw straight line
-                            })
-                    else:
-                        logger.warning(f"No path found to {station['name']}")
-                        results.append({
-                            'name': station['name'],
-                            'lat': station['lat'],
-                            'lng': station['lng'],
-                            'distance': station_data['distance'],
-                            'route': []
-                        })
-                else:
-                    logger.warning(f"Invalid nodes for {station['name']}")
-                    results.append({
-                        'name': station['name'],
-                        'lat': station['lat'],
-                        'lng': station['lng'],
-                        'distance': station_data['distance'],
-                        'route': []
-                    })
+                # Extract path directly from the same Dijkstra result - MASSIVE speedup!
+                path_nodes = sssp.getPath(station_node)
+                
+                # Convert node IDs to coordinates
+                route_coords = []
+                for node_id in path_nodes:
+                    if node_id in coordinate_mapping:
+                        lat, lng = coordinate_mapping[node_id]
+                        route_coords.append([lat, lng])  # [lat, lng] format for Leaflet
+                
+                results.append({
+                    'name': station['name'],
+                    'lat': station['lat'],
+                    'lng': station['lng'],
+                    'distance': station_data['distance'],
+                    'route': route_coords if len(route_coords) > 1 else []
+                })
                     
             except Exception as route_error:
-                logger.warning(f"Route calculation error for {station['name']}: {route_error}")
+                logger.warning(f"Path extraction failed for {station['name']}: {route_error}")
                 # Fallback without route
                 results.append({
                     'name': station['name'],
@@ -688,14 +639,14 @@ def get_walking_distances_batch():
         route_calc_time = time.time() - route_calc_start
         total_time = time.time() - start_time
         
-        logger.info(f"NetworKit route calculation took: {route_calc_time:.3f}s (for {len(closest_10)} stations)")
+        logger.info(f"🚀 OPTIMIZED route calculation took: {route_calc_time:.3f}s (for {len(closest_stations)} stations)")
         logger.info(f"NetworKit total processing time: {total_time:.3f}s")
-        logger.info(f"Performance improvement: {((len(stations) - len(closest_10)) / len(stations) * 100):.1f}% fewer route calculations")
+        logger.info(f"Performance improvement: Single Dijkstra eliminated {len(closest_stations)} separate BFS calls!")
         
         # Sort results by actual walking distance and return top N
         results.sort(key=lambda x: x['distance'])
         final_results = results[:spider_legs]
-        logger.info(f"Final selection: Top {spider_legs} stations by actual walking distance from the {len(closest_10)} candidates")
+        logger.info(f"Final selection: Top {spider_legs} stations by actual walking distance from the {len(closest_stations)} candidates")
         
         return jsonify({'stations': final_results})
         
