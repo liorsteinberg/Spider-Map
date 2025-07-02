@@ -255,6 +255,75 @@
         
         /* Mobile responsiveness */
         @media (max-width: 768px) {
+            .toggle-container {
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                width: calc(100vw - 20px);
+                max-width: none;
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .control-panel {
+                padding: 12px;
+                border-radius: 8px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .city-selector select {
+                font-size: 16px; /* Prevents zoom on iOS */
+                padding: 10px 12px;
+            }
+            
+            .toggle-button {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            .slider-container {
+                margin-top: 10px;
+                gap: 10px;
+            }
+            
+            .slider-label {
+                font-size: 13px;
+                min-width: 85px;
+            }
+            
+            .info-button {
+                bottom: 15px;
+                left: 15px;
+                width: 44px;
+                height: 44px;
+                font-size: 20px;
+            }
+            
+            /* Move zoom controls to bottom right to avoid overlap */
+            .leaflet-top.leaflet-right {
+                top: auto !important;
+                bottom: 80px !important;
+                right: 15px !important;
+            }
+            
+            .leaflet-control-zoom {
+                margin: 0 !important;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+                border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+            
+            .leaflet-control-zoom a {
+                background: rgba(26, 32, 44, 0.9) !important;
+                color: #fff !important;
+                border: none !important;
+                backdrop-filter: blur(10px);
+            }
+            
+            .leaflet-control-zoom a:hover {
+                background: rgba(255, 255, 255, 0.1) !important;
+            }
+            
             .modal-content {
                 margin: 10px auto;
                 padding: 15px;
@@ -264,6 +333,39 @@
             }
             .modal-title {
                 font-size: 20px !important;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .toggle-container {
+                top: 8px;
+                left: 8px;
+                right: 8px;
+                width: calc(100vw - 16px);
+            }
+            
+            .control-panel {
+                padding: 10px;
+            }
+            
+            .toggle-labels {
+                gap: 6px;
+            }
+            
+            .toggle-label {
+                font-size: 12px;
+            }
+            
+            .slider-label {
+                font-size: 12px;
+                min-width: 80px;
+            }
+            
+            /* Keep zoom controls at bottom right */
+            .leaflet-top.leaflet-right {
+                bottom: 70px !important;
+                right: 12px !important;
             }
         }
         
@@ -339,6 +441,35 @@
         .github-link:hover {
             background: #fbb870;
             transform: translateY(-1px);
+        }
+        
+        /* Leaflet zoom control styling to match dark theme */
+        .leaflet-control-zoom {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 8px !important;
+        }
+        
+        .leaflet-control-zoom a {
+            background: rgba(26, 32, 44, 0.9) !important;
+            color: #fff !important;
+            border: none !important;
+            backdrop-filter: blur(10px);
+            transition: all 0.2s ease !important;
+        }
+        
+        .leaflet-control-zoom a:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
+        
+        .leaflet-control-zoom a:first-child {
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
+        }
+        
+        .leaflet-control-zoom a:last-child {
+            border-bottom-left-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
         }
     </style>
 </head>
@@ -417,7 +548,20 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
-        console.log('🔥 JavaScript is loading...');
+        // --- Environment Detection & Logging Configuration ---
+        const isDevelopment = window.location.hostname === 'localhost' || 
+                             window.location.hostname === '127.0.0.1' ||
+                             window.location.search.includes('debug=true');
+
+        // Production-safe logger
+        const logger = {
+            log: (...args) => isDevelopment && console.log(...args),
+            warn: (...args) => isDevelopment && console.warn(...args),
+            error: (...args) => console.error(...args), // Always log errors
+            info: (...args) => isDevelopment && console.info(...args)
+        };
+
+        logger.log('🔥 JavaScript is loading...');
         
         // --- Configuration ---
         let useOSMNetwork = false; // Toggle between Euclidean and OSM network distance
@@ -426,7 +570,7 @@
         
         // API Configuration - works for both local development and Heroku
         const API_BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:8080' : window.location.origin;
-        console.log('🌐 API Base URL:', API_BASE_URL);
+        logger.log('🌐 API Base URL:', API_BASE_URL);
         
         // --- Global Variables ---
         let currentCity = null;
@@ -454,7 +598,7 @@
                 station.lat === 0 || station.lng === 0 ||
                 isNaN(station.lat) || isNaN(station.lng) ||
                 Math.abs(station.lat) > 90 || Math.abs(station.lng) > 180) {
-                console.warn(`⚠️ Invalid station in ${currentCity || 'unknown'}:`, {
+                logger.warn(`⚠️ Invalid station in ${currentCity || 'unknown'}:`, {
                     name: station ? station.name : 'undefined',
                     lat: station ? station.lat : 'undefined',
                     lng: station ? station.lng : 'undefined',
@@ -469,50 +613,50 @@
         // Initialize the app
         async function initializeApp() {
             try {
-                console.log('🚀 Initializing Spider Map app...');
+                logger.log('🚀 Initializing Spider Map app...');
                 
                 // Initialize caches
                 euclideanCache = new DistanceCache(50); // For euclidean distances  
                 distanceCache = new DistanceCache(30); // For OSM routes (smaller cache, bigger objects)
                 
-                console.log('✅ Caches initialized');
+                logger.log('✅ Caches initialized');
                 
                 // Load available cities
                 await loadCities();
-                console.log('✅ Cities loaded');
+                logger.log('✅ Cities loaded');
                 
                 // Load stations for current city
                 await loadStations();
-                console.log('✅ Stations loaded');
+                logger.log('✅ Stations loaded');
                 
                 // Initialize map and spatial index
                 initializeMap();
-                console.log('✅ Map initialized');
+                logger.log('✅ Map initialized');
                 
                 // Ensure toggle UI reflects initial Euclidean mode
                 updateToggleUI();
-                console.log('✅ Toggle UI initialized');
+                logger.log('✅ Toggle UI initialized');
                 
-                console.log('🎉 App initialization complete!');
+                logger.log('🎉 App initialization complete!');
                 
             } catch (error) {
-                console.error('❌ Failed to initialize app:', error);
+                logger.error('❌ Failed to initialize app:', error);
                 alert('Failed to load city data. Please refresh the page.');
             }
         }
         
         async function loadCities() {
             try {
-                console.log('Loading cities from API...');
+                logger.log('Loading cities from API...');
                 const response = await fetch(`${API_BASE_URL}/api/cities`);
-                console.log('Cities API response status:', response.status);
+                logger.log('Cities API response status:', response.status);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 
                 const data = await response.json();
-                console.log('Cities data received:', data);
+                logger.log('Cities data received:', data);
                 
                 availableCities = data.cities;
                 currentCity = data.current_city;
@@ -536,9 +680,9 @@
                 // Add change event listener
                 selector.addEventListener('change', switchCity);
                 
-                console.log(`Loaded ${availableCities.length} cities, current: ${currentCity}`);
+                logger.log(`Loaded ${availableCities.length} cities, current: ${currentCity}`);
             } catch (error) {
-                console.error('Failed to load cities:', error);
+                logger.error('Failed to load cities:', error);
                 throw error;
             }
         }
@@ -552,14 +696,11 @@
                 const rawStations = data.stations;
                 stations = rawStations.filter(station => isValidStation(station));
                 
-                console.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
-                console.log(`📊 Station validation: ${stations.length} valid, ${rawStations.length - stations.length} invalid filtered out`);
-                
-                // Keep modal title and description general - don't update with city name
-                console.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
+                logger.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
+                logger.log(`📊 Station validation: ${stations.length} valid, ${rawStations.length - stations.length} invalid filtered out`);
                 
             } catch (error) {
-                console.error('Failed to load stations:', error);
+                logger.error('Failed to load stations:', error);
                 stations = [];
                 throw error;
             }
@@ -604,11 +745,11 @@
                 // Clear distance caches to prevent cross-city contamination
                 if (euclideanCache) {
                     euclideanCache.clear();
-                    console.log('🧹 Cleared Euclidean cache during city switch');
+                    logger.log('🧹 Cleared Euclidean cache during city switch');
                 }
                 if (distanceCache) {
                     distanceCache.clear();
-                    console.log('🧹 Cleared OSM cache during city switch');
+                    logger.log('🧹 Cleared OSM cache during city switch');
                 }
                 
                 // Redraw background stations for the new city
@@ -643,7 +784,7 @@
                 // Update closest stations in Euclidean mode after city switch
                 updateClosestStations();
                 
-                console.log(`Switched to ${data.city.name}`);
+                logger.log(`Switched to ${data.city.name}`);
                 
                 // Success: Properly update the dropdown to show the new city name
                 const newCityData = availableCities.find(c => c.key === newCityKey);
@@ -652,7 +793,7 @@
                 }
                 
             } catch (error) {
-                console.error('Failed to switch city:', error);
+                logger.error('Failed to switch city:', error);
                 alert('Failed to switch city. Please try again.');
                 
                 // Error: Reset selector to previous city and restore original text
@@ -668,7 +809,7 @@
         
         function initializeMap() {
             if (stations.length === 0) {
-                console.warn('No stations available to initialize map');
+                logger.warn('No stations available to initialize map');
                 return;
             }
             
@@ -681,7 +822,14 @@
                 const center = city ? city.center : [19.4326, -99.1332]; // Default to Mexico City
                 const zoom = city ? city.zoom : 11;
                 
-                map = L.map('map').setView(center, zoom);
+                map = L.map('map', {
+                    zoomControl: false // Disable default zoom control
+                }).setView(center, zoom);
+                
+                // Add zoom control with custom positioning
+                L.control.zoom({
+                    position: 'topright'
+                }).addTo(map);
                 
                 // Add tile layer with dark theme
                 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -797,7 +945,7 @@
         function initializeSpatialIndex() {
             if (stations.length > 0) {
                 stationIndex = new StationSpatialIndex(stations);
-                console.log(`Spatial index initialized with ${stations.length} stations`);
+                logger.log(`Spatial index initialized with ${stations.length} stations`);
             }
         }
         
@@ -823,7 +971,7 @@
         function handleMapClick(e) {
             const center = e.latlng;
             
-            console.log(`🖱️ Map clicked at: ${center.lat.toFixed(6)}, ${center.lng.toFixed(6)}`);
+            logger.log(`🖱️ Map clicked at: ${center.lat.toFixed(6)}, ${center.lng.toFixed(6)}`);
             
             // Cancel any pending movement calculations
             if (moveTimeout) {
@@ -853,7 +1001,7 @@
                     }
                     this.grid.get(gridKey).push(station);
                 });
-                console.log(`Spatial index built with ${this.grid.size} grid cells for ${this.stations.length} stations`);
+                logger.log(`Spatial index built with ${this.grid.size} grid cells for ${this.stations.length} stations`);
             }
             
             getGridKey(lat, lng) {
@@ -905,7 +1053,7 @@
             get(centerLat, centerLng) {
                 // ALWAYS auto-clear cache if city changed or is different
                 if (this.currentCity !== currentCity) {
-                    console.log(`🧹 Auto-clearing OSM cache: city changed from ${this.currentCity} to ${currentCity}`);
+                    logger.log(`🧹 Auto-clearing OSM cache: city changed from ${this.currentCity} to ${currentCity}`);
                     this.clear();
                     this.currentCity = currentCity;
                     return null; // Force recalculation
@@ -919,12 +1067,12 @@
                 const key = this.getCacheKey(centerLat, centerLng);
                 const cached = this.cache.get(key);
                 if (cached) {
-                    console.log(`🚀 Using cached OSM routes for ${currentCity || 'unknown'} - instant response!`);
+                    logger.log(`🚀 Using cached OSM routes for ${currentCity || 'unknown'} - instant response!`);
                     
                     // Extra validation: ensure all cached stations are valid for current city
                     const validCached = cached.filter(station => isValidStation(station));
                     if (validCached.length !== cached.length) {
-                        console.warn(`⚠️ Found ${cached.length - validCached.length} invalid stations in cache, clearing...`);
+                        logger.warn(`⚠️ Found ${cached.length - validCached.length} invalid stations in cache, clearing...`);
                         this.clear();
                         return null;
                     }
@@ -939,7 +1087,7 @@
                 // Validate all stations before caching
                 const validResult = result.filter(station => isValidStation(station));
                 if (validResult.length !== result.length) {
-                    console.warn(`⚠️ Filtering out ${result.length - validResult.length} invalid stations before caching`);
+                    logger.warn(`⚠️ Filtering out ${result.length - validResult.length} invalid stations before caching`);
                 }
                 
                 const key = this.getCacheKey(centerLat, centerLng);
@@ -951,13 +1099,13 @@
                 }
                 
                 this.cache.set(key, validResult);
-                console.log(`💾 Cached ${validResult.length} valid OSM routes for ${currentCity || 'unknown'} at ${key} (${this.cache.size}/${this.maxSize})`);
+                logger.log(`💾 Cached ${validResult.length} valid OSM routes for ${currentCity || 'unknown'} at ${key} (${this.cache.size}/${this.maxSize})`);
             }
             
             clear() {
                 this.cache.clear();
                 this.currentCity = null;
-                console.log('🧹 OSM cache cleared');
+                logger.log('🧹 OSM cache cleared');
             }
         }
 
@@ -991,7 +1139,7 @@
         async function updateClosestStations() {
             const center = map.getCenter();
             if (!center || !center.lat || !center.lng) {
-                console.error('Invalid map center, skipping update');
+                logger.error('Invalid map center, skipping update');
                 return;
             }
             
@@ -1002,7 +1150,7 @@
         
         async function updateClosestStationsWithCenter(center) {
             if (!map || !stations || stations.length === 0) {
-                console.log('Skipping updateClosestStationsWithCenter: not ready', {
+                logger.log('Skipping updateClosestStationsWithCenter: not ready', {
                     hasMap: !!map,
                     stationsCount: stations ? stations.length : 0
                 });
@@ -1010,14 +1158,14 @@
             }
             
             if (!center || !center.lat || !center.lng) {
-                console.error('Invalid center provided to updateClosestStationsWithCenter');
+                logger.error('Invalid center provided to updateClosestStationsWithCenter');
                 return;
             }
 
             // Cancel any previous calculation and start a new one
             currentCalculationId++;
             const thisCalculationId = currentCalculationId;
-            console.log(`🔄 Starting calculation ${thisCalculationId} for center:`, center.lat.toFixed(4), center.lng.toFixed(4));
+            logger.log(`🔄 Starting calculation ${thisCalculationId} for center:`, center.lat.toFixed(4), center.lng.toFixed(4));
 
             let closestStations;
             
@@ -1413,7 +1561,7 @@
             const previousMode = useOSMNetwork;
             useOSMNetwork = !useOSMNetwork;
             
-            console.log(`🔄 Switching from ${previousMode ? 'OSM' : 'Euclidean'} to ${useOSMNetwork ? 'OSM' : 'Euclidean'} mode`);
+            logger.log(`🔄 Switching from ${previousMode ? 'OSM' : 'Euclidean'} to ${useOSMNetwork ? 'OSM' : 'Euclidean'} mode`);
             
             // Update UI immediately
             updateToggleUI();
@@ -1456,7 +1604,7 @@
         function updateSpiderLegs(value) {
             const newSpiderLegs = parseInt(value);
             if (newSpiderLegs !== spiderLegs) {
-                console.log(`🕷️ Updating spider legs from ${spiderLegs} to ${newSpiderLegs}`);
+                logger.log(`🕷️ Updating spider legs from ${spiderLegs} to ${newSpiderLegs}`);
                 spiderLegs = newSpiderLegs;
                 document.getElementById('spider-legs-value').textContent = spiderLegs;
                 
@@ -1466,22 +1614,22 @@
                 // Clear caches to force recalculation with new spider legs count
                 if (euclideanCache) {
                     euclideanCache.clear();
-                    console.log('🧹 Cleared Euclidean cache due to spider legs change');
+                    logger.log('🧹 Cleared Euclidean cache due to spider legs change');
                 }
                 if (distanceCache) {
                     distanceCache.clear();
-                    console.log('🧹 Cleared OSM cache due to spider legs change');
+                    logger.log('🧹 Cleared OSM cache due to spider legs change');
                 }
                 
                 // Force recalculation with current map center using new spider legs count
                 if (map && currentCity && stations.length > 0) {
-                    console.log('🔄 Triggering recalculation due to spider legs change');
+                    logger.log('🔄 Triggering recalculation due to spider legs change');
                     // Cancel any ongoing calculations
                     currentCalculationId++;
                     const center = map.getCenter();
                     updateClosestStationsWithCenter(center);
                 } else {
-                    console.log('⚠️ Cannot recalculate: map, city, or stations not ready', {
+                    logger.log('⚠️ Cannot recalculate: map, city, or stations not ready', {
                         hasMap: !!map,
                         hasCity: !!currentCity,
                         stationsCount: stations.length
@@ -1499,7 +1647,7 @@
 
         // Performance monitoring for distance calculations
         function measureDistanceCalculationPerformance(center, stations) {
-            console.log(`Testing distance calculation performance with ${stations.length} stations...`);
+            logger.log(`Testing distance calculation performance with ${stations.length} stations...`);
             
             // Test 1: Original method (for comparison)
             const startOriginal = performance.now();
@@ -1515,7 +1663,7 @@
             const optimizedResults = calculateEuclideanDistances(center, nearbyStations);
             const optimizedTime = performance.now() - startOptimized;
             
-            console.log(`Performance comparison:
+            logger.log(`Performance comparison:
                 Original (all ${stations.length} stations): ${originalTime.toFixed(2)}ms
                 Optimized (${nearbyStations.length} nearby): ${optimizedTime.toFixed(2)}ms
                 Speed improvement: ${(originalTime / optimizedTime).toFixed(1)}x faster
@@ -1581,7 +1729,7 @@
                 // Cache the result
                 euclideanCache.set(centerLat, centerLng, topResults);
                 
-                console.log(`Calculated distances for ${nearbyStations.length}/${stations.length} stations (${((nearbyStations.length/stations.length)*100).toFixed(1)}% of total)`);
+                logger.log(`Calculated distances for ${nearbyStations.length}/${stations.length} stations (${((nearbyStations.length/stations.length)*100).toFixed(1)}% of total)`);
                 
                 return topResults;
             } catch (error) {
@@ -1628,17 +1776,17 @@
         
         // Initialize the app when the page loads
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('🌟 DOM Content Loaded - starting initialization...');
+            logger.log('🌟 DOM Content Loaded - starting initialization...');
             initializeApp();
         });
         
         // Fallback initialization in case DOMContentLoaded already fired
         if (document.readyState === 'loading') {
             // Still loading, DOMContentLoaded will fire
-            console.log('📝 Document is still loading, waiting for DOMContentLoaded...');
+            logger.log('📝 Document is still loading, waiting for DOMContentLoaded...');
         } else {
             // Already loaded
-            console.log('🌟 Document already loaded - starting initialization immediately...');
+            logger.log('🌟 Document already loaded - starting initialization immediately...');
             initializeApp();
         }
     </script>
