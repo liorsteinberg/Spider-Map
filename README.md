@@ -1,8 +1,8 @@
-# CDMX Metro Spider Map
+# Spider Map - Multi-City Metro Network Explorer
 
-An interactive web map showing the 5 closest Mexico City metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
+An interactive web map showing the closest metro stations to any location, with adjustable spider legs (1-8 stations) and toggle between Euclidean and actual walking distances using OpenStreetMap routing.
 
-This project is inspired by [Carlos Enrique Vázquez Juárez's original work](https://carto.mx/webmap/spoke/) and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
+This project supports multiple cities and is inspired by [Carlos Enrique Vázquez Juárez's original work](https://carto.mx/webmap/spoke/) and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
 
 ## 🌐 Live Demo
 
@@ -14,11 +14,24 @@ This project is inspired by [Carlos Enrique Vázquez Juárez's original work](ht
 
 ## Features
 
-- **Interactive Map**: Click anywhere to find the 5 closest metro stations
+- **Multi-City Support**: Explore metro networks in multiple cities worldwide
+- **Interactive Map**: Click anywhere to find the closest metro stations
+- **Adjustable Spider Legs**: Choose between 1-8 stations using the slider
 - **Distance Modes**: Toggle between Euclidean (straight-line) and OSM Network (walking) distances  
 - **Route Visualization**: See actual walking routes to stations when using OSM Network mode
 - **Ultra-High Performance**: NetworKit backend with fast network calculations
 - **Optimized Frontend**: Spatial indexing and caching for instant Euclidean distance calculations
+
+## 🌍 Available Cities
+
+- **Mexico City, Mexico**
+- **Berlin, Germany**
+- **Beijing, China**
+
+## 👨‍💻 Created By
+
+**Lior Steinberg** - [steinberg.nu](https://steinberg.nu)  
+Urban planner and co-founder of [Humankind](https://humankind.city)
 
 ## 🚀 Quick Start
 
@@ -27,9 +40,10 @@ This project is inspired by [Carlos Enrique Vázquez Juárez's original work](ht
    pip install -r requirements.txt
    ```
 
-2. **Build NetworKit network:**
+2. **Download city data:**
    ```bash
-   python build_networkit_network.py  # ~10 seconds (downloads from OSM)
+   python download_data.py --city mexico_city  # or berlin, beijing
+   # Or download all cities: python download_data.py --all
    ```
 
 3. **Start the service:**
@@ -45,13 +59,14 @@ This project is inspired by [Carlos Enrique Vázquez Juárez's original work](ht
 ### Core Application
 - `map.html` - Interactive web interface with frontend optimizations
 - `walking_service.py` - Ultra-fast NetworKit backend service ⭐
-- `CDMX-metro-stations-simple.geojson` - Metro station data (165 stations)
+- `download_data.py` - Download and build city network data
 
-### Pre-built Networks
-- `cdmx_networkit_graph.pkl` - NetworKit graph cache (~50MB) ⭐
+### City Data
+- `CityData/` - Contains network graphs and station data for all cities
+  - `{city}_walking_graph.pkl` - NetworKit graph cache for each city
+  - `{city}_stations.geojson` - Metro station data for each city
 
 ### Setup & Documentation
-- `build_networkit_network.py` - Build NetworKit network
 - `requirements.txt` - Project dependencies
 
 ## Requirements
@@ -66,11 +81,17 @@ This project is inspired by [Carlos Enrique Vázquez Juárez's original work](ht
 
 ## Setup from Scratch
 
-If you need to rebuild the network:
+If you need to rebuild the network or add a new city:
 
 ```bash
-# Build NetworKit network (downloads from OSM if needed)
-python build_networkit_network.py
+# Download data for a specific city
+python download_data.py --city mexico_city
+
+# Download data for all supported cities
+python download_data.py --all
+
+# List available cities
+python download_data.py --list-cities
 
 # Start the service
 python walking_service.py

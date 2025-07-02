@@ -47,21 +47,21 @@ CITIES = {
         'display_name': 'Mexico City',
         'name': 'Mexico City, Mexico',
         'center': [19.4326, -99.1332],
-        'zoom': 11
+        'zoom': 14
     },
     'berlin': {
         'cache_prefix': 'berlin', 
         'display_name': 'Berlin',
         'name': 'Berlin, Germany',
         'center': [52.5200, 13.4050],
-        'zoom': 11
+        'zoom': 14
     },
     'beijing': {
         'cache_prefix': 'beijing', 
         'display_name': 'Beijing',
         'name': 'Beijing, China',
         'center': [39.9042, 116.4074],
-        'zoom': 11
+        'zoom': 14
     }
 }
 
@@ -475,6 +475,13 @@ def get_walking_distances_batch():
         center_lat = data['center_lat']
         center_lng = data['center_lng']
         requested_city = data.get('city', current_city)  # Get requested city
+        spider_legs = data.get('spider_legs', 5)  # Get number of spider legs, default to 5
+        
+        # Validate spider_legs parameter
+        if not isinstance(spider_legs, int) or spider_legs < 1 or spider_legs > 8:
+            spider_legs = 5
+        
+        logger.info(f"Calculating routes for {spider_legs} spider legs")
         
         # CRITICAL: Switch cities if needed for correct network
         if requested_city != current_city and requested_city in CITIES:
@@ -685,12 +692,12 @@ def get_walking_distances_batch():
         logger.info(f"NetworKit total processing time: {total_time:.3f}s")
         logger.info(f"Performance improvement: {((len(stations) - len(closest_10)) / len(stations) * 100):.1f}% fewer route calculations")
         
-        # Sort results by actual walking distance and return top 5
+        # Sort results by actual walking distance and return top N
         results.sort(key=lambda x: x['distance'])
-        final_5 = results[:5]
-        logger.info(f"Final selection: Top 5 stations by actual walking distance from the {len(closest_10)} candidates")
+        final_results = results[:spider_legs]
+        logger.info(f"Final selection: Top {spider_legs} stations by actual walking distance from the {len(closest_10)} candidates")
         
-        return jsonify({'stations': final_5})
+        return jsonify({'stations': final_results})
         
     except Exception as e:
         logger.error(f"NetworKit batch calculation error: {e}", exc_info=True)

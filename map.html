@@ -141,6 +141,59 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* Spider Legs Slider Styles */
+        .slider-container {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .slider-label {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .spider-slider {
+            flex: 1;
+            height: 6px;
+            background: #4A5568;
+            border-radius: 3px;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+        .spider-slider::-webkit-slider-thumb {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #ed8936;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .spider-slider::-webkit-slider-thumb:hover {
+            background: #f6ad55;
+            transform: scale(1.1);
+        }
+        .spider-slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: #ed8936;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+        .spider-slider::-moz-range-thumb:hover {
+            background: #f6ad55;
+            transform: scale(1.1);
+        }
+        
         /* Info Button Styles */
         .info-button {
             position: absolute;
@@ -179,19 +232,47 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(5px);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
         .modal-content {
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-            margin: 5% auto;
-            padding: 30px;
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 16px;
             width: 90%;
             max-width: 600px;
+            min-height: fit-content;
+            max-height: calc(100vh - 40px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             color: #fff;
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .modal-content {
+                margin: 10px auto;
+                padding: 15px;
+                width: 95%;
+                max-height: calc(100vh - 20px);
+                border-radius: 12px;
+            }
+            .modal-title {
+                font-size: 20px !important;
+            }
+        }
+        
+        @media (max-height: 600px) {
+            .modal-content {
+                margin: 5px auto;
+                padding: 15px;
+                max-height: calc(100vh - 10px);
+            }
         }
         .modal-header {
             display: flex;
@@ -291,6 +372,15 @@
                 </div>
                 <div class="loading-indicator" id="loading-indicator"></div>
             </button>
+            
+            <!-- Spider Legs Slider -->
+            <div class="slider-container">
+                <label for="spider-legs-slider" class="slider-label">
+                    Spider Legs: <span id="spider-legs-value">5</span>
+                </label>
+                <input type="range" id="spider-legs-slider" min="1" max="8" value="5" 
+                       class="spider-slider" oninput="updateSpiderLegs(this.value)" onchange="updateSpiderLegs(this.value)">
+            </div>
         </div>
     </div>
     
@@ -302,10 +392,14 @@
                 <button class="close-button" onclick="hideInfoModal()">&times;</button>
             </div>
             <div class="modal-text" id="modal-description">
-                An interactive web map showing the 5 closest metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.
+                An interactive web map showing the closest metro stations to any location, with adjustable spider legs (1-8 stations) and toggle between Euclidean and actual walking distances using OpenStreetMap routing.
             </div>
             <div class="modal-text">
                 This project is inspired by <a href="https://carto.mx/webmap/spoke/" target="_blank" class="modal-link">Carlos Enrique Vázquez Juárez's original work</a> and builds upon it to create an open-source, enhanced version with additional features such as pedestrian network routing and high-performance network analysis.
+            </div>
+            <div class="modal-text">
+                <strong>Created by:</strong><br>
+                <a href="https://steinberg.nu" target="_blank" class="modal-link">Lior Steinberg</a> - Urban planner and co-founder of <a href="https://humankind.city" target="_blank" class="modal-link">Humankind</a>
             </div>
             <div class="github-section">
                 <div class="modal-text">
@@ -328,6 +422,7 @@
         // --- Configuration ---
         let useOSMNetwork = false; // Toggle between Euclidean and OSM network distance
         let isLoading = false;
+        let spiderLegs = 5; // Number of closest stations to find (1-8)
         
         // API Configuration - works for both local development and Heroku
         const API_BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:8080' : window.location.origin;
@@ -460,13 +555,8 @@
                 console.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
                 console.log(`📊 Station validation: ${stations.length} valid, ${rawStations.length - stations.length} invalid filtered out`);
                 
-                // Update modal title
-                const city = availableCities.find(c => c.key === data.city);
-                if (city) {
-                    document.getElementById('modal-title').textContent = `${city.name} Metro Spider Map`;
-                    document.getElementById('modal-description').textContent = 
-                        `An interactive web map showing the 5 closest ${city.name} metro stations to any location, with toggle between Euclidean and actual walking distances using OpenStreetMap routing.`;
-                }
+                // Keep modal title and description general - don't update with city name
+                console.log(`Loaded ${rawStations.length} stations for ${data.city_name}`);
                 
             } catch (error) {
                 console.error('Failed to load stations:', error);
@@ -1242,7 +1332,8 @@
                         center_lat: center.lat,
                         center_lng: center.lng,
                         stations: stations,
-                        city: currentCity  // CRITICAL: Tell backend which city's network to use
+                        city: currentCity,  // CRITICAL: Tell backend which city's network to use
+                        spider_legs: spiderLegs  // Send number of spider legs to backend
                     })
                 });
                 
@@ -1361,6 +1452,44 @@
             }
         }
         
+        // --- Spider Legs Functions ---
+        function updateSpiderLegs(value) {
+            const newSpiderLegs = parseInt(value);
+            if (newSpiderLegs !== spiderLegs) {
+                console.log(`🕷️ Updating spider legs from ${spiderLegs} to ${newSpiderLegs}`);
+                spiderLegs = newSpiderLegs;
+                document.getElementById('spider-legs-value').textContent = spiderLegs;
+                
+                // Update the modal description to reflect the new number
+                updateModalDescription();
+                
+                // Clear caches to force recalculation with new spider legs count
+                if (euclideanCache) {
+                    euclideanCache.clear();
+                    console.log('🧹 Cleared Euclidean cache due to spider legs change');
+                }
+                if (distanceCache) {
+                    distanceCache.clear();
+                    console.log('🧹 Cleared OSM cache due to spider legs change');
+                }
+                
+                // Force recalculation with current map center using new spider legs count
+                if (map && currentCity && stations.length > 0) {
+                    console.log('🔄 Triggering recalculation due to spider legs change');
+                    // Cancel any ongoing calculations
+                    currentCalculationId++;
+                    const center = map.getCenter();
+                    updateClosestStationsWithCenter(center);
+                } else {
+                    console.log('⚠️ Cannot recalculate: map, city, or stations not ready', {
+                        hasMap: !!map,
+                        hasCity: !!currentCity,
+                        stationsCount: stations.length
+                    });
+                }
+            }
+        }
+        
         function showLoading(show) {
             const loadingIndicator = document.getElementById('loading-indicator');
             loadingIndicator.style.display = show ? 'block' : 'none';
@@ -1429,9 +1558,9 @@
                     // Fallback to all stations if filtering returns empty
                     const fallbackResults = calculateEuclideanDistances(center, stations);
                     fallbackResults.sort((a, b) => a.distance - b.distance);
-                    const top5 = fallbackResults.slice(0, 5);
-                    euclideanCache.set(centerLat, centerLng, top5);
-                    return top5;
+                    const topResults = fallbackResults.slice(0, spiderLegs);
+                    euclideanCache.set(centerLat, centerLng, topResults);
+                    return topResults;
                 }
                 
                 // Calculate distances for nearby stations only
@@ -1445,26 +1574,35 @@
                     });
                 }
                 
-                // Sort by distance and take top 5
+                // Sort by distance and take top N
                 results.sort((a, b) => a.distance - b.distance);
-                const top5 = results.slice(0, 5);
+                const topResults = results.slice(0, spiderLegs);
                 
                 // Cache the result
-                euclideanCache.set(centerLat, centerLng, top5);
+                euclideanCache.set(centerLat, centerLng, topResults);
                 
                 console.log(`Calculated distances for ${nearbyStations.length}/${stations.length} stations (${((nearbyStations.length/stations.length)*100).toFixed(1)}% of total)`);
                 
-                return top5;
+                return topResults;
             } catch (error) {
                 console.error('Error in calculateEuclideanDistancesWithCache:', error);
                 // Fallback to simple calculation
                 const fallbackResults = calculateEuclideanDistances(center, stations);
                 fallbackResults.sort((a, b) => a.distance - b.distance);
-                return fallbackResults.slice(0, 5);
+                return fallbackResults.slice(0, spiderLegs);
             }
         }
         
         // --- Modal Functions ---
+        function updateModalDescription() {
+            const modalDescription = document.getElementById('modal-description');
+            if (modalDescription) {
+                // Keep description general, just update the number of spider legs
+                modalDescription.textContent = 
+                    `An interactive web map showing the closest metro stations to any location, with adjustable spider legs (1-8 stations) and toggle between Euclidean and actual walking distances using OpenStreetMap routing.`;
+            }
+        }
+        
         function showInfoModal() {
             document.getElementById('info-modal').style.display = 'block';
         }
