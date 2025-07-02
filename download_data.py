@@ -28,6 +28,11 @@ CITIES = {
         'name': 'Berlin, Germany', 
         'display_name': 'Berlin',
         'cache_prefix': 'berlin'
+    },
+    'beijing': {
+        'name': 'Beijing, China',
+        'display_name': 'Beijing',
+        'cache_prefix': 'beijing'
     }
 }
 

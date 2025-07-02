@@ -1,0 +1,6515 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4119016,
+          40.0290192
+        ]
+      },
+      "properties": {
+        "name": "北苑路北",
+        "osm_id": "('node', 340262247)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.197616,
+          39.8989948
+        ]
+      },
+      "properties": {
+        "name": "衙门口",
+        "osm_id": "('node', 1296102418)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5871343,
+          40.0780129
+        ]
+      },
+      "properties": {
+        "name": "首都机场2号航站楼",
+        "osm_id": "('node', 1351108938)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4690136,
+          39.942932
+        ]
+      },
+      "properties": {
+        "name": "枣营",
+        "osm_id": "('node', 3363538820)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4725284,
+          39.9323096
+        ]
+      },
+      "properties": {
+        "name": "朝阳公园",
+        "osm_id": "('node', 3363577821)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2688628,
+          39.864019
+        ]
+      },
+      "properties": {
+        "name": "大井",
+        "osm_id": "('node', 3365609789)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2344523,
+          39.8583275
+        ]
+      },
+      "properties": {
+        "name": "大瓦窑",
+        "osm_id": "('node', 3365609790)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2483861,
+          39.8640535
+        ]
+      },
+      "properties": {
+        "name": "郭庄子",
+        "osm_id": "('node', 3365609791)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2881665,
+          39.8652402
+        ]
+      },
+      "properties": {
+        "name": "七里庄",
+        "osm_id": "('node', 3367038996)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2978076,
+          39.8652242
+        ]
+      },
+      "properties": {
+        "name": "西局",
+        "osm_id": "('node', 3367044891)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3144367,
+          39.8661164
+        ]
+      },
+      "properties": {
+        "name": "东管头",
+        "osm_id": "('node', 3367069254)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3249215,
+          39.8662801
+        ]
+      },
+      "properties": {
+        "name": "丽泽商务区",
+        "osm_id": "('node', 3367069255)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3600963,
+          39.8614067
+        ]
+      },
+      "properties": {
+        "name": "景风门",
+        "osm_id": "('node', 3367069256)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3366819,
+          39.8662594
+        ]
+      },
+      "properties": {
+        "name": "菜户营",
+        "osm_id": "('node', 3367069257)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4049409,
+          39.8636494
+        ]
+      },
+      "properties": {
+        "name": "景泰",
+        "osm_id": "('node', 3367857703)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4154612,
+          39.8643287
+        ]
+      },
+      "properties": {
+        "name": "蒲黄榆",
+        "osm_id": "('node', 3367857705)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3816795,
+          39.8675967
+        ]
+      },
+      "properties": {
+        "name": "陶然桥(在建)",
+        "osm_id": "('node', 3367857706)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4525595,
+          39.8647129
+        ]
+      },
+      "properties": {
+        "name": "十里河",
+        "osm_id": "('node', 3367977137)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4339348,
+          39.8646354
+        ]
+      },
+      "properties": {
+        "name": "方庄",
+        "osm_id": "('node', 3367977138)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4789687,
+          39.9583029
+        ]
+      },
+      "properties": {
+        "name": "东风北桥",
+        "osm_id": "('node', 3369001427)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4716849,
+          39.8921089
+        ]
+      },
+      "properties": {
+        "name": "九龙山",
+        "osm_id": "('node', 3369001428)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4712272,
+          39.9069399
+        ]
+      },
+      "properties": {
+        "name": "大望路",
+        "osm_id": "('node', 3369001431)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4713411,
+          39.8838514
+        ]
+      },
+      "properties": {
+        "name": "平乐园",
+        "osm_id": "('node', 3369001432)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4713573,
+          39.8736424
+        ]
+      },
+      "properties": {
+        "name": "北工大西门",
+        "osm_id": "('node', 3369001433)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4611561,
+          40.0091272
+        ]
+      },
+      "properties": {
+        "name": "东湖渠",
+        "osm_id": "('node', 3369356928)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4727698,
+          40.0265143
+        ]
+      },
+      "properties": {
+        "name": "善各庄",
+        "osm_id": "('node', 3369356929)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4840447,
+          39.9694941
+        ]
+      },
+      "properties": {
+        "name": "将台",
+        "osm_id": "('node', 3369356930)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4624279,
+          39.9965663
+        ]
+      },
+      "properties": {
+        "name": "望京",
+        "osm_id": "('node', 3369356931)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4607871,
+          40.0191988
+        ]
+      },
+      "properties": {
+        "name": "来广营",
+        "osm_id": "('node', 3369356933)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4650632,
+          39.9906798
+        ]
+      },
+      "properties": {
+        "name": "阜通",
+        "osm_id": "('node', 3369356934)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4975172,
+          39.8840067
+        ]
+      },
+      "properties": {
+        "name": "化工",
+        "osm_id": "('node', 3369459831)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4954124,
+          39.8733935
+        ]
+      },
+      "properties": {
+        "name": "南楼梓庄",
+        "osm_id": "('node', 3369459832)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4552314,
+          39.8920933
+        ]
+      },
+      "properties": {
+        "name": "双井",
+        "osm_id": "('node', 3369459833)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5223453,
+          39.8581385
+        ]
+      },
+      "properties": {
+        "name": "双合",
+        "osm_id": "('node', 3369459834)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5057156,
+          39.859574
+        ]
+      },
+      "properties": {
+        "name": "垡头",
+        "osm_id": "('node', 3369459835)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4813499,
+          39.8921857
+        ]
+      },
+      "properties": {
+        "name": "大郊亭",
+        "osm_id": "('node', 3369459836)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.351727,
+          39.8885681
+        ]
+      },
+      "properties": {
+        "name": "广安门内",
+        "osm_id": "('node', 3369459837)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4430351,
+          39.8923066
+        ]
+      },
+      "properties": {
+        "name": "广渠门外",
+        "osm_id": "('node', 3369459838)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4022485,
+          39.8912849
+        ]
+      },
+      "properties": {
+        "name": "桥湾",
+        "osm_id": "('node', 3369459839)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4277207,
+          39.8922863
+        ]
+      },
+      "properties": {
+        "name": "广渠门内",
+        "osm_id": "('node', 3369459840)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4930838,
+          39.8656674
+        ]
+      },
+      "properties": {
+        "name": "欢乐谷景区",
+        "osm_id": "('node', 3369459841)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.531614,
+          39.8542896
+        ]
+      },
+      "properties": {
+        "name": "焦化厂",
+        "osm_id": "('node', 3369459843)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4902447,
+          39.8913756
+        ]
+      },
+      "properties": {
+        "name": "百子湾",
+        "osm_id": "('node', 3369459845)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4126199,
+          39.8917025
+        ]
+      },
+      "properties": {
+        "name": "磁器口",
+        "osm_id": "('node', 3369459846)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3682164,
+          39.887991
+        ]
+      },
+      "properties": {
+        "name": "菜市口",
+        "osm_id": "('node', 3369459847)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3774806,
+          39.8883975
+        ]
+      },
+      "properties": {
+        "name": "虎坊桥",
+        "osm_id": "('node', 3369459848)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3293717,
+          39.888892
+        ]
+      },
+      "properties": {
+        "name": "达官营",
+        "osm_id": "('node', 3369459849)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4250584,
+          39.9997494
+        ]
+      },
+      "properties": {
+        "name": "关庄",
+        "osm_id": "('node', 3379245685)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3620432,
+          40.0001238
+        ]
+      },
+      "properties": {
+        "name": "北沙滩",
+        "osm_id": "('node', 3379245686)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3867559,
+          40.0003857
+        ]
+      },
+      "properties": {
+        "name": "奥林匹克公园",
+        "osm_id": "('node', 3379245688)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4016216,
+          40.0011779
+        ]
+      },
+      "properties": {
+        "name": "安立路",
+        "osm_id": "('node', 3379245689)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3336262,
+          39.9993038
+        ]
+      },
+      "properties": {
+        "name": "清华东路西口",
+        "osm_id": "('node', 3379245690)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2233972,
+          39.8477313
+        ]
+      },
+      "properties": {
+        "name": "宛平城",
+        "osm_id": "('node', 4564112633)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2529824,
+          39.8375683
+        ]
+      },
+      "properties": {
+        "name": "榆树庄",
+        "osm_id": "('node', 4564112640)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2810932,
+          39.8349394
+        ]
+      },
+      "properties": {
+        "name": "富丰桥",
+        "osm_id": "('node', 4564112660)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3307982,
+          39.8762703
+        ]
+      },
+      "properties": {
+        "name": "红莲南路",
+        "osm_id": "('node', 4564112795)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3277725,
+          39.9077017
+        ]
+      },
+      "properties": {
+        "name": "木樨地",
+        "osm_id": "('node', 4564112811)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.328872,
+          39.9139393
+        ]
+      },
+      "properties": {
+        "name": "玉渊潭东门",
+        "osm_id": "('node', 4564112816)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3285052,
+          39.922439
+        ]
+      },
+      "properties": {
+        "name": "甘家口",
+        "osm_id": "('node', 4564112817)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3032926,
+          39.9471407
+        ]
+      },
+      "properties": {
+        "name": "万寿寺",
+        "osm_id": "('node', 4564112842)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3015319,
+          39.9612484
+        ]
+      },
+      "properties": {
+        "name": "苏州桥",
+        "osm_id": "('node', 4564112846)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2942646,
+          39.9839185
+        ]
+      },
+      "properties": {
+        "name": "万泉河桥",
+        "osm_id": "('node', 4564112855)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2770283,
+          40.0184431
+        ]
+      },
+      "properties": {
+        "name": "农大南路",
+        "osm_id": "('node', 4564112873)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.265829,
+          40.031445
+        ]
+      },
+      "properties": {
+        "name": "马连洼",
+        "osm_id": "('node', 4564112875)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2520781,
+          40.0478932
+        ]
+      },
+      "properties": {
+        "name": "西北旺",
+        "osm_id": "('node', 4564112882)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2435428,
+          40.0630145
+        ]
+      },
+      "properties": {
+        "name": "永丰南",
+        "osm_id": "('node', 4564112888)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2093337,
+          40.0673089
+        ]
+      },
+      "properties": {
+        "name": "屯佃",
+        "osm_id": "('node', 4564113101)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1555687,
+          40.0675113
+        ]
+      },
+      "properties": {
+        "name": "温阳路",
+        "osm_id": "('node', 4564113107)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1243785,
+          40.0668592
+        ]
+      },
+      "properties": {
+        "name": "北安河",
+        "osm_id": "('node', 4564113110)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4209544,
+          39.9035987
+        ]
+      },
+      "properties": {
+        "name": "北京站",
+        "osm_id": "('node', 4846712797)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3727527,
+          39.8635548
+        ]
+      },
+      "properties": {
+        "name": "北京南站",
+        "osm_id": "('node', 5158580594)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4109068,
+          39.9861781
+        ]
+      },
+      "properties": {
+        "name": "惠新西街北口",
+        "osm_id": "('node', 5305505984)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4113554,
+          39.9759588
+        ]
+      },
+      "properties": {
+        "name": "惠新西街南口",
+        "osm_id": "('node', 5305505985)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4117932,
+          39.9672289
+        ]
+      },
+      "properties": {
+        "name": "和平西桥",
+        "osm_id": "('node', 5305505986)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4101645,
+          39.9469713
+        ]
+      },
+      "properties": {
+        "name": "雍和宫",
+        "osm_id": "('node', 5305505987)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4115432,
+          39.9479275
+        ]
+      },
+      "properties": {
+        "name": "雍和宫",
+        "osm_id": "('node', 5305505988)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4118355,
+          39.9154103
+        ]
+      },
+      "properties": {
+        "name": "灯市口",
+        "osm_id": "('node', 5305505989)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4102477,
+          39.9229744
+        ]
+      },
+      "properties": {
+        "name": "东四",
+        "osm_id": "('node', 5305505990)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3900647,
+          39.9359528
+        ]
+      },
+      "properties": {
+        "name": "什刹海",
+        "osm_id": "('node', 5305505993)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3879183,
+          39.947544
+        ]
+      },
+      "properties": {
+        "name": "鼓楼大街",
+        "osm_id": "('node', 5305505994)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3876367,
+          39.9467307
+        ]
+      },
+      "properties": {
+        "name": "鼓楼大街",
+        "osm_id": "('node', 5305505995)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3883984,
+          39.9671117
+        ]
+      },
+      "properties": {
+        "name": "安华桥",
+        "osm_id": "('node', 5305505996)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3879263,
+          39.9763987
+        ]
+      },
+      "properties": {
+        "name": "北土城",
+        "osm_id": "('node', 5305505997)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3864002,
+          40.009195
+        ]
+      },
+      "properties": {
+        "name": "森林公园南门",
+        "osm_id": "('node', 5305505998)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3538978,
+          40.0704794
+        ]
+      },
+      "properties": {
+        "name": "霍营",
+        "osm_id": "('node', 5305506001)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3667905,
+          40.0206001
+        ]
+      },
+      "properties": {
+        "name": "林萃桥",
+        "osm_id": "('node', 5305506002)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3483302,
+          40.0366785
+        ]
+      },
+      "properties": {
+        "name": "永泰庄",
+        "osm_id": "('node', 5305506003)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3451639,
+          40.0460679
+        ]
+      },
+      "properties": {
+        "name": "西小口",
+        "osm_id": "('node', 5305506004)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3571849,
+          40.0797507
+        ]
+      },
+      "properties": {
+        "name": "回龙观东大街",
+        "osm_id": "('node', 5305506006)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3441902,
+          40.0886607
+        ]
+      },
+      "properties": {
+        "name": "平西府",
+        "osm_id": "('node', 5305506007)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2878759,
+          40.1296641
+        ]
+      },
+      "properties": {
+        "name": "巩华城",
+        "osm_id": "('node', 5305506010)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2827677,
+          40.1470443
+        ]
+      },
+      "properties": {
+        "name": "沙河",
+        "osm_id": "('node', 5305506011)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2743857,
+          40.1633993
+        ]
+      },
+      "properties": {
+        "name": "沙河高教园",
+        "osm_id": "('node', 5305506012)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1893808,
+          40.243313
+        ]
+      },
+      "properties": {
+        "name": "昌平西山口",
+        "osm_id": "('node', 5305506013)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2018465,
+          40.2386353
+        ]
+      },
+      "properties": {
+        "name": "十三陵景区",
+        "osm_id": "('node', 5305506014)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2274869,
+          40.2193139
+        ]
+      },
+      "properties": {
+        "name": "昌平",
+        "osm_id": "('node', 5305506015)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.281971,
+          40.2066479
+        ]
+      },
+      "properties": {
+        "name": "南邵",
+        "osm_id": "('node', 5305506016)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2754466,
+          40.2206969
+        ]
+      },
+      "properties": {
+        "name": "北邵洼",
+        "osm_id": "('node', 5305506017)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2567145,
+          40.2205477
+        ]
+      },
+      "properties": {
+        "name": "昌平东关",
+        "osm_id": "('node', 5305506018)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0105419,
+          39.703788
+        ]
+      },
+      "properties": {
+        "name": "马各庄",
+        "osm_id": "('node', 5315328203)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4960424,
+          39.9216269
+        ]
+      },
+      "properties": {
+        "name": "十里堡",
+        "osm_id": "('node', 5365586568)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4549705,
+          39.8748619
+        ]
+      },
+      "properties": {
+        "name": "潘家园",
+        "osm_id": "('node', 5372350032)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.447588,
+          39.8506149
+        ]
+      },
+      "properties": {
+        "name": "分钟寺",
+        "osm_id": "('node', 5372350033)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4121905,
+          40.0015358
+        ]
+      },
+      "properties": {
+        "name": "大屯路东",
+        "osm_id": "('node', 5402687151)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3853355,
+          40.0008946
+        ]
+      },
+      "properties": {
+        "name": "奥林匹克公园",
+        "osm_id": "('node', 5402695989)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0739687,
+          39.715288
+        ]
+      },
+      "properties": {
+        "name": "阎村",
+        "osm_id": "('node', 5402953665)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9835976,
+          39.7046285
+        ]
+      },
+      "properties": {
+        "name": "房山城关",
+        "osm_id": "('node', 5402956432)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9674631,
+          39.7184583
+        ]
+      },
+      "properties": {
+        "name": "燕山",
+        "osm_id": "('node', 5402957177)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4417045,
+          39.9941582
+        ]
+      },
+      "properties": {
+        "name": "望京西",
+        "osm_id": "('node', 5428305222)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3139055,
+          39.6689886
+        ]
+      },
+      "properties": {
+        "name": "天宫院",
+        "osm_id": "('node', 5428310397)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7272447,
+          39.9022116
+        ]
+      },
+      "properties": {
+        "name": "东夏园",
+        "osm_id": "('node', 5428312459)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3777751,
+          39.8986925
+        ]
+      },
+      "properties": {
+        "name": "和平门",
+        "osm_id": "('node', 5428312892)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.332733,
+          39.9369392
+        ]
+      },
+      "properties": {
+        "name": "动物园",
+        "osm_id": "('node', 5429399341)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4108894,
+          39.9393851
+        ]
+      },
+      "properties": {
+        "name": "北新桥",
+        "osm_id": "('node', 5429400342)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3187284,
+          39.9412214
+        ]
+      },
+      "properties": {
+        "name": "国家图书馆",
+        "osm_id": "('node', 5429413631)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4551162,
+          39.8830661
+        ]
+      },
+      "properties": {
+        "name": "劲松",
+        "osm_id": "('node', 5430390389)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1342397,
+          39.7218824
+        ]
+      },
+      "properties": {
+        "name": "良乡南关",
+        "osm_id": "('node', 5430390454)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3788076,
+          39.8438402
+        ]
+      },
+      "properties": {
+        "name": "角门东",
+        "osm_id": "('node', 5430391236)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.533948,
+          39.7718151
+        ]
+      },
+      "properties": {
+        "name": "同济南路",
+        "osm_id": "('node', 5430391237)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4297381,
+          39.9759527
+        ]
+      },
+      "properties": {
+        "name": "芍药居",
+        "osm_id": "('node', 5430392913)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3505107,
+          39.905948
+        ]
+      },
+      "properties": {
+        "name": "复兴门",
+        "osm_id": "('node', 5430395013)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3343902,
+          39.9750927
+        ]
+      },
+      "properties": {
+        "name": "知春路",
+        "osm_id": "('node', 5430403863)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3178241,
+          39.9061218
+        ]
+      },
+      "properties": {
+        "name": "军事博物馆（1号线）",
+        "osm_id": "('node', 5430417411)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3680141,
+          39.8983866
+        ]
+      },
+      "properties": {
+        "name": "宣武门",
+        "osm_id": "('node', 5430419547)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4119567,
+          39.8997371
+        ]
+      },
+      "properties": {
+        "name": "崇文门",
+        "osm_id": "('node', 5430420858)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3041253,
+          39.9061762
+        ]
+      },
+      "properties": {
+        "name": "公主坟",
+        "osm_id": "('node', 5430421400)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.412626,
+          39.9068579
+        ]
+      },
+      "properties": {
+        "name": "东单",
+        "osm_id": "('node', 5430429324)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4281041,
+          39.9398861
+        ]
+      },
+      "properties": {
+        "name": "东直门",
+        "osm_id": "('node', 5430434767)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4554956,
+          39.9220995
+        ]
+      },
+      "properties": {
+        "name": "呼家楼",
+        "osm_id": "('node', 5430443221)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3646715,
+          39.8352632
+        ]
+      },
+      "properties": {
+        "name": "公益西桥",
+        "osm_id": "('node', 5430444271)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2874286,
+          39.9732969
+        ]
+      },
+      "properties": {
+        "name": "巴沟",
+        "osm_id": "('node', 5430448102)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2960281,
+          39.8133778
+        ]
+      },
+      "properties": {
+        "name": "郭公庄",
+        "osm_id": "('node', 5430450045)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4983103,
+          40.0325513
+        ]
+      },
+      "properties": {
+        "name": "马泉营",
+        "osm_id": "('node', 5430450498)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2968997,
+          39.8786861
+        ]
+      },
+      "properties": {
+        "name": "六里桥",
+        "osm_id": "('node', 5430454140)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492348,
+          39.9392172
+        ]
+      },
+      "properties": {
+        "name": "西直门",
+        "osm_id": "('node', 5430462574)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6819734,
+          39.9018256
+        ]
+      },
+      "properties": {
+        "name": "北运河西",
+        "osm_id": "('node', 5430487507)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5094811,
+          39.9073037
+        ]
+      },
+      "properties": {
+        "name": "四惠东",
+        "osm_id": "('node', 5430491074)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4893819,
+          39.9075722
+        ]
+      },
+      "properties": {
+        "name": "四惠",
+        "osm_id": "('node', 5430493577)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4292321,
+          39.9071594
+        ]
+      },
+      "properties": {
+        "name": "建国门",
+        "osm_id": "('node', 5430497283)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3664868,
+          39.9323165
+        ]
+      },
+      "properties": {
+        "name": "平安里",
+        "osm_id": "('node', 5430502371)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3493426,
+          39.9311554
+        ]
+      },
+      "properties": {
+        "name": "车公庄",
+        "osm_id": "('node', 5430505472)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3647807,
+          39.8444824
+        ]
+      },
+      "properties": {
+        "name": "角门西",
+        "osm_id": "('node', 5430507192)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2888626,
+          39.9315586
+        ]
+      },
+      "properties": {
+        "name": "慈寿寺",
+        "osm_id": "('node', 5430509863)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4556474,
+          39.9070164
+        ]
+      },
+      "properties": {
+        "name": "国贸",
+        "osm_id": "('node', 5430522453)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4279504,
+          39.9230647
+        ]
+      },
+      "properties": {
+        "name": "朝阳门",
+        "osm_id": "('node', 5430525703)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3544475,
+          40.0693567
+        ]
+      },
+      "properties": {
+        "name": "霍营",
+        "osm_id": "('node', 5430532540)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3001813,
+          40.0517165
+        ]
+      },
+      "properties": {
+        "name": "西二旗",
+        "osm_id": "('node', 5430533767)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3682035,
+          39.9057386
+        ]
+      },
+      "properties": {
+        "name": "西单",
+        "osm_id": "('node', 5430540736)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3193762,
+          39.9323878
+        ]
+      },
+      "properties": {
+        "name": "白石桥南",
+        "osm_id": "('node', 5430545454)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.329755,
+          40.069525
+        ]
+      },
+      "properties": {
+        "name": "回龙观",
+        "osm_id": "('node', 5441470420)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7111595,
+          39.9021403
+        ]
+      },
+      "properties": {
+        "name": "郝家府",
+        "osm_id": "('node', 5441488835)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4219287,
+          39.8443821
+        ]
+      },
+      "properties": {
+        "name": "宋家庄",
+        "osm_id": "('node', 5441491000)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5581345,
+          39.9226731
+        ]
+      },
+      "properties": {
+        "name": "褡裢坡",
+        "osm_id": "('node', 5441499243)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.428187,
+          40.0416631
+        ]
+      },
+      "properties": {
+        "name": "北苑",
+        "osm_id": "('node', 5441502966)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2639202,
+          40.0110618
+        ]
+      },
+      "properties": {
+        "name": "安河桥北",
+        "osm_id": "('node', 5441503035)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4156074,
+          39.8560744
+        ]
+      },
+      "properties": {
+        "name": "刘家窑",
+        "osm_id": "('node', 5441507804)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3612739,
+          39.9394291
+        ]
+      },
+      "properties": {
+        "name": "新街口",
+        "osm_id": "('node', 5441512445)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7416309,
+          39.9016234
+        ]
+      },
+      "properties": {
+        "name": "潞城",
+        "osm_id": "('node', 5441513452)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3156802,
+          39.6851077
+        ]
+      },
+      "properties": {
+        "name": "生物医药基地",
+        "osm_id": "('node', 5441516142)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3949169,
+          39.9063337
+        ]
+      },
+      "properties": {
+        "name": "天安门东",
+        "osm_id": "('node', 5441520625)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4514799,
+          39.9597061
+        ]
+      },
+      "properties": {
+        "name": "三元桥",
+        "osm_id": "('node', 5441521553)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3039811,
+          39.9312135
+        ]
+      },
+      "properties": {
+        "name": "花园桥",
+        "osm_id": "('node', 5441522470)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3800445,
+          39.9317985
+        ]
+      },
+      "properties": {
+        "name": "北海北",
+        "osm_id": "('node', 5441526453)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.325694,
+          39.7622885
+        ]
+      },
+      "properties": {
+        "name": "高米店南",
+        "osm_id": "('node', 5441536634)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5931678,
+          39.9080845
+        ]
+      },
+      "properties": {
+        "name": "管庄",
+        "osm_id": "('node', 5441536712)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6511833,
+          40.1288586
+        ]
+      },
+      "properties": {
+        "name": "顺义",
+        "osm_id": "('node', 5441544159)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.44415,
+          39.9070982
+        ]
+      },
+      "properties": {
+        "name": "永安里",
+        "osm_id": "('node', 5442185238)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6127053,
+          39.9050518
+        ]
+      },
+      "properties": {
+        "name": "八里桥",
+        "osm_id": "('node', 5442190079)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4082437,
+          40.0405075
+        ]
+      },
+      "properties": {
+        "name": "立水桥南",
+        "osm_id": "('node', 5442212133)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1956719,
+          39.8599934
+        ]
+      },
+      "properties": {
+        "name": "园博园",
+        "osm_id": "('node', 5442227596)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3317017,
+          39.9914779
+        ]
+      },
+      "properties": {
+        "name": "五道口",
+        "osm_id": "('node', 5442237543)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2914302,
+          39.8308852
+        ]
+      },
+      "properties": {
+        "name": "科怡路",
+        "osm_id": "('node', 5442237611)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5108366,
+          39.9216819
+        ]
+      },
+      "properties": {
+        "name": "青年路",
+        "osm_id": "('node', 5444431618)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2880393,
+          39.9574108
+        ]
+      },
+      "properties": {
+        "name": "长春桥",
+        "osm_id": "('node', 5444434450)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2834171,
+          39.9643309
+        ]
+      },
+      "properties": {
+        "name": "火器营",
+        "osm_id": "('node', 5444436956)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3672738,
+          39.9147796
+        ]
+      },
+      "properties": {
+        "name": "灵境胡同",
+        "osm_id": "('node', 5444439979)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3260337,
+          39.7518055
+        ]
+      },
+      "properties": {
+        "name": "枣园",
+        "osm_id": "('node', 5444440441)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6314069,
+          39.9027423
+        ]
+      },
+      "properties": {
+        "name": "通州北苑",
+        "osm_id": "('node', 5444674048)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5709843,
+          39.9090728
+        ]
+      },
+      "properties": {
+        "name": "双桥",
+        "osm_id": "('node', 5444677242)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4066402,
+          40.0737747
+        ]
+      },
+      "properties": {
+        "name": "天通苑",
+        "osm_id": "('node', 5444679354)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5488365,
+          39.9080422
+        ]
+      },
+      "properties": {
+        "name": "传媒大学",
+        "osm_id": "('node', 5444680534)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4112952,
+          39.9322844
+        ]
+      },
+      "properties": {
+        "name": "张自忠路",
+        "osm_id": "('node', 5444681481)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4532399,
+          39.8267264
+        ]
+      },
+      "properties": {
+        "name": "小红门",
+        "osm_id": "('node', 5444690814)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4846211,
+          39.8056285
+        ]
+      },
+      "properties": {
+        "name": "亦庄文化园",
+        "osm_id": "('node', 5444691512)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4995335,
+          39.8017615
+        ]
+      },
+      "properties": {
+        "name": "万源街",
+        "osm_id": "('node', 5444694219)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5564358,
+          39.7825504
+        ]
+      },
+      "properties": {
+        "name": "经海路",
+        "osm_id": "('node', 5444695596)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6789785,
+          40.1313792
+        ]
+      },
+      "properties": {
+        "name": "俸伯",
+        "osm_id": "('node', 5444733365)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4110688,
+          40.0021697
+        ]
+      },
+      "properties": {
+        "name": "大屯路东",
+        "osm_id": "('node', 5447564524)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4809035,
+          40.0020276
+        ]
+      },
+      "properties": {
+        "name": "望京东",
+        "osm_id": "('node', 5447578126)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3747659,
+          39.9750859
+        ]
+      },
+      "properties": {
+        "name": "健德门",
+        "osm_id": "('node', 5447625351)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3196813,
+          39.9225738
+        ]
+      },
+      "properties": {
+        "name": "白堆子",
+        "osm_id": "('node', 5448545746)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1844475,
+          39.9061423
+        ]
+      },
+      "properties": {
+        "name": "古城",
+        "osm_id": "('node', 5448550393)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4418815,
+          39.8445478
+        ]
+      },
+      "properties": {
+        "name": "成寿寺",
+        "osm_id": "('node', 5448554757)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4556066,
+          39.9322013
+        ]
+      },
+      "properties": {
+        "name": "团结湖",
+        "osm_id": "('node', 5448561568)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4562886,
+          39.940129
+        ]
+      },
+      "properties": {
+        "name": "农业展览馆",
+        "osm_id": "('node', 5448567458)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4562709,
+          39.9482568
+        ]
+      },
+      "properties": {
+        "name": "亮马桥",
+        "osm_id": "('node', 5448569279)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3991828,
+          39.9758344
+        ]
+      },
+      "properties": {
+        "name": "安贞门",
+        "osm_id": "('node', 5448580676)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3630635,
+          39.9749126
+        ]
+      },
+      "properties": {
+        "name": "牡丹园",
+        "osm_id": "('node', 5448581898)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3477745,
+          39.9748659
+        ]
+      },
+      "properties": {
+        "name": "西土城",
+        "osm_id": "('node', 5448585739)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2999736,
+          39.9743281
+        ]
+      },
+      "properties": {
+        "name": "苏州街",
+        "osm_id": "('node', 5448587388)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.318448,
+          39.9312548
+        ]
+      },
+      "properties": {
+        "name": "白石桥南",
+        "osm_id": "('node', 5448589968)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4725535,
+          40.0263879
+        ]
+      },
+      "properties": {
+        "name": "善各庄",
+        "osm_id": "('node', 5448590861)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.388548,
+          39.9554944
+        ]
+      },
+      "properties": {
+        "name": "安德里北街",
+        "osm_id": "('node', 5448593092)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2878965,
+          39.9451275
+        ]
+      },
+      "properties": {
+        "name": "车道沟",
+        "osm_id": "('node', 5453371982)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2981946,
+          39.8573762
+        ]
+      },
+      "properties": {
+        "name": "泥洼",
+        "osm_id": "('node', 5453382713)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2919093,
+          39.9218994
+        ]
+      },
+      "properties": {
+        "name": "西钓鱼台",
+        "osm_id": "('node', 5453388186)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3043065,
+          39.8961589
+        ]
+      },
+      "properties": {
+        "name": "莲花桥",
+        "osm_id": "('node', 5453394777)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2975967,
+          39.8496396
+        ]
+      },
+      "properties": {
+        "name": "丰台站",
+        "osm_id": "('node', 5453410797)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3151056,
+          39.8935411
+        ]
+      },
+      "properties": {
+        "name": "北京西站",
+        "osm_id": "('node', 5463450278)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3466428,
+          39.9996659
+        ]
+      },
+      "properties": {
+        "name": "六道口",
+        "osm_id": "('node', 5687426566)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4555255,
+          39.9159595
+        ]
+      },
+      "properties": {
+        "name": "金台夕照",
+        "osm_id": "('node', 5687481931)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4067673,
+          40.0820885
+        ]
+      },
+      "properties": {
+        "name": "天通苑北",
+        "osm_id": "('node', 5687495579)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4119342,
+          39.9396965
+        ]
+      },
+      "properties": {
+        "name": "北新桥",
+        "osm_id": "('node', 5720933166)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.094557,
+          39.7275574
+        ]
+      },
+      "properties": {
+        "name": "阎村东",
+        "osm_id": "('node', 5779155490)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1649357,
+          39.9385482
+        ]
+      },
+      "properties": {
+        "name": "福寿岭",
+        "osm_id": "('node', 5779214860)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.156827,
+          39.9219237
+        ]
+      },
+      "properties": {
+        "name": "金安桥",
+        "osm_id": "('node', 6172173583)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1795516,
+          39.9264588
+        ]
+      },
+      "properties": {
+        "name": "杨庄",
+        "osm_id": "('node', 6172173584)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2005982,
+          39.9324935
+        ]
+      },
+      "properties": {
+        "name": "西黄村",
+        "osm_id": "('node', 6172173685)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2208854,
+          39.9314101
+        ]
+      },
+      "properties": {
+        "name": "廖公庄",
+        "osm_id": "('node', 6172173686)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2468822,
+          39.9283896
+        ]
+      },
+      "properties": {
+        "name": "田村",
+        "osm_id": "('node', 6172173687)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3921937,
+          39.8893117
+        ]
+      },
+      "properties": {
+        "name": "珠市口",
+        "osm_id": "('node', 6172173698)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3930393,
+          39.8647562
+        ]
+      },
+      "properties": {
+        "name": "永定门外",
+        "osm_id": "('node', 6172173700)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3932245,
+          39.858181
+        ]
+      },
+      "properties": {
+        "name": "木樨园",
+        "osm_id": "('node', 6172173701)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3940324,
+          39.8506537
+        ]
+      },
+      "properties": {
+        "name": "海户屯",
+        "osm_id": "('node', 6172173702)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3948539,
+          39.8355481
+        ]
+      },
+      "properties": {
+        "name": "大红门南",
+        "osm_id": "('node', 6172173703)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3958329,
+          39.8135634
+        ]
+      },
+      "properties": {
+        "name": "和义",
+        "osm_id": "('node', 6172173704)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4030681,
+          39.8037787
+        ]
+      },
+      "properties": {
+        "name": "东高地",
+        "osm_id": "('node', 6172173705)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4124409,
+          39.797982
+        ]
+      },
+      "properties": {
+        "name": "火箭万源",
+        "osm_id": "('node', 6172173706)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4174105,
+          39.7837675
+        ]
+      },
+      "properties": {
+        "name": "五福堂",
+        "osm_id": "('node', 6172173707)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4045447,
+          39.9236287
+        ]
+      },
+      "properties": {
+        "name": "中国美术馆",
+        "osm_id": "('node', 6172173744)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3851622,
+          39.9059702
+        ]
+      },
+      "properties": {
+        "name": "天安门西",
+        "osm_id": "('node', 6447754030)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4355574,
+          39.7712874
+        ]
+      },
+      "properties": {
+        "name": "德茂",
+        "osm_id": "('node', 6488102423)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4428265,
+          39.7593594
+        ]
+      },
+      "properties": {
+        "name": "瀛海",
+        "osm_id": "('node', 6488102424)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3925037,
+          39.8806517
+        ]
+      },
+      "properties": {
+        "name": "天桥",
+        "osm_id": "('node', 6488102425)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1719509,
+          39.9248346
+        ]
+      },
+      "properties": {
+        "name": "苹果园 (封闭改造中)",
+        "osm_id": "('node', 6496364880)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3927722,
+          39.8440139
+        ]
+      },
+      "properties": {
+        "name": "大红门",
+        "osm_id": "('node', 6496364883)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3213598,
+          39.8889326
+        ]
+      },
+      "properties": {
+        "name": "湾子",
+        "osm_id": "('node', 6496364884)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4280068,
+          39.932287
+        ]
+      },
+      "properties": {
+        "name": "东四十条",
+        "osm_id": "('node', 6497754454)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3966927,
+          39.9316439
+        ]
+      },
+      "properties": {
+        "name": "南锣鼓巷",
+        "osm_id": "('node', 6497767616)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3976888,
+          39.9323094
+        ]
+      },
+      "properties": {
+        "name": "南锣鼓巷",
+        "osm_id": "('node', 6497773831)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2713671,
+          40.0011928
+        ]
+      },
+      "properties": {
+        "name": "北宫门站",
+        "osm_id": "('node', 6497814374)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2855319,
+          39.9966984
+        ]
+      },
+      "properties": {
+        "name": "西苑",
+        "osm_id": "('node', 6580603898)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4723407,
+          39.9215918
+        ]
+      },
+      "properties": {
+        "name": "金台路",
+        "osm_id": "('node', 6606206479)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3115201,
+          39.9747132
+        ]
+      },
+      "properties": {
+        "name": "海淀黄庄",
+        "osm_id": "('node', 6606270273)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3315051,
+          39.9061161
+        ]
+      },
+      "properties": {
+        "name": "木樨地（1号线）",
+        "osm_id": "('node', 6617849501)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3465697,
+          39.9058662
+        ]
+      },
+      "properties": {
+        "name": "南礼士路",
+        "osm_id": "('node', 6617849502)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4052789,
+          39.9069496
+        ]
+      },
+      "properties": {
+        "name": "王府井",
+        "osm_id": "('node', 6617849503)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2887714,
+          39.9062159
+        ]
+      },
+      "properties": {
+        "name": "万寿路",
+        "osm_id": "('node', 6617849504)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2680336,
+          39.9062214
+        ]
+      },
+      "properties": {
+        "name": "五棵松",
+        "osm_id": "('node', 6617849505)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2064861,
+          39.9061539
+        ]
+      },
+      "properties": {
+        "name": "八角游乐园",
+        "osm_id": "('node', 6617849506)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2296796,
+          39.9061888
+        ]
+      },
+      "properties": {
+        "name": "八宝山",
+        "osm_id": "('node', 6617849507)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2468996,
+          39.9061931
+        ]
+      },
+      "properties": {
+        "name": "玉泉路",
+        "osm_id": "('node', 6617849508)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3390137,
+          39.9652731
+        ]
+      },
+      "properties": {
+        "name": "大钟寺",
+        "osm_id": "('node', 6617852356)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.425641,
+          39.9669843
+        ]
+      },
+      "properties": {
+        "name": "光熙门",
+        "osm_id": "('node', 6617852357)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4266211,
+          39.9568025
+        ]
+      },
+      "properties": {
+        "name": "柳芳",
+        "osm_id": "('node', 6617852358)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3140843,
+          40.0317646
+        ]
+      },
+      "properties": {
+        "name": "上地",
+        "osm_id": "('node', 6617852359)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3132033,
+          40.0695732
+        ]
+      },
+      "properties": {
+        "name": "龙泽",
+        "osm_id": "('node', 6617852360)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7018094,
+          39.9021187
+        ]
+      },
+      "properties": {
+        "name": "北运河东",
+        "osm_id": "('node', 6713165204)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6802742,
+          39.8707455
+        ]
+      },
+      "properties": {
+        "name": "土桥",
+        "osm_id": "('node', 6716238810)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3670609,
+          39.947325
+        ]
+      },
+      "properties": {
+        "name": "积水潭",
+        "osm_id": "('node', 6724002358)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3929416,
+          39.8982814
+        ]
+      },
+      "properties": {
+        "name": "前门",
+        "osm_id": "('node', 6724644886)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3500666,
+          39.922313
+        ]
+      },
+      "properties": {
+        "name": "阜成门",
+        "osm_id": "('node', 6724644887)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3572147,
+          39.8980394
+        ]
+      },
+      "properties": {
+        "name": "长椿街",
+        "osm_id": "('node', 6724644888)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4020676,
+          39.9476674
+        ]
+      },
+      "properties": {
+        "name": "安定门",
+        "osm_id": "('node', 6724644889)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3594824,
+          39.7340741
+        ]
+      },
+      "properties": {
+        "name": "大兴新城",
+        "osm_id": "('node', 6818020472)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5475285,
+          39.8479616
+        ]
+      },
+      "properties": {
+        "name": "黄厂",
+        "osm_id": "('node', 6930098566)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5641046,
+          39.8555351
+        ]
+      },
+      "properties": {
+        "name": "郎辛庄",
+        "osm_id": "('node', 6930098568)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5927827,
+          39.8577135
+        ]
+      },
+      "properties": {
+        "name": "黑庄户",
+        "osm_id": "('node', 6930098569)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6267073,
+          39.8624408
+        ]
+      },
+      "properties": {
+        "name": "万盛西",
+        "osm_id": "('node', 6930098570)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6890142,
+          39.8553801
+        ]
+      },
+      "properties": {
+        "name": "花庄",
+        "osm_id": "('node', 6930098785)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.673529,
+          39.8481659
+        ]
+      },
+      "properties": {
+        "name": "环球度假区",
+        "osm_id": "('node', 6930098800)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3140715,
+          39.8431792
+        ]
+      },
+      "properties": {
+        "name": "首经贸",
+        "osm_id": "('node', 7074344502)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3086826,
+          40.0397784
+        ]
+      },
+      "properties": {
+        "name": "清河站",
+        "osm_id": "('node', 7116372189)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6795103,
+          39.8618619
+        ]
+      },
+      "properties": {
+        "name": "高楼金",
+        "osm_id": "('node', 7117305974)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4427211,
+          39.8328015
+        ]
+      },
+      "properties": {
+        "name": "肖村",
+        "osm_id": "('node', 7278207455)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3067798,
+          39.818274
+        ]
+      },
+      "properties": {
+        "name": "白盆窑",
+        "osm_id": "('node', 7631365912)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3139452,
+          39.8278468
+        ]
+      },
+      "properties": {
+        "name": "花乡东桥",
+        "osm_id": "('node', 7631365924)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2906678,
+          39.8395949
+        ]
+      },
+      "properties": {
+        "name": "丰台南路",
+        "osm_id": "('node', 7780780502)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0105495,
+          39.7037753
+        ]
+      },
+      "properties": {
+        "name": "马各庄",
+        "osm_id": "('node', 7796839024)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.000048,
+          39.7002557
+        ]
+      },
+      "properties": {
+        "name": "饶乐府",
+        "osm_id": "('node', 7796853448)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2912488,
+          39.8239138
+        ]
+      },
+      "properties": {
+        "name": "丰台科技园",
+        "osm_id": "('node', 7860304588)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2877862,
+          39.8541721
+        ]
+      },
+      "properties": {
+        "name": "丰台东大街",
+        "osm_id": "('node', 7860304589)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.308808,
+          39.8857143
+        ]
+      },
+      "properties": {
+        "name": "六里桥东",
+        "osm_id": "('node', 7860304590)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.322677,
+          39.7883939
+        ]
+      },
+      "properties": {
+        "name": "西红门",
+        "osm_id": "('node', 7860703071)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3244805,
+          39.7730301
+        ]
+      },
+      "properties": {
+        "name": "高米店北",
+        "osm_id": "('node', 7860703072)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3263162,
+          39.7417561
+        ]
+      },
+      "properties": {
+        "name": "清源路",
+        "osm_id": "('node', 7860703073)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3265186,
+          39.730422
+        ]
+      },
+      "properties": {
+        "name": "黄村西大街",
+        "osm_id": "('node', 7860703074)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3266541,
+          39.7215049
+        ]
+      },
+      "properties": {
+        "name": "黄村火车站",
+        "osm_id": "('node', 7860703075)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3130186,
+          39.7111046
+        ]
+      },
+      "properties": {
+        "name": "义和庄",
+        "osm_id": "('node', 7860703076)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3036739,
+          39.9982949
+        ]
+      },
+      "properties": {
+        "name": "圆明园",
+        "osm_id": "('node', 7861046849)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3097264,
+          39.9907813
+        ]
+      },
+      "properties": {
+        "name": "北京大学东门",
+        "osm_id": "('node', 7861046850)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3103787,
+          39.9826574
+        ]
+      },
+      "properties": {
+        "name": "中关村",
+        "osm_id": "('node', 7861046851)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3157286,
+          39.965744
+        ]
+      },
+      "properties": {
+        "name": "人民大学",
+        "osm_id": "('node', 7861046852)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3171815,
+          39.9563044
+        ]
+      },
+      "properties": {
+        "name": "魏公村",
+        "osm_id": "('node', 7861046853)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3668145,
+          39.9225455
+        ]
+      },
+      "properties": {
+        "name": "西四",
+        "osm_id": "('node', 7861046854)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3682029,
+          39.8774369
+        ]
+      },
+      "properties": {
+        "name": "陶然亭",
+        "osm_id": "('node', 7861046855)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.365207,
+          39.8516352
+        ]
+      },
+      "properties": {
+        "name": "马家堡",
+        "osm_id": "('node', 7861046856)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4122352,
+          39.9573887
+        ]
+      },
+      "properties": {
+        "name": "和平里北街",
+        "osm_id": "('node', 7896842489)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4145694,
+          39.8822567
+        ]
+      },
+      "properties": {
+        "name": "天坛东门",
+        "osm_id": "('node', 7896842490)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5730712,
+          39.9228365
+        ]
+      },
+      "properties": {
+        "name": "黄渠",
+        "osm_id": "('node', 7896877677)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3379903,
+          39.931061
+        ]
+      },
+      "properties": {
+        "name": "车公庄西",
+        "osm_id": "('node', 7896877678)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3273554,
+          39.8431736
+        ]
+      },
+      "properties": {
+        "name": "纪家庙",
+        "osm_id": "('node', 7896877679)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4455603,
+          39.921482
+        ]
+      },
+      "properties": {
+        "name": "东大桥",
+        "osm_id": "('node', 7896877680)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3229284,
+          39.9749496
+        ]
+      },
+      "properties": {
+        "name": "知春里",
+        "osm_id": "('node', 7896877681)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074126,
+          39.8444927
+        ]
+      },
+      "properties": {
+        "name": "石榴庄",
+        "osm_id": "('node', 7896877682)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4547308,
+          39.8056107
+        ]
+      },
+      "properties": {
+        "name": "旧宫",
+        "osm_id": "('node', 8073260825)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4742673,
+          39.801744
+        ]
+      },
+      "properties": {
+        "name": "亦庄桥",
+        "osm_id": "('node', 8073260826)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.507463,
+          39.7920207
+        ]
+      },
+      "properties": {
+        "name": "荣京东街",
+        "osm_id": "('node', 8073260827)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.515857,
+          39.7816956
+        ]
+      },
+      "properties": {
+        "name": "荣昌东街",
+        "osm_id": "('node', 8073260828)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5960819,
+          39.8115669
+        ]
+      },
+      "properties": {
+        "name": "亦庄火车站",
+        "osm_id": "('node', 8073260829)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5856212,
+          39.8025523
+        ]
+      },
+      "properties": {
+        "name": "次渠",
+        "osm_id": "('node', 8073260830)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2854666,
+          39.8064524
+        ]
+      },
+      "properties": {
+        "name": "大葆台",
+        "osm_id": "('node', 8073272027)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2065044,
+          39.7625141
+        ]
+      },
+      "properties": {
+        "name": "长阳",
+        "osm_id": "('node', 8073272028)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1833797,
+          39.759377
+        ]
+      },
+      "properties": {
+        "name": "篱笆房",
+        "osm_id": "('node', 8073272029)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1788414,
+          39.7465971
+        ]
+      },
+      "properties": {
+        "name": "广阳城",
+        "osm_id": "('node', 8073272030)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1773354,
+          39.728465
+        ]
+      },
+      "properties": {
+        "name": "良乡大学城北",
+        "osm_id": "('node', 8073272031)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1702973,
+          39.7219018
+        ]
+      },
+      "properties": {
+        "name": "良乡大学城",
+        "osm_id": "('node', 8073272032)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1500157,
+          39.7218688
+        ]
+      },
+      "properties": {
+        "name": "良乡大学城西",
+        "osm_id": "('node', 8073272033)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1189698,
+          39.7218523
+        ]
+      },
+      "properties": {
+        "name": "苏庄",
+        "osm_id": "('node', 8073272034)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5493705,
+          40.068903
+        ]
+      },
+      "properties": {
+        "name": "国展",
+        "osm_id": "('node', 8073325252)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5518402,
+          40.0833437
+        ]
+      },
+      "properties": {
+        "name": "花梨坎",
+        "osm_id": "('node', 8073325253)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5584491,
+          40.1130148
+        ]
+      },
+      "properties": {
+        "name": "后沙峪",
+        "osm_id": "('node', 8073325254)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6035713,
+          40.1274067
+        ]
+      },
+      "properties": {
+        "name": "南法信",
+        "osm_id": "('node', 8073325255)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6555297,
+          39.9174644
+        ]
+      },
+      "properties": {
+        "name": "通州北关",
+        "osm_id": "('node', 8073325257)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6334973,
+          39.9259297
+        ]
+      },
+      "properties": {
+        "name": "物资学院路",
+        "osm_id": "('node', 8073325258)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6103044,
+          39.9235091
+        ]
+      },
+      "properties": {
+        "name": "草房",
+        "osm_id": "('node', 8073325259)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.651623,
+          39.889165
+        ]
+      },
+      "properties": {
+        "name": "九棵树",
+        "osm_id": "('node', 8073325261)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6407547,
+          39.8922857
+        ]
+      },
+      "properties": {
+        "name": "果园",
+        "osm_id": "('node', 8073325262)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.288183,
+          40.093573
+        ]
+      },
+      "properties": {
+        "name": "生命科学园",
+        "osm_id": "('node', 8073325263)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.387583,
+          39.9841327
+        ]
+      },
+      "properties": {
+        "name": "奥体中心",
+        "osm_id": "('node', 8073325264)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3138654,
+          39.8429666
+        ]
+      },
+      "properties": {
+        "name": "首经贸",
+        "osm_id": "('node', 8277164621)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3166795,
+          39.8535213
+        ]
+      },
+      "properties": {
+        "name": "东管头南",
+        "osm_id": "('node', 8277164642)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2426141,
+          39.8472115
+        ]
+      },
+      "properties": {
+        "name": "洪泰庄",
+        "osm_id": "('node', 8278912792)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3733186,
+          39.8641006
+        ]
+      },
+      "properties": {
+        "name": "北京南站",
+        "osm_id": "('node', 8658952312)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0105573,
+          39.7037638
+        ]
+      },
+      "properties": {
+        "name": "马各庄",
+        "osm_id": "('node', 8791341586)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5255476,
+          39.9082528
+        ]
+      },
+      "properties": {
+        "name": "高碑店",
+        "osm_id": "('node', 8978629464)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3454124,
+          39.8445995
+        ]
+      },
+      "properties": {
+        "name": "草桥",
+        "osm_id": "('node', 9122347219)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4544834,
+          39.8635284
+        ]
+      },
+      "properties": {
+        "name": "十里河",
+        "osm_id": "('node', 9147328748)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4721115,
+          39.9145679
+        ]
+      },
+      "properties": {
+        "name": "红庙",
+        "osm_id": "('node', 9150216945)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0339981,
+          39.7085836
+        ]
+      },
+      "properties": {
+        "name": "大石河东",
+        "osm_id": "('node', 9153343830)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0551386,
+          39.7122214
+        ]
+      },
+      "properties": {
+        "name": "星城",
+        "osm_id": "('node', 9153343831)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0804553,
+          39.723022
+        ]
+      },
+      "properties": {
+        "name": "紫草坞",
+        "osm_id": "('node', 9153343832)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497096,
+          39.859977
+        ]
+      },
+      "properties": {
+        "name": "西铁营",
+        "osm_id": "('node', 9365006124)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4049246,
+          39.9147047
+        ]
+      },
+      "properties": {
+        "name": "金鱼胡同",
+        "osm_id": "('node', 9379477284)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1585873,
+          39.9138827
+        ]
+      },
+      "properties": {
+        "name": "北辛安",
+        "osm_id": "('node', 9379477289)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1586061,
+          39.9076653
+        ]
+      },
+      "properties": {
+        "name": "新首钢",
+        "osm_id": "('node', 9379477290)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1552373,
+          39.9209099
+        ]
+      },
+      "properties": {
+        "name": "金安桥",
+        "osm_id": "('node', 9379477292)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3402526,
+          39.8225567
+        ]
+      },
+      "properties": {
+        "name": "新发地",
+        "osm_id": "('node', 9379477293)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6097731,
+          40.0515344
+        ]
+      },
+      "properties": {
+        "name": "首都机场3号航站楼",
+        "osm_id": "('node', 9380267870)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5871495,
+          40.0780123
+        ]
+      },
+      "properties": {
+        "name": "首都机场2号航站楼",
+        "osm_id": "('node', 9380267871)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4898314,
+          39.8430584
+        ]
+      },
+      "properties": {
+        "name": "十八里店",
+        "osm_id": "('node', 9380291879)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.547173,
+          39.8175347
+        ]
+      },
+      "properties": {
+        "name": "北神树",
+        "osm_id": "('node', 9380291880)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6052556,
+          39.7918725
+        ]
+      },
+      "properties": {
+        "name": "嘉会湖",
+        "osm_id": "('node', 9380291881)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3275776,
+          39.9310721
+        ]
+      },
+      "properties": {
+        "name": "二里沟",
+        "osm_id": "('node', 9380308680)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1713056,
+          39.9243597
+        ]
+      },
+      "properties": {
+        "name": "苹果园",
+        "osm_id": "('node', 9380332412)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1498174,
+          39.9323418
+        ]
+      },
+      "properties": {
+        "name": "模式口",
+        "osm_id": "('node', 9383939775)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4706068,
+          39.855252
+        ]
+      },
+      "properties": {
+        "name": "周家庄",
+        "osm_id": "('node', 9384986215)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5858895,
+          39.8025378
+        ]
+      },
+      "properties": {
+        "name": "次渠",
+        "osm_id": "('node', 9385028990)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5706243,
+          39.8085973
+        ]
+      },
+      "properties": {
+        "name": "次渠北",
+        "osm_id": "('node', 9385028991)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3658244,
+          39.9462372
+        ]
+      },
+      "properties": {
+        "name": "积水潭",
+        "osm_id": "('node', 9385085643)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.364124,
+          39.9667708
+        ]
+      },
+      "properties": {
+        "name": "北太平庄",
+        "osm_id": "('node', 9385085646)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3617483,
+          39.9320831
+        ]
+      },
+      "properties": {
+        "name": "平安里",
+        "osm_id": "('node', 9385088768)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3651624,
+          39.9313232
+        ]
+      },
+      "properties": {
+        "name": "平安里",
+        "osm_id": "('node', 9385088769)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3636148,
+          39.9750791
+        ]
+      },
+      "properties": {
+        "name": "牡丹园",
+        "osm_id": "('node', 9385101461)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3428438,
+          39.8460959
+        ]
+      },
+      "properties": {
+        "name": "草桥",
+        "osm_id": "('node', 9385116432)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3424361,
+          39.8461391
+        ]
+      },
+      "properties": {
+        "name": "草桥",
+        "osm_id": "('node', 9385116433)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3580843,
+          39.8626316
+        ]
+      },
+      "properties": {
+        "name": "景风门",
+        "osm_id": "('node', 9385116436)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.1485756,
+          39.9470576
+        ]
+      },
+      "properties": {
+        "name": "五三",
+        "osm_id": "('node', 9470274656)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.359749,
+          39.8110444
+        ]
+      },
+      "properties": {
+        "name": "新宫",
+        "osm_id": "('node', 9706596471)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3571516,
+          39.9087765
+        ]
+      },
+      "properties": {
+        "name": "太平桥",
+        "osm_id": "('node', 9920410920)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2666477,
+          39.8338003
+        ]
+      },
+      "properties": {
+        "name": "看丹",
+        "osm_id": "('node', 10296512593)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3472515,
+          39.9868013
+        ]
+      },
+      "properties": {
+        "name": "学院桥",
+        "osm_id": "('node', 10605339565)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3457528,
+          40.0136302
+        ]
+      },
+      "properties": {
+        "name": "学知园",
+        "osm_id": "('node', 10605339566)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3367846,
+          40.0338705
+        ]
+      },
+      "properties": {
+        "name": "清河小营桥",
+        "osm_id": "('node', 10605339567)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4285738,
+          39.941652
+        ]
+      },
+      "properties": {
+        "name": "东直门",
+        "osm_id": "('node', 10655378373)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4276776,
+          39.9397031
+        ]
+      },
+      "properties": {
+        "name": "东直门",
+        "osm_id": "('node', 10655378374)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4294829,
+          39.9400378
+        ]
+      },
+      "properties": {
+        "name": "东直门",
+        "osm_id": "('node', 10655378375)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5519702,
+          39.9746043
+        ]
+      },
+      "properties": {
+        "name": "东坝北",
+        "osm_id": "('node', 10671369627)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4630616,
+          40.1296313
+        ]
+      },
+      "properties": {
+        "name": "未来科学城北",
+        "osm_id": "('node', 11478693895)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4605159,
+          40.1141592
+        ]
+      },
+      "properties": {
+        "name": "未来科学城",
+        "osm_id": "('node', 11478693919)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4359844,
+          40.0671005
+        ]
+      },
+      "properties": {
+        "name": "天通苑东",
+        "osm_id": "('node', 11478693941)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4360139,
+          40.0496531
+        ]
+      },
+      "properties": {
+        "name": "清河营",
+        "osm_id": "('node', 11478723285)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4355362,
+          40.0330877
+        ]
+      },
+      "properties": {
+        "name": "红军营",
+        "osm_id": "('node', 11478723290)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4442038,
+          39.9323548
+        ]
+      },
+      "properties": {
+        "name": "工人体育场",
+        "osm_id": "('node', 11481744716)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4348149,
+          39.9644456
+        ]
+      },
+      "properties": {
+        "name": "西坝河",
+        "osm_id": "('node', 11481744722)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4365482,
+          39.9485486
+        ]
+      },
+      "properties": {
+        "name": "左家庄",
+        "osm_id": "('node', 11481744738)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4411862,
+          39.9712918
+        ]
+      },
+      "properties": {
+        "name": "太阳宫",
+        "osm_id": "('node', 11496710264)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4057013,
+          40.0515049
+        ]
+      },
+      "properties": {
+        "name": "立水桥",
+        "osm_id": "('node', 12205156087)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2682827,
+          39.9425119
+        ]
+      },
+      "properties": {
+        "name": "四季青桥",
+        "osm_id": "('node', 12416948175)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5411241,
+          39.9507876
+        ]
+      },
+      "properties": {
+        "name": "东坝南",
+        "osm_id": "('node', 12417931579)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.541359,
+          39.964645
+        ]
+      },
+      "properties": {
+        "name": "东坝",
+        "osm_id": "('node', 12417931584)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4994848,
+          39.9792261
+        ]
+      },
+      "properties": {
+        "name": "驼房营",
+        "osm_id": "('node', 12423657577)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4850346,
+          39.9791304
+        ]
+      },
+      "properties": {
+        "name": "高家园",
+        "osm_id": "('node', 12423657578)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4739564,
+          39.9713939
+        ]
+      },
+      "properties": {
+        "name": "将台西",
+        "osm_id": "('node', 12423657579)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5283562,
+          39.9733361
+        ]
+      },
+      "properties": {
+        "name": "东坝西",
+        "osm_id": "('node', 12423757161)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3488274,
+          39.9663129
+        ]
+      },
+      "properties": {
+        "name": "蓟门桥",
+        "osm_id": "('node', 12430713733)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3758342,
+          39.9668285
+        ]
+      },
+      "properties": {
+        "name": "马甸桥",
+        "osm_id": "('node', 12430713734)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4009974,
+          39.9675012
+        ]
+      },
+      "properties": {
+        "name": "安贞桥",
+        "osm_id": "('node', 12430713735)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2767052,
+          39.9558597
+        ]
+      },
+      "properties": {
+        "name": "蓝靛厂",
+        "osm_id": "('node', 12430714719)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4934435,
+          39.9341652
+        ]
+      },
+      "properties": {
+        "name": "石佛营",
+        "osm_id": "('node', 12430747506)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4998836,
+          39.9429982
+        ]
+      },
+      "properties": {
+        "name": "朝阳站",
+        "osm_id": "('node', 12430747507)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5212923,
+          39.9465956
+        ]
+      },
+      "properties": {
+        "name": "姚家园",
+        "osm_id": "('node', 12430747508)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4118056,
+          39.9677829
+        ]
+      },
+      "properties": {
+        "name": "和平西桥",
+        "osm_id": "('node', 12435251103)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4242608,
+          39.9680699
+        ]
+      },
+      "properties": {
+        "name": "光熙门",
+        "osm_id": "('node', 12435251104)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4360547,
+          39.9644089
+        ]
+      },
+      "properties": {
+        "name": "西坝河",
+        "osm_id": "('node', 12435251105)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3015966,
+          39.9607503
+        ]
+      },
+      "properties": {
+        "name": "苏州桥",
+        "osm_id": "('node', 12435287602)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3378309,
+          39.9661057
+        ]
+      },
+      "properties": {
+        "name": "大钟寺",
+        "osm_id": "('node', 12435287603)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3152771,
+          39.9061612
+        ]
+      },
+      "properties": {
+        "name": "军事博物馆（9号线）",
+        "osm_id": "('node', 12438117726)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3469946895708,
+          39.940471817374885
+        ]
+      },
+      "properties": {
+        "name": "西直门",
+        "osm_id": "('way', 72592765)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.21278104542827,
+          39.79359070116543
+        ]
+      },
+      "properties": {
+        "name": "稻田",
+        "osm_id": "('way', 93577810)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.66273081824896,
+          39.882530571586805
+        ]
+      },
+      "properties": {
+        "name": "梨园",
+        "osm_id": "('way', 115505288)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.40651669781847,
+          40.06511781939345
+        ]
+      },
+      "properties": {
+        "name": "天通苑南",
+        "osm_id": "('way', 121231322)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.41165522703152,
+          39.92311949936492
+        ]
+      },
+      "properties": {
+        "name": "东四",
+        "osm_id": "('way', 121375734)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.28791462423433,
+          39.94516836395948
+        ]
+      },
+      "properties": {
+        "name": "车道沟站",
+        "osm_id": "('way', 121653924)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3410691280781,
+          40.05828996082299
+        ]
+      },
+      "properties": {
+        "name": "育新",
+        "osm_id": "('way', 126857011)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.32602374978487,
+          39.75165589770801
+        ]
+      },
+      "properties": {
+        "name": "Station 416",
+        "osm_id": "('way', 128511305)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.30754657693252,
+          40.10299913438768
+        ]
+      },
+      "properties": {
+        "name": "朱辛庄",
+        "osm_id": "('way', 136979357)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.28806198486902,
+          39.95741095221533
+        ]
+      },
+      "properties": {
+        "name": "长春桥站",
+        "osm_id": "('way', 152587337)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.32735885,
+          39.8431511
+        ]
+      },
+      "properties": {
+        "name": "纪家庙站",
+        "osm_id": "('way', 152589305)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.36500186681006,
+          39.84448494318729
+        ]
+      },
+      "properties": {
+        "name": "角门西",
+        "osm_id": "('way', 152589307)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.51081455,
+          39.92169500000001
+        ]
+      },
+      "properties": {
+        "name": "Station 421",
+        "osm_id": "('way', 169078154)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.27114895000001,
+          39.93139560000001
+        ]
+      },
+      "properties": {
+        "name": "海淀五路居",
+        "osm_id": "('way', 169079144)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.39316251880389,
+          39.86596047167278
+        ]
+      },
+      "properties": {
+        "name": "永定门外",
+        "osm_id": "('way', 175226706)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.32062340747655,
+          40.08661588288519
+        ]
+      },
+      "properties": {
+        "name": "育知路",
+        "osm_id": "('way', 301638280)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.18098255391263,
+          39.856743404172896
+        ]
+      },
+      "properties": {
+        "name": "张郭庄",
+        "osm_id": "('way', 329393593)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.19556657516667,
+          39.860029034447464
+        ]
+      },
+      "properties": {
+        "name": "园博园",
+        "osm_id": "('way', 330150818)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.47547316591553,
+          39.98316331786442
+        ]
+      },
+      "properties": {
+        "name": "望京南",
+        "osm_id": "('way', 330398340)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.72736966654833,
+          39.902226399014445
+        ]
+      },
+      "properties": {
+        "name": "东夏园",
+        "osm_id": "('way', 331385472)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.68184615,
+          39.90184495
+        ]
+      },
+      "properties": {
+        "name": "北运河西",
+        "osm_id": "('way', 331385473)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.66758367885463,
+          39.90961977032237
+        ]
+      },
+      "properties": {
+        "name": "通运门",
+        "osm_id": "('way', 331385474)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.59389465,
+          39.92432995
+        ]
+      },
+      "properties": {
+        "name": "常营",
+        "osm_id": "('way', 334620989)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.65508273616788,
+          39.91667145618905
+        ]
+      },
+      "properties": {
+        "name": "通州北关",
+        "osm_id": "('way', 334620990)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.09454422719175,
+          39.72755607042354
+        ]
+      },
+      "properties": {
+        "name": "阎村东",
+        "osm_id": "('way', 550313875)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.44286109661921,
+          39.75931874529912
+        ]
+      },
+      "properties": {
+        "name": "瀛海",
+        "osm_id": "('way', 653846449)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.67929433738816,
+          39.8615869780829
+        ]
+      },
+      "properties": {
+        "name": "高楼金",
+        "osm_id": "('way', 691433531)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.66468100259813,
+          39.862322040959576
+        ]
+      },
+      "properties": {
+        "name": "群芳",
+        "osm_id": "('way', 691433562)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6509628977401,
+          39.862333275269314
+        ]
+      },
+      "properties": {
+        "name": "万盛东",
+        "osm_id": "('way', 691433579)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.33680595248002,
+          40.03387741691384
+        ]
+      },
+      "properties": {
+        "name": "清河小营桥",
+        "osm_id": "('way', 860024330)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.31686177600407,
+          39.854400013508446
+        ]
+      },
+      "properties": {
+        "name": "东管头南",
+        "osm_id": "('way', 890562439)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.31387466994833,
+          39.82768849369959
+        ]
+      },
+      "properties": {
+        "name": "花乡东桥",
+        "osm_id": "('way', 890562440)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3070069475145,
+          39.81823238166588
+        ]
+      },
+      "properties": {
+        "name": "白盆窑",
+        "osm_id": "('way', 890562449)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.12430648882834,
+          40.066900129050076
+        ]
+      },
+      "properties": {
+        "name": "北安河",
+        "osm_id": "('way', 890588022)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.15584815511379,
+          40.067548537930996
+        ]
+      },
+      "properties": {
+        "name": "温阳路",
+        "osm_id": "('way', 890588029)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.18257438497253,
+          40.06750657306158
+        ]
+      },
+      "properties": {
+        "name": "稻香湖路",
+        "osm_id": "('way', 890592405)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.28630455737616,
+          39.997475872995246
+        ]
+      },
+      "properties": {
+        "name": "西苑",
+        "osm_id": "('way', 890600582)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.23244290000001,
+          40.07066925
+        ]
+      },
+      "properties": {
+        "name": "永丰",
+        "osm_id": "('way', 890759491)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2811307230601,
+          39.8349953100498
+        ]
+      },
+      "properties": {
+        "name": "Station 447",
+        "osm_id": "('way', 891180455)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.29553214377358,
+          39.849330494109054
+        ]
+      },
+      "properties": {
+        "name": "丰台站",
+        "osm_id": "('way', 891180457)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.29861717172622,
+          39.84869623189283
+        ]
+      },
+      "properties": {
+        "name": "丰台站",
+        "osm_id": "('way', 891180458)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.32690423441879,
+          39.86767222911123
+        ]
+      },
+      "properties": {
+        "name": "丽泽商务区",
+        "osm_id": "('way', 891180463)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.33074356606285,
+          39.87617349149186
+        ]
+      },
+      "properties": {
+        "name": "Station 451",
+        "osm_id": "('way', 891180464)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.54710281874989,
+          39.81758623851757
+        ]
+      },
+      "properties": {
+        "name": "Station 452",
+        "osm_id": "('way', 982144746)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35731501035725,
+          39.88931239329007
+        ]
+      },
+      "properties": {
+        "name": "牛街",
+        "osm_id": "('way', 988860257)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.45445421183373,
+          39.86358251776423
+        ]
+      },
+      "properties": {
+        "name": "Station 454",
+        "osm_id": "('way', 989789105)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.31402411505093,
+          39.84315563527581
+        ]
+      },
+      "properties": {
+        "name": "Station 455",
+        "osm_id": "('way', 1016804242)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3165799279339,
+          39.853184513306005
+        ]
+      },
+      "properties": {
+        "name": "东管头南",
+        "osm_id": "('way', 1126037291)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.29919726574184,
+          39.849029449828784
+        ]
+      },
+      "properties": {
+        "name": "丰台站地铁站",
+        "osm_id": "('way', 1206305771)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.32400542816357,
+          39.77166740606373
+        ]
+      },
+      "properties": {
+        "name": "Station 458",
+        "osm_id": "('way', 1226872765)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.00004317323413,
+          39.70027855905956
+        ]
+      },
+      "properties": {
+        "name": "饶乐府",
+        "osm_id": "('way', 1234808370)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.00004317323413,
+          39.70027855905956
+        ]
+      },
+      "properties": {
+        "name": "饶乐府",
+        "osm_id": "('way', 1234808370)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.19570427197169,
+          39.860379723648116
+        ]
+      },
+      "properties": {
+        "name": "Station 461",
+        "osm_id": "('way', 1260596679)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.19903254190655,
+          39.933009151722736
+        ]
+      },
+      "properties": {
+        "name": "Station 462",
+        "osm_id": "('way', 1324042271)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34638005000001,
+          40.01457155
+        ]
+      },
+      "properties": {
+        "name": "Station 463",
+        "osm_id": "('way', 1340828349)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34564691163504,
+          40.01267825564112
+        ]
+      },
+      "properties": {
+        "name": "Station 464",
+        "osm_id": "('way', 1340828351)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.28169922286149,
+          39.965620009998425
+        ]
+      },
+      "properties": {
+        "name": "火器营A2口",
+        "osm_id": "('way', 1343945424)"
+      }
+    }
+  ]
+}

@@ -55,6 +55,13 @@ CITIES = {
         'name': 'Berlin, Germany',
         'center': [52.5200, 13.4050],
         'zoom': 11
+    },
+    'beijing': {
+        'cache_prefix': 'beijing', 
+        'display_name': 'Beijing',
+        'name': 'Beijing, China',
+        'center': [39.9042, 116.4074],
+        'zoom': 11
     }
 }
 
