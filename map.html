@@ -857,17 +857,27 @@
                     }
                     
                     if (useOSMNetwork) {
-                        // OSM MODE: Update center marker immediately, delay expensive calculation
+                        // OSM MODE: Ultra-responsive real-time calculation with NetworKit backend!
                         const center = map.getCenter();
+                        
+                        // Update center marker immediately for responsive feedback
                         updateCenterMarker(center);
                         
-                        // Wait for movement to stop before calculating expensive OSM routes
-                        moveTimeout = setTimeout(() => {
-                            isMoving = false;
-                            if (map) {
-                                updateClosestStationsWithCenter(map.getCenter());
-                            }
-                        }, 300); // 300ms delay after movement stops
+                        // Check if we have cached data for instant response
+                        const cached = distanceCache.get(center.lat, center.lng);
+                        if (cached) {
+                            // INSTANT response with cached data - render immediately for smooth real-time updates
+                            updateClosestStationsWithCenter(center);
+                            isMoving = false; // No need to wait since we have instant data
+                        } else {
+                            // No cache - use minimal delay to prevent excessive API calls while maintaining responsiveness
+                            moveTimeout = setTimeout(() => {
+                                isMoving = false;
+                                if (map) {
+                                    updateClosestStationsWithCenter(map.getCenter());
+                                }
+                            }, 100); // Further reduced from 150ms to 100ms for ultra-responsive feel
+                        }
                     } else {
                         // EUCLIDEAN MODE: Calculate immediately on the fly for smooth real-time effect
                         const center = map.getCenter();
@@ -888,10 +898,9 @@
                         clearTimeout(moveTimeout);
                     }
                     isMoving = false;
-                    // Final update when movement completely stops (mainly for OSM mode)
-                    if (useOSMNetwork) {
-                        updateClosestStations();
-                    }
+                    // Final update when movement completely stops for both modes
+                    // This ensures accuracy after movement and handles any missed updates
+                    updateClosestStations();
                 });
                 
                 // Show info modal on initial load
@@ -1041,7 +1050,7 @@
                 this.currentCity = null; // Track which city the cache is for
             }
             
-            getCacheKey(lat, lng, precision = 4) { // ~100m precision for responsive caching
+            getCacheKey(lat, lng, precision = 4) { // ~100m precision for responsive caching while maintaining accuracy
                 // Round to specified decimal places to create cache key
                 const roundedLat = Math.round(lat * Math.pow(10, precision)) / Math.pow(10, precision);
                 const roundedLng = Math.round(lng * Math.pow(10, precision)) / Math.pow(10, precision);
@@ -1448,27 +1457,31 @@
         
         async function calculateOSMDistances(center, stations, calculationId = null) {
             try {
+                // ULTRA-FAST REAL-TIME OSM CALCULATIONS: Powered by NetworKit for smooth live movement updates!
+                // Smart caching system ensures instant responses for previously calculated locations
+                // This enables real-time walking distance calculations while panning and zooming the map
+                
                 // Validate input parameters
                 if (!center || !center.lat || !center.lng || !stations || stations.length === 0) {
-                    console.error('Invalid parameters for OSM distance calculation', { center, stationsCount: stations ? stations.length : 0 });
+                    logger.error('Invalid parameters for OSM distance calculation', { center, stationsCount: stations ? stations.length : 0 });
                     throw new Error('Invalid parameters');
                 }
                 
                 // Check if calculation is still current
                 if (calculationId && calculationId !== currentCalculationId) {
-                    console.log(`⏭️ OSM calculation ${calculationId} cancelled at start`);
+                    logger.log(`⏭️ OSM calculation ${calculationId} cancelled at start`);
                     throw new Error('Calculation cancelled');
                 }
                 
-                // Check cache first for instant response
+                // Check cache first for instant response - CRITICAL for real-time performance
                 const cached = distanceCache.get(center.lat, center.lng);
                 if (cached) {
-                    console.log(`✅ Using cached OSM data for ${currentCity}`);
+                    logger.log(`🚀 Instant OSM response from cache for ${currentCity} - enabling real-time movement!`);
                     return cached; // Use cached data directly
                 }
                 
-                console.log(`🔄 Calculating OSM routes for ${currentCity} with ${stations.length} stations...`);
-                console.log(`📍 Sending OSM request with city: ${currentCity}`);
+                logger.log(`🔄 Calculating OSM routes for ${currentCity} with ${stations.length} stations...`);
+                logger.log(`📍 Sending OSM request with city: ${currentCity}`);
                 const requestStart = performance.now();
                 
                 const response = await fetch(`${API_BASE_URL}/walking-distances-batch`, {
@@ -1519,7 +1532,7 @@
                         });
                         
                         if (validRoute.length < station.route.length) {
-                            console.warn(`⚠️ Filtered ${station.route.length - validRoute.length} invalid route points for ${station.name}`);
+                            logger.warn(`⚠️ Filtered ${station.route.length - validRoute.length} invalid route points for ${station.name}`);
                         }
                         
                         station.route = validRoute;
@@ -1528,10 +1541,10 @@
                     return station;
                 }).filter(station => station !== null);
                 
-                console.log(`✅ OSM validation: ${result.length}/${rawResult.length} stations valid`);
+                logger.log(`✅ OSM validation: ${result.length}/${rawResult.length} stations valid`);
                 
                 // Debug: Log all stations being returned for debugging
-                console.log('🔍 Detailed OSM response stations:', result.map(s => ({
+                logger.log('🔍 Detailed OSM response stations:', result.map(s => ({
                     name: s.name,
                     lat: s.lat,
                     lng: s.lng,
@@ -1540,9 +1553,10 @@
                 })));
                 
                 const requestTime = performance.now() - requestStart;
-                console.log(`✅ OSM calculation completed in ${requestTime.toFixed(0)}ms`);
+                logger.log(`✅ OSM calculation completed in ${requestTime.toFixed(0)}ms - ready for real-time caching!`);
                 
-                // Cache the result for instant future responses
+                // Cache the result for instant future responses - CRITICAL for ultra-responsive real-time movement
+                // The fast NetworKit backend combined with smart caching enables smooth real-time updates
                 distanceCache.set(center.lat, center.lng, result);
                 
                 return result;
@@ -1550,7 +1564,7 @@
                 if (error.message === 'Calculation cancelled') {
                     throw error; // Re-throw cancellation errors
                 }
-                console.error('Error calculating OSM distances:', error);
+                logger.error('Error calculating OSM distances:', error);
                 // Fallback to fully optimized Euclidean distance
                 return calculateEuclideanDistancesWithCache(center);
             }
