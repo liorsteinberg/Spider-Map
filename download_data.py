@@ -12,6 +12,7 @@ import json
 import os
 import argparse
 import numpy as np
+import requests
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -33,6 +34,11 @@ CITIES = {
         'name': 'Beijing, China',
         'display_name': 'Beijing',
         'cache_prefix': 'beijing'
+    },
+    'montreal': {
+        'name': 'Montreal, Quebec, Canada',
+        'display_name': 'Montreal',
+        'cache_prefix': 'montreal'
     }
 }
 
@@ -262,7 +268,207 @@ def download_subway_stations(city_config):
 
     return True
 
-def download_city_data(city_key):
+def download_metro_lines(city_config, skip_if_exists=True):
+    """Download metro line information from Wikidata for stations"""
+    cache_prefix = city_config['cache_prefix']
+    
+    # File paths
+    stations_file = f'CityData/{cache_prefix}_stations.geojson'
+    station_lines_file = f'CityData/{cache_prefix}_station_lines.json'
+    
+    # Check if already exists
+    if skip_if_exists and os.path.exists(station_lines_file):
+        logger.info(f"Metro line data already exists at {station_lines_file}")
+        return True
+    
+    # Check if stations file exists
+    if not os.path.exists(stations_file):
+        logger.warning(f"Stations file not found: {stations_file}")
+        logger.warning("Run download_subway_stations first")
+        return False
+    
+    logger.info(f"Fetching metro line data from Wikidata for {city_config['display_name']}...")
+    
+    # Load stations
+    try:
+        with open(stations_file, 'r', encoding='utf-8') as f:
+            geojson_data = json.load(f)
+    except Exception as e:
+        logger.error(f"Failed to load stations file: {e}")
+        return False
+    
+    # Helper function to query Wikidata
+    def get_wikidata_lines(wikidata_id):
+        """Fetch metro line info from Wikidata using P81 (connecting line)"""
+        if not wikidata_id or not wikidata_id.startswith('Q'):
+            return []
+        
+        # SPARQL query to get connecting lines and their colors
+        sparql_query = f"""
+        SELECT ?line ?lineLabel ?color WHERE {{
+          wd:{wikidata_id} wdt:P81 ?line .
+          OPTIONAL {{ ?line wdt:P465 ?color . }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,fr,de,es,zh". }}
+        }}
+        """
+        
+        url = "https://query.wikidata.org/sparql"
+        params = {
+            'query': sparql_query,
+            'format': 'json'
+        }
+        
+        try:
+            response = requests.get(url, params=params, headers={'User-Agent': 'Spider-Map/1.0'}, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            
+            lines = []
+            for result in data['results']['bindings']:
+                line_uri = result['line']['value']
+                line_qid = line_uri.split('/')[-1]
+                line_label = result.get('lineLabel', {}).get('value', line_qid)
+                line_color = result.get('color', {}).get('value', None)
+                
+                line_info = {
+                    'qid': line_qid,
+                    'label': line_label
+                }
+                if line_color:
+                    line_info['color'] = f"#{line_color}"  # Wikidata returns RGB without #
+                
+                lines.append(line_info)
+            return lines
+        except Exception as e:
+            logger.debug(f"Error fetching Wikidata for {wikidata_id}: {e}")
+            return []
+    
+    # Process stations
+    station_lines = {}
+    stations_processed = 0
+    stations_with_wikidata = 0
+    stations_with_lines = 0
+    
+    # First, try to get wikidata IDs from OSM if not in GeoJSON
+    try:
+        import osmnx as ox
+        logger.info("Fetching additional station metadata from OSM...")
+        osm_stations = ox.features_from_place(
+            city_config['name'],
+            tags={'station': 'subway'}
+        )
+        
+        # Create a mapping of station names to wikidata IDs
+        wikidata_mapping = {}
+        for idx, station in osm_stations.iterrows():
+            if 'name' in station and station['name'] and 'wikidata' in station:
+                wikidata_id = str(station['wikidata'])
+                if wikidata_id and wikidata_id != 'nan':
+                    wikidata_mapping[station['name']] = wikidata_id
+    except Exception as e:
+        logger.warning(f"Could not fetch additional OSM data: {e}")
+        wikidata_mapping = {}
+    
+    # Process each station
+    for feature in geojson_data.get('features', []):
+        if feature['geometry']['type'] != 'Point':
+            continue
+        
+        station_name = feature['properties'].get('name', '')
+        if not station_name:
+            continue
+        
+        stations_processed += 1
+        
+        # Try to get wikidata ID from mapping
+        wikidata_id = wikidata_mapping.get(station_name)
+        
+        if wikidata_id:
+            stations_with_wikidata += 1
+            
+            # Get line info from Wikidata
+            lines = get_wikidata_lines(wikidata_id)
+            
+            if lines:
+                station_lines[station_name] = lines
+                stations_with_lines += 1
+                logger.debug(f"{station_name}: {len(lines)} lines found")
+            
+            # Be nice to Wikidata API
+            time.sleep(0.1)
+    
+    # Save results
+    try:
+        with open(station_lines_file, 'w', encoding='utf-8') as f:
+            json.dump(station_lines, f, indent=2, ensure_ascii=False)
+        
+        file_size = os.path.getsize(station_lines_file) / 1024  # KB
+        logger.info(f"Metro line data saved: {station_lines_file} ({file_size:.1f} KB)")
+        logger.info(f"Summary: {stations_processed} stations, {stations_with_wikidata} with Wikidata, {stations_with_lines} with line data")
+        
+        # Check line colors and create metro_lines.json
+        lines_with_colors = 0
+        all_lines = {}  # Collect all unique lines
+        
+        for station_data in station_lines.values():
+            for line in station_data:
+                line_qid = line['qid']
+                if line_qid not in all_lines:
+                    all_lines[line_qid] = {
+                        'name': line['label'],
+                        'color': line.get('color', '#999999')  # Default gray if no color
+                    }
+                if 'color' in line:
+                    lines_with_colors += 1
+        
+        # Always create metro_lines.json if we have line data
+        if all_lines:
+            metro_lines_file = f'CityData/{cache_prefix}_metro_lines.json'
+            
+            # If no colors from Wikidata, try manual configuration
+            if lines_with_colors == 0:
+                logger.warning("No line colors found in Wikidata!")
+                logger.info("Checking manual color configuration...")
+                
+                # Try to load manual colors
+                manual_colors_file = 'CityData/metro_line_colors.json'
+                if os.path.exists(manual_colors_file):
+                    try:
+                        with open(manual_colors_file, 'r', encoding='utf-8') as f:
+                            manual_data = json.load(f)
+                        
+                        city_colors = manual_data.get('cities', {}).get(cache_prefix, {})
+                        if city_colors and not isinstance(city_colors.get('_comment'), str):
+                            # Update colors from manual configuration
+                            for qid, line_info in city_colors.items():
+                                if qid in all_lines:
+                                    all_lines[qid].update(line_info)
+                            logger.info(f"Applied manual colors for {cache_prefix}")
+                        else:
+                            logger.info(f"No manual colors configured for {cache_prefix}")
+                            logger.info(f"Add colors to {manual_colors_file} for line QIDs: {sorted(all_lines.keys())}")
+                    except Exception as e:
+                        logger.warning(f"Could not load manual colors: {e}")
+                else:
+                    logger.info(f"Manual color file not found: {manual_colors_file}")
+                    logger.info(f"Line QIDs found: {sorted(all_lines.keys())}")
+            
+            # Write metro_lines.json
+            metro_lines_data = {'lines': all_lines}
+            with open(metro_lines_file, 'w', encoding='utf-8') as f:
+                json.dump(metro_lines_data, f, indent=2, ensure_ascii=False)
+            
+            logger.info(f"Created metro lines file: {metro_lines_file}")
+            if lines_with_colors > 0:
+                logger.info(f"Found {len(all_lines)} unique lines with colors from Wikidata")
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"Failed to save metro line data: {e}")
+        return False
+
+def download_city_data(city_key, include_metro_lines=False):
     """Download all data for a specific city"""
     if city_key not in CITIES:
         logger.error(f"Unknown city: {city_key}")
@@ -274,13 +480,24 @@ def download_city_data(city_key):
     
     start_time = time.time()
     
+    # Determine number of steps based on options
+    total_steps = 2
+    if include_metro_lines:
+        total_steps = 3
+    
     # Download walking network
-    logger.info("Step 1/2: Downloading walking network...")
+    logger.info(f"Step 1/{total_steps}: Downloading walking network...")
     walking_success = download_walking_network(city_config)
     
     # Download subway stations
-    logger.info("Step 2/2: Downloading subway stations...")
+    logger.info(f"Step 2/{total_steps}: Downloading subway stations...")
     subway_success = download_subway_stations(city_config)
+    
+    # Download metro line data if requested
+    metro_lines_success = False
+    if include_metro_lines and subway_success:
+        logger.info(f"Step 3/{total_steps}: Fetching metro line data...")
+        metro_lines_success = download_metro_lines(city_config)
     
     total_time = time.time() - start_time
     
@@ -291,6 +508,8 @@ def download_city_data(city_key):
     logger.info(f"Total download time: {total_time:.2f}s")
     logger.info(f"Walking network: {'✅ Success' if walking_success else '❌ Failed'}")
     logger.info(f"Subway stations: {'✅ Success' if subway_success else '❌ Failed'}")
+    if include_metro_lines:
+        logger.info(f"Metro line data: {'✅ Success' if metro_lines_success else '❌ Failed'}")
     
     if walking_success:
         logger.info("🎯 Next steps:")
@@ -308,8 +527,15 @@ def main():
                        help='Download data for all supported cities')
     parser.add_argument('--list-cities', action='store_true',
                        help='List all supported cities')
+    parser.add_argument('--metro-lines', action='store_true',
+                       help='Also fetch metro line data from Wikidata (optional feature)')
+    parser.add_argument('--skip-metro-lines', action='store_true',
+                       help='Skip fetching metro line data even if available')
     
     args = parser.parse_args()
+    
+    # Determine whether to include metro lines
+    include_metro_lines = args.metro_lines and not args.skip_metro_lines
     
     if args.list_cities:
         logger.info("Supported cities:")
@@ -319,20 +545,22 @@ def main():
     
     if args.all:
         logger.info("Downloading data for all cities...")
+        if include_metro_lines:
+            logger.info("Including metro line data...")
         success_count = 0
         for city_key in CITIES.keys():
-            if download_city_data(city_key):
+            if download_city_data(city_key, include_metro_lines=include_metro_lines):
                 success_count += 1
         
         logger.info(f"Successfully downloaded data for {success_count}/{len(CITIES)} cities")
         return success_count > 0
     
     if args.city:
-        return download_city_data(args.city)
+        return download_city_data(args.city, include_metro_lines=include_metro_lines)
     
     # Default behavior - download Mexico City for backward compatibility
     logger.info("No city specified, downloading Mexico City (default)")
-    return download_city_data('mexico_city')
+    return download_city_data('mexico_city', include_metro_lines=include_metro_lines)
 
 if __name__ == '__main__':
     success = main()
