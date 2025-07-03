@@ -220,7 +220,7 @@ def get_stations():
 @app.route('/api/cities/<city_key>', methods=['POST'])
 def switch_city(city_key):
     """Switch to a different city"""
-    global current_city, networkit_graph, node_mapping, coordinate_mapping
+    global current_city, networkit_graph, node_mapping, coordinate_mapping, _spatial_index, _spatial_node_ids
     
     if city_key not in CITIES:
         return jsonify({
@@ -240,6 +240,8 @@ def switch_city(city_key):
     networkit_graph = None
     node_mapping = None
     coordinate_mapping = None
+    _spatial_index = None
+    _spatial_node_ids = None
     
     # Clear numpy arrays if they exist
     global _node_ids_array, _coords_array
@@ -469,7 +471,7 @@ def find_nearest_node(lat, lng):
 def get_walking_distances_batch():
     """Calculate walking distances using NetworKit"""
     try:
-        global current_city, networkit_graph, node_mapping, coordinate_mapping
+        global current_city, networkit_graph, node_mapping, coordinate_mapping, _spatial_index, _spatial_node_ids
         
         data = request.json
         logger.info(f"Received walking distances request for {len(data.get('stations', []))} stations")
@@ -494,6 +496,8 @@ def get_walking_distances_batch():
             networkit_graph = None
             node_mapping = None
             coordinate_mapping = None
+            _spatial_index = None
+            _spatial_node_ids = None
             
             # Clear numpy arrays if they exist
             global _node_ids_array, _coords_array
