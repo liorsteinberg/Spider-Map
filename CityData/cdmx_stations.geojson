@@ -1336,6 +1336,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -99.1707895,
+          19.3615817
+        ]
+      },
+      "properties": {
+        "name": "Coyoacán",
+        "osm_id": "('node', 30416240)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1770655,
           19.3360586
         ]
