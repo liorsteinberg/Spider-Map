@@ -95,8 +95,10 @@ def fetch_montreal_station_lines():
     print(f"Stations with line data: {len(station_lines)}")
     
     # Save the results
-    with open('montreal_station_lines.json', 'w') as f:
+    output_file = 'CityData/montreal_station_lines.json'
+    with open(output_file, 'w') as f:
         json.dump(station_lines, f, indent=2)
+    print(f"\nSaved to: {output_file}")
     
     return station_lines
 

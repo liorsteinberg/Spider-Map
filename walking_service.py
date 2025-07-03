@@ -194,18 +194,20 @@ def get_stations():
         
         # Load metro line colors if available
         metro_lines = {}
-        metro_lines_file = 'CityData/metro_lines.json'
-        station_lines_file = f'montreal_station_lines.json'  # TODO: make city-specific
+        cache_prefix = CITIES.get(current_city, {}).get('cache_prefix', current_city)
+        metro_lines_file = f'CityData/{cache_prefix}_metro_lines.json'
+        station_lines_file = f'CityData/{cache_prefix}_station_lines.json'
         station_line_mapping = {}
         
         try:
+            # Load metro line definitions
             if os.path.exists(metro_lines_file):
                 with open(metro_lines_file, 'r', encoding='utf-8') as f:
                     metro_data = json.load(f)
-                    metro_lines = metro_data.get(current_city, {}).get('lines', {})
+                    metro_lines = metro_data.get('lines', {})
             
-            # Load station-to-line mapping if available (currently only Montreal)
-            if current_city == 'montreal' and os.path.exists(station_lines_file):
+            # Load station-to-line mapping
+            if os.path.exists(station_lines_file):
                 with open(station_lines_file, 'r', encoding='utf-8') as f:
                     station_line_mapping = json.load(f)
         except Exception as e:
