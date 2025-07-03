@@ -765,12 +765,22 @@
                         return; // Skip this station - warning already logged
                     }
                     
+                    // Use line colors if available
+                    let fillColor = '#718096'; // Default gray
+                    let borderColor = '#4A5568';
+                    
+                    if (station.colors && station.colors.length > 0) {
+                        // For stations with multiple lines, use the first color
+                        fillColor = station.colors[0];
+                        borderColor = station.colors[0];
+                    }
+                    
                     L.circleMarker([station.lat, station.lng], { 
                         radius: 4, 
-                        color: '#4A5568', 
+                        color: borderColor, 
                         weight: 1, 
-                        fillColor: '#718096', 
-                        fillOpacity: 0.5,
+                        fillColor: fillColor, 
+                        fillOpacity: 0.8,
                         isBackgroundStation: true
                     }).bindPopup(`<b>${station.name}</b>`).addTo(map);
                 });
@@ -1351,14 +1361,28 @@
                     }).addTo(linesLayer);
                 }
                 
-                // Draw station marker
+                // Draw station marker with line colors
+                let stationFillColor = '#ed8936'; // Default orange
+                let stationBorderColor = '#FFFFFF';
+                
+                // Find station in the stations array to get colors
+                const stationData = stations.find(s => s.name === station.name);
+                if (stationData && stationData.colors && stationData.colors.length > 0) {
+                    stationFillColor = stationData.colors[0];
+                    // For multi-line stations, show all colors in popup
+                    if (stationData.colors.length > 1) {
+                        const colorDots = stationData.colors.map(c => `<span style="display:inline-block;width:12px;height:12px;background:${c};border-radius:50%;margin:0 2px;"></span>`).join('');
+                        station.colorInfo = `<br>Lines: ${colorDots}`;
+                    }
+                }
+                
                 L.circleMarker(stationLatLng, { 
                     radius: 8, 
-                    color: '#FFFFFF', 
+                    color: stationBorderColor, 
                     weight: 2, 
-                    fillColor: '#ed8936', 
+                    fillColor: stationFillColor, 
                     fillOpacity: 1 
-                }).bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m`).addTo(highlightedStationsLayer);
+                }).bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m${station.colorInfo || ''}`).addTo(highlightedStationsLayer);
             });
             
             console.log(`🎯 Successfully rendered ${closestStations.length} stations for calculation ${thisCalculationId}`);

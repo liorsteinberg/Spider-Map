@@ -64,6 +64,13 @@ CITIES = {
         'name': 'Beijing, China',
         'center': [39.9042, 116.4074],
         'zoom': 14
+    },
+    'montreal': {
+        'cache_prefix': 'montreal',
+        'display_name': 'Montreal',
+        'name': 'Montreal, Quebec, Canada',
+        'center': [45.5017, -73.5673],
+        'zoom': 14
     }
 }
 
@@ -185,6 +192,25 @@ def get_stations():
         with open(geojson_file, 'r', encoding='utf-8') as f:
             geojson_data = json.load(f)
         
+        # Load metro line colors if available
+        metro_lines = {}
+        metro_lines_file = 'CityData/metro_lines.json'
+        station_lines_file = f'montreal_station_lines.json'  # TODO: make city-specific
+        station_line_mapping = {}
+        
+        try:
+            if os.path.exists(metro_lines_file):
+                with open(metro_lines_file, 'r', encoding='utf-8') as f:
+                    metro_data = json.load(f)
+                    metro_lines = metro_data.get(current_city, {}).get('lines', {})
+            
+            # Load station-to-line mapping if available (currently only Montreal)
+            if current_city == 'montreal' and os.path.exists(station_lines_file):
+                with open(station_lines_file, 'r', encoding='utf-8') as f:
+                    station_line_mapping = json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load metro line data: {e}")
+        
         # Convert GeoJSON to simple station list
         stations = []
         for feature in geojson_data.get('features', []):
@@ -192,12 +218,25 @@ def get_stations():
                 coords = feature['geometry']['coordinates']
                 lng, lat = coords[0], coords[1]  # GeoJSON uses [lng, lat] order
                 
+                station_name = feature['properties'].get('name', 'Unknown Station')
                 station = {
-                    'name': feature['properties'].get('name', 'Unknown Station'),
+                    'name': station_name,
                     'lat': lat,
                     'lng': lng,
                     'osm_id': feature['properties'].get('osm_id', '')
                 }
+                
+                # Add line colors if available
+                if station_name in station_line_mapping:
+                    lines = station_line_mapping[station_name]
+                    colors = []
+                    for line in lines:
+                        line_qid = line.get('qid')
+                        if line_qid in metro_lines:
+                            colors.append(metro_lines[line_qid]['color'])
+                    if colors:
+                        station['colors'] = colors
+                
                 stations.append(station)
         
         logger.info(f"✅ Loaded {len(stations)} stations for {CITIES[current_city]['display_name']}")

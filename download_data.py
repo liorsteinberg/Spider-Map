@@ -33,6 +33,11 @@ CITIES = {
         'name': 'Beijing, China',
         'display_name': 'Beijing',
         'cache_prefix': 'beijing'
+    },
+    'montreal': {
+        'name': 'Montreal, Quebec, Canada',
+        'display_name': 'Montreal',
+        'cache_prefix': 'montreal'
     }
 }
 
