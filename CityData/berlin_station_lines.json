@@ -1,0 +1,1274 @@
+{
+  "Ruhleben": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Amrumer Straße": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Kurfürstendamm": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Güntzelstraße": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Berliner Straße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    },
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Friedrich-Wilhelm-Platz": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Walther-Schreiber-Platz": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Schloßstraße": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Rathaus Steglitz": [
+    {
+      "qid": "Q315418",
+      "label": "Wannsee Railway"
+    }
+  ],
+  "U Französische Straße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Theodor-Heuss-Platz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Neu-Westend": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Deutsche Oper": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Ernst-Reuter-Platz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Lindauer Allee": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Innsbrucker Platz": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Bayerischer Platz": [
+    {
+      "qid": "Q99708",
+      "label": "U4",
+      "color": "#FFD900"
+    },
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Hermannstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Bismarckstraße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    },
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Richard-Wagner-Platz": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Eisenacher Straße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Rathaus Reinickendorf": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Südstern": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Friedrichsfelde": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Gneisenaustraße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Kaiserdamm": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Elsterwerdaer Platz": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Biesdorf-Süd": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Rosenthaler Platz": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Gleisdreieck": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Wedding": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Stadtmitte": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    },
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Seestraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Leopoldplatz": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    },
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Frankfurter Allee": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Naturkundemuseum": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Voltastraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Moritzplatz": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Schönleinstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Boddinstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Leinestraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Strausberger Platz": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Dahlem-Dorf": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Weberwiese": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Grenzallee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Rehberge": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Hallesches Tor": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "U Potsdamer Platz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Britz-Süd": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Johannisthaler Chaussee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Lipschitzallee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Rudow": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Zwickauer Damm": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Afrikanische Straße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Kurt-Schumacher-Platz": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Scharnweberstraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Otisstraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Holzhauser Straße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Borsigwerke": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Brandenburger Tor": [
+    {
+      "qid": "Q564188",
+      "label": "Berlin Nord-Süd Tunnel"
+    }
+  ],
+  "Neukölln": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Weinmeisterstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "U Friedrichstraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Mohrenstraße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Warschauer Straße": [
+    {
+      "qid": "Q317129",
+      "label": "Berlin–Wrocław railway"
+    },
+    {
+      "qid": "Q60196426",
+      "label": "Berlin–Küstrin railway"
+    },
+    {
+      "qid": "Q96107092",
+      "label": "Berlin Ostkreuz–Königs Wusterhausen railway"
+    }
+  ],
+  "Krumme Lanke": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Görlitzer Bahnhof": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Klosterstraße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Schillingstraße": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Frankfurter Tor": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Schlesisches Tor": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Westhafen": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Prinzenstraße": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Alt-Mariendorf": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Platz der Luftbrücke": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Paracelsus-Bad": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Residenzstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Franz-Neumann-Platz": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Vinetastraße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Kaiserin-Augusta-Straße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Westphalweg": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Kottbusser Tor": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    },
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Sophie-Charlotte-Platz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Nollendorfplatz": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    },
+    {
+      "qid": "Q99708",
+      "label": "U4",
+      "color": "#FFD900"
+    }
+  ],
+  "Spittelmarkt": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Kurfürstenstraße": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Schwartzkopffstraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Senefelderplatz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Konstanzer Straße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Karl-Marx-Straße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Oranienburger Tor": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Adenauerplatz": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Cottbusser Platz": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Kaulsdorf-Nord": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Magdalenenstraße": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Kienberg (Gärten der Welt)": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Nauener Platz": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Mendelssohn-Bartholdy-Park": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Möckernbrücke": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    },
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Pankstraße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Samariterstraße": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Hönow": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Bülowstraße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Hausvogteiplatz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Alt-Tempelhof": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Ullsteinstraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Mehringdamm": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    },
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Paradestraße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Onkel Toms Hütte": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Oskar-Helene-Heim": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Freie Universität (Thielplatz)": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Uhlandstraße": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    }
+  ],
+  "Wittenbergplatz": [
+    {
+      "qid": "Q99691",
+      "label": "U1",
+      "color": "#65BD00"
+    },
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    },
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Hansaplatz": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Birkenstraße": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Blaschkoallee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Blissestraße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Breitenbachplatz": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Osloer Straße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    },
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Bundestag": [
+    {
+      "qid": "Q99715",
+      "label": "U55",
+      "color": "#7D533D"
+    }
+  ],
+  "Turmstraße": [
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Siemensdamm": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Tierpark": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Louis-Lewin-Straße": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Hellersdorf": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ],
+  "Märkisches Museum": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Rathaus Spandau": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Kleistpark": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Kochstraße/Checkpoint Charlie": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Rathaus Schöneberg": [
+    {
+      "qid": "Q99708",
+      "label": "U4",
+      "color": "#FFD900"
+    }
+  ],
+  "Viktoria-Luise-Platz": [
+    {
+      "qid": "Q99708",
+      "label": "U4",
+      "color": "#FFD900"
+    }
+  ],
+  "Rüdesheimer Platz": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Podbielskiallee": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Augsburger Straße": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Heidelberger Platz": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Hohenzollernplatz": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    }
+  ],
+  "Spichernstraße": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    },
+    {
+      "qid": "Q99744",
+      "label": "U9",
+      "color": "#F38901"
+    }
+  ],
+  "Fehrbelliner Platz": [
+    {
+      "qid": "Q99702",
+      "label": "U3",
+      "color": "#00A991"
+    },
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Hermannplatz": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    },
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Rathaus Neukölln": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Parchimer Allee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Jakob-Kaiser-Platz": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Wilmersdorfer Straße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Zitadelle": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Paulsternstraße": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Halemweg": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Reinickendorfer Straße": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Karl-Bonhoeffer-Nervenklinik": [
+    {
+      "qid": "Q390106",
+      "label": "Kremmen Railway"
+    }
+  ],
+  "Wittenau": [
+    {
+      "qid": "Q456533",
+      "label": "Berlin Northern Railway"
+    }
+  ],
+  "Rosa-Luxemburg-Platz": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Mierendorffplatz": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Haselhorst": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Bundesplatz": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Rohrdamm": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Tempelhof": [
+    {
+      "qid": "Q525056",
+      "label": "Berlin Ringbahn"
+    }
+  ],
+  "Olympia-Stadion": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Heinrich-Heine-Straße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Eberswalder Straße": [
+    {
+      "qid": "Q99697",
+      "label": "U2",
+      "color": "#EA5006"
+    }
+  ],
+  "Bernauer Straße": [
+    {
+      "qid": "Q99729",
+      "label": "U8",
+      "color": "#00609E"
+    }
+  ],
+  "Alt-Tegel": [
+    {
+      "qid": "Q99720",
+      "label": "U6",
+      "color": "#9070C1"
+    }
+  ],
+  "Altstadt Spandau": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Wutzkyallee": [
+    {
+      "qid": "Q99725",
+      "label": "U7",
+      "color": "#34A0D2"
+    }
+  ],
+  "Museumsinsel": [
+    {
+      "qid": "Q99711",
+      "label": "U5",
+      "color": "#672F17"
+    }
+  ]
+}

@@ -406,44 +406,61 @@ def download_metro_lines(city_config, skip_if_exists=True):
         logger.info(f"Metro line data saved: {station_lines_file} ({file_size:.1f} KB)")
         logger.info(f"Summary: {stations_processed} stations, {stations_with_wikidata} with Wikidata, {stations_with_lines} with line data")
         
-        # Check if we need manual color configuration
+        # Check line colors and create metro_lines.json
         lines_with_colors = 0
-        all_line_qids = set()
+        all_lines = {}  # Collect all unique lines
+        
         for station_data in station_lines.values():
             for line in station_data:
-                all_line_qids.add(line['qid'])
+                line_qid = line['qid']
+                if line_qid not in all_lines:
+                    all_lines[line_qid] = {
+                        'name': line['label'],
+                        'color': line.get('color', '#999999')  # Default gray if no color
+                    }
                 if 'color' in line:
                     lines_with_colors += 1
         
-        if all_line_qids and lines_with_colors == 0:
-            logger.warning("No line colors found in Wikidata!")
-            logger.info("Checking manual color configuration...")
+        # Always create metro_lines.json if we have line data
+        if all_lines:
+            metro_lines_file = f'CityData/{cache_prefix}_metro_lines.json'
             
-            # Try to load manual colors and create metro_lines file
-            manual_colors_file = 'CityData/metro_line_colors.json'
-            if os.path.exists(manual_colors_file):
-                try:
-                    with open(manual_colors_file, 'r', encoding='utf-8') as f:
-                        manual_data = json.load(f)
-                    
-                    city_colors = manual_data.get('cities', {}).get(cache_prefix, {})
-                    if city_colors and not isinstance(city_colors.get('_comment'), str):
-                        # Create metro_lines.json file
-                        metro_lines_file = f'CityData/{cache_prefix}_metro_lines.json'
-                        metro_lines_data = {'lines': city_colors}
+            # If no colors from Wikidata, try manual configuration
+            if lines_with_colors == 0:
+                logger.warning("No line colors found in Wikidata!")
+                logger.info("Checking manual color configuration...")
+                
+                # Try to load manual colors
+                manual_colors_file = 'CityData/metro_line_colors.json'
+                if os.path.exists(manual_colors_file):
+                    try:
+                        with open(manual_colors_file, 'r', encoding='utf-8') as f:
+                            manual_data = json.load(f)
                         
-                        with open(metro_lines_file, 'w', encoding='utf-8') as f:
-                            json.dump(metro_lines_data, f, indent=2, ensure_ascii=False)
-                        
-                        logger.info(f"Created metro lines file with manual colors: {metro_lines_file}")
-                    else:
-                        logger.info(f"No manual colors configured for {cache_prefix}")
-                        logger.info(f"Add colors to {manual_colors_file} for line QIDs: {sorted(all_line_qids)}")
-                except Exception as e:
-                    logger.warning(f"Could not load manual colors: {e}")
-            else:
-                logger.info(f"Manual color file not found: {manual_colors_file}")
-                logger.info(f"Line QIDs found: {sorted(all_line_qids)}")
+                        city_colors = manual_data.get('cities', {}).get(cache_prefix, {})
+                        if city_colors and not isinstance(city_colors.get('_comment'), str):
+                            # Update colors from manual configuration
+                            for qid, line_info in city_colors.items():
+                                if qid in all_lines:
+                                    all_lines[qid].update(line_info)
+                            logger.info(f"Applied manual colors for {cache_prefix}")
+                        else:
+                            logger.info(f"No manual colors configured for {cache_prefix}")
+                            logger.info(f"Add colors to {manual_colors_file} for line QIDs: {sorted(all_lines.keys())}")
+                    except Exception as e:
+                        logger.warning(f"Could not load manual colors: {e}")
+                else:
+                    logger.info(f"Manual color file not found: {manual_colors_file}")
+                    logger.info(f"Line QIDs found: {sorted(all_lines.keys())}")
+            
+            # Write metro_lines.json
+            metro_lines_data = {'lines': all_lines}
+            with open(metro_lines_file, 'w', encoding='utf-8') as f:
+                json.dump(metro_lines_data, f, indent=2, ensure_ascii=False)
+            
+            logger.info(f"Created metro lines file: {metro_lines_file}")
+            if lines_with_colors > 0:
+                logger.info(f"Found {len(all_lines)} unique lines with colors from Wikidata")
         
         return True
         

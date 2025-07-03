@@ -1,0 +1,76 @@
+{
+  "lines": {
+    "Q99697": {
+      "name": "U2",
+      "color": "#EA5006"
+    },
+    "Q99744": {
+      "name": "U9",
+      "color": "#F38901"
+    },
+    "Q99691": {
+      "name": "U1",
+      "color": "#65BD00"
+    },
+    "Q99725": {
+      "name": "U7",
+      "color": "#34A0D2"
+    },
+    "Q315418": {
+      "name": "Wannsee Railway",
+      "color": "#999999"
+    },
+    "Q99720": {
+      "name": "U6",
+      "color": "#9070C1"
+    },
+    "Q99729": {
+      "name": "U8",
+      "color": "#00609E"
+    },
+    "Q525056": {
+      "name": "Berlin Ringbahn",
+      "color": "#999999"
+    },
+    "Q99708": {
+      "name": "U4",
+      "color": "#FFD900"
+    },
+    "Q99711": {
+      "name": "U5",
+      "color": "#672F17"
+    },
+    "Q99702": {
+      "name": "U3",
+      "color": "#00A991"
+    },
+    "Q564188": {
+      "name": "Berlin Nord-Süd Tunnel",
+      "color": "#999999"
+    },
+    "Q317129": {
+      "name": "Berlin–Wrocław railway",
+      "color": "#999999"
+    },
+    "Q60196426": {
+      "name": "Berlin–Küstrin railway",
+      "color": "#999999"
+    },
+    "Q96107092": {
+      "name": "Berlin Ostkreuz–Königs Wusterhausen railway",
+      "color": "#999999"
+    },
+    "Q99715": {
+      "name": "U55",
+      "color": "#7D533D"
+    },
+    "Q390106": {
+      "name": "Kremmen Railway",
+      "color": "#999999"
+    },
+    "Q456533": {
+      "name": "Berlin Northern Railway",
+      "color": "#999999"
+    }
+  }
+}
