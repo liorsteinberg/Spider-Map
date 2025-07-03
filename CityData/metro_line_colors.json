@@ -1,0 +1,36 @@
+{
+  "description": "Manual color configuration for metro lines by city. Used when Wikidata doesn't have color data.",
+  "cities": {
+    "montreal": {
+      "Q1925762": {
+        "name": "Green Line", 
+        "color": "#00A650", 
+        "number": 1
+      },
+      "Q967397": {
+        "name": "Orange Line", 
+        "color": "#FF6319", 
+        "number": 2
+      },
+      "Q1597847": {
+        "name": "Yellow Line", 
+        "color": "#FFD503", 
+        "number": 4
+      },
+      "Q1726049": {
+        "name": "Blue Line", 
+        "color": "#0075C9", 
+        "number": 5
+      }
+    },
+    "berlin": {
+      "_comment": "Add Berlin U-Bahn/S-Bahn line colors here when needed"
+    },
+    "beijing": {
+      "_comment": "Add Beijing subway line colors here when needed"
+    },
+    "cdmx": {
+      "_comment": "Add Mexico City metro line colors here when needed"
+    }
+  }
+}

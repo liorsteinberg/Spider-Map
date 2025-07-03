@@ -57,11 +57,14 @@ These instructions will get you a copy of the project up and running on your loc
 3.  **Download city data:**
     You can download data for a specific city or all supported cities.
     ```bash
-    python download_data.py --city mexico_city  # or berlin, beijing
+    python download_data.py --city mexico_city  # or berlin, beijing, montreal
     # To download all cities:
     # python download_data.py --all
     # To list available cities:
     # python download_data.py --list-cities
+    
+    # Optional: Include metro line colors (requires Wikidata):
+    # python download_data.py --city montreal --metro-lines
     ```
 
 4.  **Start the backend service:**
@@ -83,6 +86,21 @@ These instructions will get you a copy of the project up and running on your loc
 * `CityData/` - Directory containing network graphs and station data for all cities.
     * `{city}_walking_graph.pkl` - NetworKit graph cache for each city.
     * `{city}_stations.geojson` - Metro station data for each city.
+    * `{city}_station_lines.json` - Station to metro line mappings (optional).
+    * `{city}_metro_lines.json` - Metro line color definitions (optional).
+    * `metro_line_colors.json` - Manual color configuration for all cities.
+    * `README_metro_lines.md` - Documentation for the metro lines feature.
+
+---
+
+## ✨ Features
+
+* **Ultra-fast walking distance calculations** using NetworKit (50x faster than NetworkX)
+* **Multi-city support** with easy city switching
+* **Metro line colors** (optional) - Shows stations with their line colors
+* **Station list panel** - Displays nearest stations with distances
+* **Interactive map** with real-time updates as you move the cursor
+* **Mobile responsive** design
 
 ---
 
