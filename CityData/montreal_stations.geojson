@@ -1,0 +1,1111 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5798146,
+          45.4953505
+        ]
+      },
+      "properties": {
+        "name": "Guy-Concordia",
+        "osm_id": "('node', 208949374)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5683367,
+          45.5080372
+        ]
+      },
+      "properties": {
+        "name": "Place-des-Arts",
+        "osm_id": "('node', 208949390)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5648225,
+          45.5109236
+        ]
+      },
+      "properties": {
+        "name": "Saint-Laurent",
+        "osm_id": "('node', 208949406)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5863126,
+          45.4896787
+        ]
+      },
+      "properties": {
+        "name": "Atwater",
+        "osm_id": "('node', 213329687)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5511268,
+          45.5468903
+        ]
+      },
+      "properties": {
+        "name": "Joliette",
+        "osm_id": "('node', 218356349)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5820354,
+          45.4567578
+        ]
+      },
+      "properties": {
+        "name": "Jolicoeur",
+        "osm_id": "('node', 225689808)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5515006,
+          45.5542002
+        ]
+      },
+      "properties": {
+        "name": "Pie IX",
+        "osm_id": "('node', 264271702)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.603611,
+          45.4462277
+        ]
+      },
+      "properties": {
+        "name": "Angrignon",
+        "osm_id": "('node', 311564466)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6148897,
+          45.5201103
+        ]
+      },
+      "properties": {
+        "name": "Outremont",
+        "osm_id": "('node', 1765620875)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5709494,
+          45.4950136
+        ]
+      },
+      "properties": {
+        "name": "Lucien L'Allier",
+        "osm_id": "('node', 5360360498)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.623489,
+          45.4966507
+        ]
+      },
+      "properties": {
+        "name": "Côte-des-Neiges",
+        "osm_id": "('node', 6600830244)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5610756,
+          45.5151125
+        ]
+      },
+      "properties": {
+        "name": "Berri-UQAM",
+        "osm_id": "('node', 6600856333)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5331259,
+          45.5124469
+        ]
+      },
+      "properties": {
+        "name": "Jean-Drapeau",
+        "osm_id": "('node', 6600874117)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6197555,
+          45.4797551
+        ]
+      },
+      "properties": {
+        "name": "Villa-Maria",
+        "osm_id": "('node', 6607411941)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6283531,
+          45.4856705
+        ]
+      },
+      "properties": {
+        "name": "Snowdon",
+        "osm_id": "('node', 6607411942)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5473091,
+          45.5611109
+        ]
+      },
+      "properties": {
+        "name": "Viau",
+        "osm_id": "('node', 6615202527)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5932019,
+          45.4510439
+        ]
+      },
+      "properties": {
+        "name": "Monk",
+        "osm_id": "('node', 6615202528)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5670231,
+          45.4627596
+        ]
+      },
+      "properties": {
+        "name": "De l'Église",
+        "osm_id": "('node', 6615202529)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5693705,
+          45.4782496
+        ]
+      },
+      "properties": {
+        "name": "Charlevoix",
+        "osm_id": "('node', 6615202530)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5542369,
+          45.5417253
+        ]
+      },
+      "properties": {
+        "name": "Préfontaine",
+        "osm_id": "('node', 6615202531)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5715689,
+          45.5040858
+        ]
+      },
+      "properties": {
+        "name": "McGill",
+        "osm_id": "('node', 6831524451)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5466995,
+          45.5768358
+        ]
+      },
+      "properties": {
+        "name": "Cadillac",
+        "osm_id": "('node', 7041520765)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5354362,
+          45.596414
+        ]
+      },
+      "properties": {
+        "name": "Honoré-Beaugrand",
+        "osm_id": "('node', 7041520766)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5999622,
+          45.5597489
+        ]
+      },
+      "properties": {
+        "name": "Saint-Michel",
+        "osm_id": "('node', 7052471485)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6026995,
+          45.5525993
+        ]
+      },
+      "properties": {
+        "name": "D’Iberville",
+        "osm_id": "('node', 7052471486)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6078016,
+          45.5467522
+        ]
+      },
+      "properties": {
+        "name": "Fabre",
+        "osm_id": "('node', 7052471487)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6134236,
+          45.5391835
+        ]
+      },
+      "properties": {
+        "name": "Jean-Talon",
+        "osm_id": "('node', 7052471488)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6201056,
+          45.5352621
+        ]
+      },
+      "properties": {
+        "name": "De Castelnau",
+        "osm_id": "('node', 7052471489)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6245212,
+          45.530416
+        ]
+      },
+      "properties": {
+        "name": "Parc",
+        "osm_id": "('node', 7052471490)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6125273,
+          45.5101323
+        ]
+      },
+      "properties": {
+        "name": "Édouard-Montpetit",
+        "osm_id": "('node', 7052471492)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.617581,
+          45.503439
+        ]
+      },
+      "properties": {
+        "name": "Université-de-Montréal",
+        "osm_id": "('node', 7052471493)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6832845,
+          45.5142942
+        ]
+      },
+      "properties": {
+        "name": "Côte-Vertu",
+        "osm_id": "('node', 7052605729)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6728291,
+          45.5084616
+        ]
+      },
+      "properties": {
+        "name": "Du Collège",
+        "osm_id": "('node', 7052605730)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6615981,
+          45.5003824
+        ]
+      },
+      "properties": {
+        "name": "De La Savane",
+        "osm_id": "('node', 7052605731)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6529072,
+          45.4949329
+        ]
+      },
+      "properties": {
+        "name": "Namur",
+        "osm_id": "('node', 7052605732)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6379309,
+          45.4943703
+        ]
+      },
+      "properties": {
+        "name": "Plamondon",
+        "osm_id": "('node', 7052605733)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6328602,
+          45.4923747
+        ]
+      },
+      "properties": {
+        "name": "Côte-Sainte-Catherine",
+        "osm_id": "('node', 7052605734)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6038307,
+          45.4738941
+        ]
+      },
+      "properties": {
+        "name": "Vendôme",
+        "osm_id": "('node', 7052605735)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.586572,
+          45.4771794
+        ]
+      },
+      "properties": {
+        "name": "Place Saint-Henri",
+        "osm_id": "('node', 7052605736)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5764602,
+          45.488951
+        ]
+      },
+      "properties": {
+        "name": "Georges-Vanier",
+        "osm_id": "('node', 7052605737)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5669583,
+          45.4981853
+        ]
+      },
+      "properties": {
+        "name": "Bonaventure",
+        "osm_id": "('node', 7052605738)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5631107,
+          45.50209
+        ]
+      },
+      "properties": {
+        "name": "Square-Victoria-OACI",
+        "osm_id": "('node', 7052605739)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.559605,
+          45.5060856
+        ]
+      },
+      "properties": {
+        "name": "Place d’Armes",
+        "osm_id": "('node', 7052605740)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.556487,
+          45.5101439
+        ]
+      },
+      "properties": {
+        "name": "Champ-de-Mars",
+        "osm_id": "('node', 7052605741)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5680527,
+          45.5187201
+        ]
+      },
+      "properties": {
+        "name": "Sherbrooke",
+        "osm_id": "('node', 7052605742)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5816468,
+          45.5245985
+        ]
+      },
+      "properties": {
+        "name": "Mont-Royal",
+        "osm_id": "('node', 7052605743)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5883784,
+          45.5280804
+        ]
+      },
+      "properties": {
+        "name": "Laurier",
+        "osm_id": "('node', 7052605744)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5973383,
+          45.5314962
+        ]
+      },
+      "properties": {
+        "name": "Rosemont",
+        "osm_id": "('node', 7052605745)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6046246,
+          45.5351198
+        ]
+      },
+      "properties": {
+        "name": "Beaubien",
+        "osm_id": "('node', 7052605746)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6286029,
+          45.5432233
+        ]
+      },
+      "properties": {
+        "name": "Jarry",
+        "osm_id": "('node', 7052605747)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6388375,
+          45.5461436
+        ]
+      },
+      "properties": {
+        "name": "Crémazie",
+        "osm_id": "('node', 7052605748)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6565058,
+          45.5511003
+        ]
+      },
+      "properties": {
+        "name": "Sauvé",
+        "osm_id": "('node', 7052605749)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6682516,
+          45.5545124
+        ]
+      },
+      "properties": {
+        "name": "Henri-Bourassa",
+        "osm_id": "('node', 7052605750)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5397875,
+          45.5896475
+        ]
+      },
+      "properties": {
+        "name": "Radisson",
+        "osm_id": "('node', 7052949183)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5431577,
+          45.5827257
+        ]
+      },
+      "properties": {
+        "name": "Langelier",
+        "osm_id": "('node', 7052949184)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5467318,
+          45.5693911
+        ]
+      },
+      "properties": {
+        "name": "Assomption",
+        "osm_id": "('node', 7052992085)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5515329,
+          45.5541959
+        ]
+      },
+      "properties": {
+        "name": "Pie IX",
+        "osm_id": "('node', 7052992086)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5510099,
+          45.5469325
+        ]
+      },
+      "properties": {
+        "name": "Joliette",
+        "osm_id": "('node', 7052992087)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5522155,
+          45.5331536
+        ]
+      },
+      "properties": {
+        "name": "Frontenac",
+        "osm_id": "('node', 7052992088)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5521686,
+          45.5237396
+        ]
+      },
+      "properties": {
+        "name": "Papineau",
+        "osm_id": "('node', 7052992089)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5571716,
+          45.5195498
+        ]
+      },
+      "properties": {
+        "name": "Beaudry",
+        "osm_id": "('node', 7052992090)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5648092,
+          45.5108831
+        ]
+      },
+      "properties": {
+        "name": "Saint-Laurent",
+        "osm_id": "('node', 7052992091)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5683162,
+          45.5080307
+        ]
+      },
+      "properties": {
+        "name": "Place-des-Arts",
+        "osm_id": "('node', 7052992092)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5750881,
+          45.5006095
+        ]
+      },
+      "properties": {
+        "name": "Peel",
+        "osm_id": "('node', 7052992094)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5798383,
+          45.4953736
+        ]
+      },
+      "properties": {
+        "name": "Guy-Concordia",
+        "osm_id": "('node', 7052992095)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5863426,
+          45.4897865
+        ]
+      },
+      "properties": {
+        "name": "Atwater",
+        "osm_id": "('node', 7052992096)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5661308,
+          45.4708146
+        ]
+      },
+      "properties": {
+        "name": "LaSalle",
+        "osm_id": "('node', 7052992097)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5720103,
+          45.4592869
+        ]
+      },
+      "properties": {
+        "name": "Verdun",
+        "osm_id": "('node', 7052992098)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5819981,
+          45.45686
+        ]
+      },
+      "properties": {
+        "name": "Jolicoeur",
+        "osm_id": "('node', 7052992099)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6036506,
+          45.4461825
+        ]
+      },
+      "properties": {
+        "name": "Angrignon",
+        "osm_id": "('node', 7052992100)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5798271,
+          45.4827728
+        ]
+      },
+      "properties": {
+        "name": "Lionel-Groulx",
+        "osm_id": "('node', 7164242333)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5388789,
+          45.47033
+        ]
+      },
+      "properties": {
+        "name": "Île-des-Soeurs",
+        "osm_id": "('node', 7350710750)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5666874,
+          45.4999265
+        ]
+      },
+      "properties": {
+        "name": "Gare Centrale",
+        "osm_id": "('node', 8205968569)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6035778,
+          45.4462029
+        ]
+      },
+      "properties": {
+        "name": "Angrignon",
+        "osm_id": "('node', 10905645589)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5819839,
+          45.45675
+        ]
+      },
+      "properties": {
+        "name": "Jolicoeur",
+        "osm_id": "('node', 10934212937)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5731629,
+          45.4594567
+        ]
+      },
+      "properties": {
+        "name": "Verdun",
+        "osm_id": "('node', 10938614688)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5731663,
+          45.4594242
+        ]
+      },
+      "properties": {
+        "name": "Verdun",
+        "osm_id": "('node', 10938614689)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5571619,
+          45.5195426
+        ]
+      },
+      "properties": {
+        "name": "Beaudry",
+        "osm_id": "('node', 11483331210)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.62807858086367,
+          45.486381236392916
+        ]
+      },
+      "properties": {
+        "name": "Station 79",
+        "osm_id": "('way', 1155282212)"
+      }
+    }
+  ]
+}

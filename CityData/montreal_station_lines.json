@@ -1,0 +1,394 @@
+{
+  "Saint-Laurent": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Jolicoeur": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Outremont": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "C\u00f4te-des-Neiges": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Berri-UQAM": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    },
+    {
+      "qid": "Q1597847",
+      "label": "Yellow Line"
+    },
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Jean-Drapeau": [
+    {
+      "qid": "Q1597847",
+      "label": "Yellow Line"
+    }
+  ],
+  "Villa-Maria": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Snowdon": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    },
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Viau": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Monk": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "De l'\u00c9glise": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Charlevoix": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Pr\u00e9fontaine": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "McGill": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Cadillac": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Honor\u00e9-Beaugrand": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Saint-Michel": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "D\u2019Iberville": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Fabre": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Jean-Talon": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    },
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "De Castelnau": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Parc": [
+    {
+      "qid": "Q111905050",
+      "label": "CPKC Parc Subdivision"
+    }
+  ],
+  "\u00c9douard-Montpetit": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "Universit\u00e9-de-Montr\u00e9al": [
+    {
+      "qid": "Q1726049",
+      "label": "Blue Line"
+    }
+  ],
+  "C\u00f4te-Vertu": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Du Coll\u00e8ge": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "De La Savane": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Namur": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Plamondon": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "C\u00f4te-Sainte-Catherine": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Vend\u00f4me": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Place Saint-Henri": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Georges-Vanier": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Bonaventure": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Square-Victoria-OACI": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Place d\u2019Armes": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Champ-de-Mars": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Sherbrooke": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Mont-Royal": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Laurier": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Rosemont": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Beaubien": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Jarry": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Cr\u00e9mazie": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Sauv\u00e9": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Henri-Bourassa": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    }
+  ],
+  "Radisson": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Langelier": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Assomption": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Pie IX": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Joliette": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Frontenac": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Papineau": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Beaudry": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Place-des-Arts": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Peel": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Guy-Concordia": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Atwater": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "LaSalle": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Verdun": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Angrignon": [
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ],
+  "Lionel-Groulx": [
+    {
+      "qid": "Q967397",
+      "label": "Orange Line"
+    },
+    {
+      "qid": "Q1925762",
+      "label": "Green Line"
+    }
+  ]
+}
